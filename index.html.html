@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>LaoEdge — ລີວິວໂບຣກເກີ & IB Rebate</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#C9A84C;--gold-light:#E8C97A;--gold-dim:#7A6230;
+  --bg:#080C12;--bg2:#0D1520;--bg3:#121D2E;--surface:#152035;
+  --border:rgba(201,168,76,0.18);--text:#E8EDF5;--text-muted:#7A8BA0;
+  --green:#2ECC71;--red:#E74C3C;--px:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html{scroll-behavior:smooth;}
+body{font-family:'Noto Sans Lao','PhetsalatOT',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;font-size:15px;-webkit-font-smoothing:antialiased;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:14px var(--px);height:58px;background:rgba(8,12,18,0.93);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.logo{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--gold);}
+.logo span{color:var(--text);}
+.hamburger{width:36px;height:36px;display:flex;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{display:block;height:2px;width:22px;background:var(--text);border-radius:2px;transition:all 0.3s;}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mobile-menu{position:fixed;top:58px;left:0;right:0;z-index:199;background:rgba(8,12,18,0.98);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transform:translateY(-110%);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);padding:20px var(--px) 28px;}
+.mobile-menu.open{transform:translateY(0);}
+.mobile-menu a{display:block;padding:14px 0;color:var(--text);text-decoration:none;font-size:1rem;font-weight:500;border-bottom:1px solid var(--border);}
+.menu-cta{margin-top:16px;background:var(--gold)!important;color:#000!important;text-align:center;padding:14px!important;border-radius:10px;font-weight:700!important;border:none!important;}
+.menu-admin{margin-top:10px;background:var(--surface)!important;color:var(--gold)!important;text-align:center;padding:12px!important;border-radius:10px;border:1px solid var(--border)!important;}
+
+.hero{padding:90px var(--px) 60px;position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center;}
+.hero-glow{position:absolute;width:320px;height:320px;background:radial-gradient(circle,rgba(201,168,76,0.14) 0%,transparent 70%);top:5%;right:-80px;border-radius:50%;animation:pulse 6s ease-in-out infinite;pointer-events:none;}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.hero-content{position:relative;z-index:1;width:100%;}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);padding:5px 12px;border-radius:99px;font-size:0.68rem;color:var(--gold);letter-spacing:0.1em;margin-bottom:20px;background:rgba(201,168,76,0.07);}
+h1{font-family:'Playfair Display',serif;font-size:2.6rem;line-height:1.12;font-weight:900;margin-bottom:14px;}
+h1 .accent{color:var(--gold);}
+.hero-sub{font-size:0.91rem;color:var(--text-muted);line-height:1.75;margin-bottom:30px;}
+.hero-sub strong{color:var(--gold-light);}
+.hero-actions{display:flex;flex-direction:column;gap:10px;}
+.btn-primary{background:var(--gold);color:#000;border:none;padding:15px 24px;border-radius:10px;font-size:0.95rem;font-weight:700;cursor:pointer;font-family:inherit;text-align:center;transition:background 0.2s,transform 0.1s;width:100%;-webkit-appearance:none;}
+.btn-primary:active{background:var(--gold-light);transform:scale(0.98);}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border);padding:15px 24px;border-radius:10px;font-size:0.95rem;font-weight:500;cursor:pointer;font-family:inherit;text-align:center;transition:all 0.2s;width:100%;-webkit-appearance:none;}
+.btn-outline:active{border-color:var(--gold);color:var(--gold);}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:36px;background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;}
+.stat-item{padding:18px 8px;text-align:center;}
+.stat-item+.stat-item{border-left:1px solid var(--border);}
+.stat-num{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--gold);font-weight:700;line-height:1;}
+.stat-label{font-size:0.62rem;color:var(--text-muted);margin-top:5px;line-height:1.4;}
+
+section{padding:52px var(--px);position:relative;z-index:1;}
+.section-label{font-size:0.67rem;letter-spacing:0.15em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;}
+h2{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;margin-bottom:8px;line-height:1.2;}
+.section-desc{color:var(--text-muted);font-size:0.87rem;line-height:1.7;margin-bottom:26px;}
+
+.search-wrap{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:20px;}
+.search-input-wrap{display:flex;align-items:center;gap:10px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:14px;}
+.search-input-wrap svg{color:var(--gold);flex-shrink:0;}
+.search-input-wrap input{background:none;border:none;outline:none;color:var(--text);font-size:0.9rem;font-family:inherit;width:100%;min-width:0;}
+.search-input-wrap input::placeholder{color:var(--text-muted);}
+.result-count{font-size:0.77rem;color:var(--text-muted);}
+.result-count strong{color:var(--gold);}
+
+/* ══ BROKER LOGO ══ */
+.broker-list{display:flex;flex-direction:column;gap:14px;}
+.broker-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;position:relative;}
+.broker-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity 0.3s;}
+.broker-card.expanded::before{opacity:1;}
+.card-header{display:flex;align-items:center;gap:12px;padding:16px;cursor:pointer;user-select:none;}
+
+/* Logo wrapper — shows real image or fallback text */
+.broker-logo-wrap{width:48px;height:48px;border-radius:12px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative;}
+.broker-logo-wrap img{width:100%;height:100%;object-fit:contain;border-radius:12px;}
+.broker-logo-wrap .logo-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:0.82rem;font-weight:800;border-radius:12px;}
+.broker-logo-wrap img.loaded + .logo-fallback{display:none;}
+
+.broker-info{flex:1;min-width:0;}
+.broker-name{font-weight:600;font-size:0.95rem;}
+.broker-reg{font-size:0.7rem;color:var(--text-muted);margin-top:2px;}
+.header-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;}
+.rating-row{display:flex;align-items:center;gap:3px;}
+.stars{color:var(--gold);font-size:0.72rem;}
+.rating-num{font-size:0.82rem;font-weight:600;}
+.rebate-badge{background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);color:var(--gold);font-size:0.68rem;font-weight:700;padding:3px 8px;border-radius:5px;white-space:nowrap;}
+.chevron{color:var(--text-muted);transition:transform 0.3s;flex-shrink:0;}
+.broker-card.expanded .chevron{transform:rotate(180deg);}
+
+.card-detail{overflow:hidden;max-height:0;opacity:0;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1),opacity 0.3s;}
+.card-detail.open{max-height:700px;opacity:1;}
+.card-detail-inner{padding:0 16px 16px;}
+.card-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:8px;overflow:hidden;margin-bottom:12px;}
+.stat-cell{background:var(--bg3);padding:10px 6px;text-align:center;}
+.stat-cell .val{font-size:0.86rem;font-weight:600;}
+.stat-cell .key{font-size:0.63rem;color:var(--text-muted);margin-top:2px;}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px;}
+.tag{font-size:0.63rem;padding:3px 7px;border-radius:4px;border:1px solid;}
+.tag-reg{border-color:rgba(46,204,113,0.3);color:#2ECC71;background:rgba(46,204,113,0.08);}
+.tag-type{border-color:var(--border);color:var(--text-muted);}
+.broker-note{font-size:0.8rem;color:var(--text-muted);line-height:1.65;margin-bottom:12px;padding:10px 12px;background:rgba(255,255,255,0.03);border-radius:8px;border-left:2px solid var(--gold-dim);}
+.card-actions{display:flex;gap:8px;}
+.btn-review{flex:1;background:transparent;border:1px solid var(--border);color:var(--text);padding:11px 8px;border-radius:8px;font-size:0.78rem;font-family:inherit;cursor:pointer;}
+.btn-review:active{border-color:var(--gold);color:var(--gold);}
+.btn-register{flex:1.5;background:var(--gold);border:none;color:#000;padding:11px 8px;border-radius:8px;font-size:0.78rem;font-weight:700;font-family:inherit;cursor:pointer;}
+.btn-register:active{background:var(--gold-light);transform:scale(0.97);}
+
+.calc-section{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.calc-wrap{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:22px var(--px);}
+.calc-field{margin-bottom:14px;}
+.calc-field label{display:block;font-size:0.74rem;color:var(--text-muted);margin-bottom:7px;}
+.calc-field input,.calc-field select{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:9px;padding:13px 14px;color:var(--text);font-size:1rem;font-family:inherit;outline:none;-webkit-appearance:none;appearance:none;transition:border-color 0.2s;}
+.calc-field input:focus,.calc-field select:focus{border-color:var(--gold);}
+.select-wrap{position:relative;}
+.select-wrap::after{content:'▾';position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--gold);pointer-events:none;}
+.calc-result{background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:20px 12px;margin:18px 0;display:grid;grid-template-columns:1fr 1fr 1fr;text-align:center;}
+.result-item{padding:0 4px;}
+.result-item+.result-item{border-left:1px solid var(--border);}
+.result-item .num{font-family:'Playfair Display',serif;font-size:1.45rem;color:var(--gold);font-weight:700;line-height:1;}
+.result-item .lbl{font-size:0.65rem;color:var(--text-muted);margin-top:5px;line-height:1.4;}
+
+.steps{display:flex;flex-direction:column;gap:12px;}
+.step{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px 16px;display:flex;gap:14px;align-items:flex-start;}
+.step-num{font-family:'Playfair Display',serif;font-size:1.7rem;color:rgba(201,168,76,0.2);font-weight:900;line-height:1;flex-shrink:0;width:34px;}
+.step-body h3{font-size:0.93rem;font-weight:600;margin-bottom:5px;}
+.step-body p{font-size:0.81rem;color:var(--text-muted);line-height:1.6;}
+
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:150;padding:10px var(--px);background:rgba(8,12,18,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--border);display:flex;gap:10px;}
+.sticky-cta .s-outline{flex:0.55;background:transparent;color:var(--text);border:1px solid var(--border);padding:13px 8px;border-radius:9px;font-size:0.82rem;font-family:inherit;cursor:pointer;text-align:center;}
+.sticky-cta .s-primary{flex:1;background:var(--gold);color:#000;border:none;padding:13px 8px;border-radius:9px;font-size:0.82rem;font-weight:700;font-family:inherit;cursor:pointer;}
+.sticky-cta .s-primary:active{background:var(--gold-light);}
+
+footer{border-top:1px solid var(--border);padding:32px var(--px) 90px;text-align:center;color:var(--text-muted);font-size:0.78rem;}
+footer .footer-logo{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.3rem;margin-bottom:10px;}
+footer p{line-height:1.8;}
+
+@supports (padding-bottom:env(safe-area-inset-bottom)){
+  .sticky-cta{padding-bottom:calc(10px + env(safe-area-inset-bottom));}
+  footer{padding-bottom:calc(80px + env(safe-area-inset-bottom));}
+}
+
+/* ADMIN */
+.admin-overlay{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:flex-end;}
+.admin-overlay.open{display:flex;}
+.admin-sheet{background:var(--bg2);border:1px solid var(--border);border-radius:20px 20px 0 0;width:100%;max-height:92svh;display:flex;flex-direction:column;}
+.admin-handle{width:40px;height:4px;background:var(--border);border-radius:99px;margin:12px auto 0;}
+.admin-header{display:flex;align-items:center;justify-content:space-between;padding:16px var(--px);border-bottom:1px solid var(--border);}
+.admin-title{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);}
+.admin-close{background:var(--surface);border:1px solid var(--border);color:var(--text);width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;}
+.admin-body{overflow-y:auto;flex:1;padding:var(--px);}
+.admin-tabs{display:flex;gap:6px;margin-bottom:20px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:4px;}
+.tab-btn{flex:1;padding:9px 6px;border:none;background:transparent;color:var(--text-muted);font-size:0.78rem;font-family:inherit;cursor:pointer;border-radius:7px;transition:all 0.2s;font-weight:500;}
+.tab-btn.active{background:var(--gold);color:#000;font-weight:700;}
+.tab-content{display:none;}
+.tab-content.active{display:block;}
+.admin-broker-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px;}
+.abi-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.abi-logo-wrap{width:40px;height:40px;border-radius:9px;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;position:relative;}
+.abi-logo-wrap img{width:100%;height:100%;object-fit:contain;}
+.abi-logo-wrap .logo-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:800;border-radius:9px;}
+.abi-logo-wrap img.loaded + .logo-fallback{display:none;}
+.abi-name{font-weight:600;font-size:0.9rem;flex:1;}
+.abi-actions{display:flex;gap:6px;}
+.btn-edit{background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.3);color:var(--gold);padding:6px 12px;border-radius:7px;font-size:0.75rem;font-family:inherit;cursor:pointer;}
+.btn-del{background:rgba(231,76,60,0.1);border:1px solid rgba(231,76,60,0.25);color:var(--red);padding:6px 10px;border-radius:7px;font-size:0.75rem;font-family:inherit;cursor:pointer;}
+.form-group{margin-bottom:14px;}
+.form-group label{display:block;font-size:0.74rem;color:var(--text-muted);margin-bottom:6px;}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:9px;padding:12px 14px;color:var(--text);font-size:0.9rem;font-family:inherit;outline:none;-webkit-appearance:none;transition:border-color 0.2s;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);}
+.form-group textarea{resize:vertical;min-height:70px;line-height:1.5;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.form-hint{font-size:0.68rem;color:var(--text-muted);margin-top:4px;}
+.btn-save{width:100%;background:var(--gold);color:#000;border:none;padding:14px;border-radius:10px;font-size:0.95rem;font-weight:700;font-family:inherit;cursor:pointer;margin-top:4px;}
+.btn-save:active{background:var(--gold-light);}
+.btn-cancel-form{width:100%;background:transparent;color:var(--text-muted);border:1px solid var(--border);padding:12px;border-radius:10px;font-size:0.88rem;font-family:inherit;cursor:pointer;margin-top:8px;}
+.logo-preview-row{display:flex;align-items:center;gap:12px;margin-top:8px;}
+.logo-preview-box{width:52px;height:52px;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--bg3);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.logo-preview-box img{width:100%;height:100%;object-fit:contain;}
+.logo-preview-tip{font-size:0.7rem;color:var(--text-muted);line-height:1.6;}
+.success-toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:var(--green);color:#000;padding:10px 22px;border-radius:99px;font-size:0.82rem;font-weight:700;z-index:9999;opacity:0;pointer-events:none;transition:opacity 0.3s;white-space:nowrap;}
+.success-toast.show{opacity:1;}
+.pw-gate{display:flex;flex-direction:column;align-items:center;padding:32px var(--px) 20px;}
+.pw-gate h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gold);margin-bottom:6px;}
+.pw-gate p{font-size:0.82rem;color:var(--text-muted);margin-bottom:24px;text-align:center;}
+.pw-input-wrap{display:flex;gap:8px;width:100%;max-width:320px;}
+.pw-input-wrap input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:9px;padding:12px 14px;color:var(--text);font-size:1rem;font-family:inherit;outline:none;}
+.pw-input-wrap input:focus{border-color:var(--gold);}
+.pw-input-wrap button{background:var(--gold);color:#000;border:none;padding:12px 18px;border-radius:9px;font-weight:700;font-family:inherit;cursor:pointer;}
+.pw-error{font-size:0.78rem;color:var(--red);margin-top:10px;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{animation:fadeUp 0.6s 0.1s both;}
+h1{animation:fadeUp 0.6s 0.2s both;}
+.hero-sub{animation:fadeUp 0.6s 0.3s both;}
+.hero-actions{animation:fadeUp 0.6s 0.4s both;}
+.hero-stats{animation:fadeUp 0.6s 0.5s both;}
+</style>
+</head>
+<body>
+
+<div class="success-toast" id="toast"></div>
+
+<nav>
+  <div class="logo">Lao<span>Edge</span></div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#brokers" onclick="closeMenu()">📊 ໂບຣກເກີທັງໝົດ</a>
+  <a href="#calc" onclick="closeMenu()">🧮 ຄຳນວນ Rebate</a>
+  <a href="#how" onclick="closeMenu()">📋 ວິທີຮັບ Rebate</a>
+  <a href="#" class="menu-cta" onclick="closeMenu()">🔥 ສະໝັກ IB ດຽວນີ້</a>
+  <a href="#" class="menu-admin" onclick="closeMenu();openAdmin()">⚙️ Admin Panel</a>
+</div>
+
+<!-- ADMIN -->
+<div class="admin-overlay" id="adminOverlay" onclick="handleOverlayClick(event)">
+  <div class="admin-sheet">
+    <div class="admin-handle"></div>
+    <div class="admin-header">
+      <div class="admin-title">⚙️ Admin Panel</div>
+      <button class="admin-close" onclick="closeAdmin()">✕</button>
+    </div>
+    <div class="admin-body">
+      <div id="pwGate" class="pw-gate">
+        <h3>🔐 Admin Access</h3>
+        <p>ໃສ່ລະຫັດຜ່ານເພື່ອຈັດການໂບຣກເກີ</p>
+        <div class="pw-input-wrap">
+          <input type="password" id="pwInput" placeholder="ລະຫັດຜ່ານ" onkeydown="if(event.key==='Enter')checkPw()">
+          <button onclick="checkPw()">ເຂົ້າ</button>
+        </div>
+        <div class="pw-error" id="pwError"></div>
+        <p style="font-size:0.7rem;color:var(--text-muted);margin-top:16px;">ລະຫັດເລີ່ມຕົ້ນ: <strong style="color:var(--gold);">admin123</strong></p>
+      </div>
+      <div id="adminContent" style="display:none;">
+        <div class="admin-tabs">
+          <button class="tab-btn active" onclick="switchTab('list')">📋 ລາຍຊື່</button>
+          <button class="tab-btn" onclick="switchTab('add')">➕ ເພີ່ມ</button>
+          <button class="tab-btn" onclick="switchTab('settings')">⚙️ ຕັ້ງຄ່າ</button>
+        </div>
+        <div class="tab-content active" id="tab-list"><div id="adminBrokerList"></div></div>
+        <div class="tab-content" id="tab-add">
+          <input type="hidden" id="editIndex" value="-1">
+          <div class="form-group"><label>ຊື່ໂບຣກເກີ *</label><input type="text" id="f-name" placeholder="ເຊັ່ນ: XM"></div>
+          <div class="form-group">
+            <label>🖼️ URL ຮູບໂລໂກ້</label>
+            <input type="url" id="f-logourl" placeholder="https://..." oninput="previewLogo()">
+            <div class="logo-preview-row">
+              <div class="logo-preview-box"><img id="logoPreviewImg" src="" alt="" onerror="this.style.display='none'" style="display:none;"></div>
+              <div class="logo-preview-tip">ວາງ URL ຮູບໂລໂກ້ຂອງໂບຣກ<br>ຫຼື ອອກ URL ທີ່ upload ໄວ້<br><span style="color:var(--gold);">ວ່າງ = ໃຊ້ຕົວໜັງສືແທນ</span></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>ຕົວໜັງສື (ຖ້າບໍ່ມີຮູບ)</label><input type="text" id="f-logo" placeholder="XM" maxlength="3"></div>
+            <div class="form-group"><label>ສີພື້ນຫຼັງໂລໂກ້</label><input type="color" id="f-bg" value="#1a2030" style="height:46px;padding:4px 8px;cursor:pointer;"></div>
+          </div>
+          <div class="form-group"><label>ສີຕົວໜັງສື</label><input type="color" id="f-color" value="#ffffff" style="height:46px;padding:4px 8px;cursor:pointer;width:100%;"></div>
+          <div class="form-group"><label>ລະບຽບ / Regulation</label><input type="text" id="f-reg" placeholder="FCA · CySEC · ASIC"></div>
+          <div class="form-row">
+            <div class="form-group"><label>Rating (1-5)</label><input type="number" id="f-rating" placeholder="4.8" min="1" max="5" step="0.1" inputmode="decimal"></div>
+            <div class="form-group"><label>Rebate ($/Lot)</label><input type="number" id="f-rebate" placeholder="7" min="0" step="0.5" inputmode="decimal"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Spread</label><input type="text" id="f-spread" placeholder="0.6"></div>
+            <div class="form-group"><label>Leverage</label><input type="text" id="f-lev" placeholder="1:888"></div>
+          </div>
+          <div class="form-group"><label>ຝາກຂັ້ນຕ່ຳ</label><input type="text" id="f-deposit" placeholder="$5"></div>
+          <div class="form-group">
+            <label>Tags (ຄັ່ນດ້ວຍ ,)</label>
+            <input type="text" id="f-tags" placeholder="*FCA, *ASIC, ECN, MT5">
+            <div class="form-hint">* ນຳໜ້າ = ✓ Regulation badge</div>
+          </div>
+          <div class="form-group">
+            <label>🔗 ລິ້ງ IB ຂອງທ່ານ *</label>
+            <input type="url" id="f-link" placeholder="https://your-ib-link.com/?ref=xxx">
+          </div>
+          <div class="form-group"><label>ລີວິວສັ້ນ</label><textarea id="f-note" placeholder="ໂບຣກທີ່ດີ..."></textarea></div>
+          <button class="btn-save" onclick="saveBroker()">💾 ບັນທຶກ</button>
+          <button class="btn-cancel-form" onclick="cancelEdit()">ຍົກເລີກ</button>
+        </div>
+        <div class="tab-content" id="tab-settings">
+          <div class="form-group"><label>ຊື່ເວັບໄຊ</label><input type="text" id="s-sitename" value="LaoEdge"></div>
+          <div class="form-group"><label>Tagline</label><textarea id="s-tagline" style="min-height:70px;">ສະໝັກຜ່ານ IB ຂອງພວກເຮົາ ຮັບ Rebate ຄືນທຸກ Lot</textarea></div>
+          <div class="form-group"><label>ລິ້ງ Default IB</label><input type="url" id="s-defaultlink" placeholder="https://..."></div>
+          <div class="form-group"><label>ເບີ WhatsApp / ຕິດຕໍ່</label><input type="text" id="s-contact" placeholder="+856 20 xxxx xxxx"></div>
+          <div class="form-group"><label>🔐 ປ່ຽນລະຫັດຜ່ານ</label><input type="password" id="s-newpw" placeholder="ລະຫັດໃໝ່ (ວ່າງ = ບໍ່ປ່ຽນ)"></div>
+          <button class="btn-save" onclick="saveSettings()">💾 ບັນທຶກ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">◈ GLOBAL BROKER DIRECTORY</div>
+    <h1>ເລືອກໂບຣກ<br><span class="accent">ຢ່າງສະຫຼາດ</span></h1>
+    <p class="hero-sub">ລີວິວໂບຣກເກີ Forex ທຸກລາຍ — ຂໍ້ມູນຄົບ, ບໍ່ລຳອຽງ.<br>
+      <strong id="heroTagline">ສະໝັກຜ່ານ IB ຂອງພວກເຮົາ ຮັບ Rebate ຄືນທຸກ Lot</strong></p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="go('brokers')">ເບິ່ງໂບຣກເກີທັງໝົດ</button>
+      <button class="btn-outline" onclick="go('calc')">🧮 ຄຳນວນ Rebate ຂອງຂ້ອຍ</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num" id="heroCount">6</div><div class="stat-label">ໂບຣກ ໃນ ຖານຂໍ້ມູນ</div></div>
+      <div class="stat-item"><div class="stat-num" id="heroMaxRebate">$8</div><div class="stat-label">Rebate ສູງສຸດ / Lot</div></div>
+      <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">ລີວິວ ຈາກ ຜູ້ເທຣດຈິງ</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BROKERS -->
+<section id="brokers">
+  <div class="section-label">⬡ BROKER DIRECTORY</div>
+  <h2>ໂບຣກເກີ<br>ທີ່ແນະນຳ</h2>
+  <p class="section-desc">ທຸກໂບຣກຜ່ານການກວດສອບ — ກົດ "ສະໝັກ" ເພື່ອຮັບ Rebate</p>
+  <div class="search-wrap">
+    <div class="search-input-wrap">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" placeholder="ຄົ້ນຫາໂບຣກ..." id="searchInput" oninput="renderBrokers()">
+    </div>
+    <div class="result-count">ພົບ <strong id="resultCount">6</strong> ລາຍການ</div>
+  </div>
+  <div class="broker-list" id="brokerGrid"></div>
+</section>
+
+<!-- CALC -->
+<section id="calc" class="calc-section">
+  <div class="section-label">◈ REBATE CALCULATOR</div>
+  <h2>ຄຳນວນ<br>Rebate ຂອງທ່ານ</h2>
+  <p class="section-desc">ຮູ້ກ່ອນວ່າຈະໄດ້ຄືນເທົ່າໃດ</p>
+  <div class="calc-wrap">
+    <div class="calc-field"><label>ເລືອກໂບຣກ</label><div class="select-wrap"><select id="calcBroker" onchange="calcRebate()"></select></div></div>
+    <div class="calc-field"><label>Lot ຕໍ່ວັນ</label><input type="number" id="lotsPerDay" value="10" min="1" inputmode="numeric" oninput="calcRebate()"></div>
+    <div class="calc-field"><label>ວັນເທຣດ / ເດືອນ</label><input type="number" id="daysPerMonth" value="20" min="1" max="31" inputmode="numeric" oninput="calcRebate()"></div>
+    <div class="calc-result">
+      <div class="result-item"><div class="num" id="r1">$0</div><div class="lbl">Rebate<br>/ວັນ</div></div>
+      <div class="result-item"><div class="num" id="r2">$0</div><div class="lbl">Rebate<br>/ເດືອນ</div></div>
+      <div class="result-item"><div class="num" id="r3">$0</div><div class="lbl">Rebate<br>/ປີ</div></div>
+    </div>
+    <button class="btn-primary" style="width:100%;">ສະໝັກ IB ດຽວນີ້ ➜</button>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how">
+  <div class="section-label">◆ HOW IT WORKS</div>
+  <h2>ວິທີຮັບ<br>Rebate</h2>
+  <p class="section-desc">ງ່າຍ · ໂປ່ງໃສ · ຄືນທຸກເດືອນ</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">01</div><div class="step-body"><h3>ເລືອກໂບຣກ</h3><p>ເລືອກໂບຣກທີ່ທ່ານສົນໃຈ ເບິ່ງລີວິວ ປຽບທຽບ Rebate</p></div></div>
+    <div class="step"><div class="step-num">02</div><div class="step-body"><h3>ສະໝັກຜ່ານລິ້ງ IB</h3><p>ກົດ "ສະໝັກ + ຮັບ Rebate" ສ້າງບັນຊີຜ່ານລິ້ງ IB ຂອງພວກເຮົາ</p></div></div>
+    <div class="step"><div class="step-num">03</div><div class="step-body"><h3>ຝາກເງິນ & ເທຣດ</h3><p>ຝາກເງິນ ເທຣດຕາມປົກກະຕິ — ທຸກ Lot ສ້າງ Rebate ອັດຕະໂນມັດ</p></div></div>
+    <div class="step"><div class="step-num">04</div><div class="step-body"><h3>ຮັບ Rebate ຄືນ 💰</h3><p>ພວກເຮົາໂອນ Rebate ຄືນທຸກເດືອນ ຕາມ Lot ທີ່ເທຣດຈິງ</p></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo" id="footerLogo">LaoEdge</div>
+  <p>ລີວິວໂບຣກເກີ Forex · IB & Rebate · ສຳລັບນັກເທຣດລາວ<br>
+  <span id="footerContact"></span><br>
+  <span style="font-size:0.67rem;color:#364a60;">ການລົງທຶນມີຄວາມສ່ຽງ — ກະລຸນາສຶກສາກ່ອນຕັດສິນໃຈ</span></p>
+</footer>
+
+<div class="sticky-cta">
+  <button class="s-outline" onclick="go('calc')">🧮 Rebate</button>
+  <button class="s-primary" onclick="go('brokers')">ສະໝັກຮັບ Rebate ດຽວນີ້</button>
+</div>
+
+<script>
+const BROKER_KEY='laoedge_brokers';
+const SETTINGS_KEY='laoedge_settings';
+const PW_KEY='laoedge_pw';
+
+// ✅ ໂລໂກ້ຈິງຈາກ CDN / official sources
+const DEFAULT_BROKERS=[
+  {
+    name:'XM',
+    logoUrl:'https://www.xm.com/assets/images/logo.svg',
+    logo:'XM',color:'#ffffff',bg:'#cc0000',
+    reg:'CySEC · ASIC · IFSC · DFSA',
+    rating:4.7,rebate:7,spread:'0.6',lev:'1:888',deposit:'$5',
+    tags:['*CySEC','*ASIC','MT4/MT5','ECN/STP'],link:'https://affs.click/wLl9B',
+    note:'ໂບຣກທີ່ໄດ້ຮັບຄວາມນິຍົມໃນອາຊຽນ ຝາກຂັ້ນຕ່ຳ $5 ມີໂບນັດ $30 ສຳລັບລູກຄ້າໃໝ່'
+  },
+  {
+    name:'Vantage Markets',
+    logoUrl:'https://www.vantagemarkets.com/wp-content/themes/vantage/assets/images/logo/logo-light.svg',
+    logo:'VM',color:'#F0B429',bg:'#1a1400',
+    reg:'ASIC · FCA · CIMA · VFSC',
+    rating:4.6,rebate:6,spread:'0.0',lev:'1:500',deposit:'$50',
+    tags:['*ASIC','*FCA','ECN','MT4/MT5/cTrader'],link:'https://vigco.co/la-com-inv/wmd8Y80S',
+    note:'ECN ແທ້ Spread 0.0 pips ໃນ Raw Account ມີ Copy Trading ໃນ app ຕົນເອງ'
+  },
+  {
+    name:'IUX Markets',
+    logoUrl:'https://iux.com/assets/img/iux-logo.svg',
+    logo:'IUX',color:'#ffffff',bg:'#1a0d40',
+    reg:'FSA (Seychelles) · VFSC',
+    rating:4.4,rebate:5,spread:'0.1',lev:'1:3000',deposit:'$1',
+    tags:['*FSA','STP','MT5','ໂບນັດ'],link:'https://iux.com/en/register?code=EPs5nw6M',
+    note:'Leverage ສູງ 1:3000 ຝາກ $1 ໂອນຜ່ານ PromptPay/TrueMoney ງ່າຍສຳລັບນັກເທຣດລາວ-ໄທ'
+  },
+  {
+    name:'Exness',
+    logoUrl:'https://d33vw3iu5hs0zi.cloudfront.net/media/exness_logo_white_new_1_b8e2e81b03.svg',
+    logo:'EX',color:'#ffffff',bg:'#051a0d',
+    reg:'FCA · CySEC · FSCA · FSA · CBCS',
+    rating:4.8,rebate:6,spread:'0.1',lev:'∞',deposit:'$1',
+    tags:['*FCA','*CySEC','*FSCA','MT4/MT5','STP'],link:'https://one.exnessonelink.com/a/ocvhdpugv1',
+    note:'Leverage ບໍ່ຈຳກັດ ຖອນເງິນໄວທີ່ສຸດ ສ່ວນໃຫຍ່ຮອດພາຍໃນ 1 ວິນາທີ'
+  },
+  {
+    name:'Markets4you',
+    logoUrl:'https://www.markets4you.com/imgs/markets4you-logo.png',
+    logo:'M4',color:'#00B4D8',bg:'#001824',
+    reg:'FSC (Mauritius) · SVGFSA',
+    rating:4.2,rebate:8,spread:'0.4',lev:'1:1000',deposit:'$1',
+    tags:['*FSC','MT4/MT5','ECN','Rebate ສູງ'],link:'https://account.markets4you.online/en/user-registration/?affid=bpblvtj',
+    note:'Rebate ສູງທີ່ສຸດ $8/Lot ເໝາະສຳລັບນັກເທຣດ Volume ສູງ'
+  },
+  {
+    name:'HFM (HF Markets)',
+    logoUrl:'https://www.hfm.com/assets/img/hfm-logo-white.svg',
+    logo:'HF',color:'#ffffff',bg:'#1a0800',
+    reg:'FCA · CySEC · DFSA · FSCA · CMA',
+    rating:4.6,rebate:7,spread:'0.1',lev:'1:2000',deposit:'$0',
+    tags:['*FCA','*CySEC','*FSCA','MT4/MT5','ECN/STP'],link:'https://register.hfm.com/sv/en/new-live-account/?refid=30421077',
+    note:'ບໍ່ຕ້ອງຝາກຂັ້ນຕ່ຳ Leverage 1:2000 Rebate ອັດຕະໂນມັດຜ່ານ HFM system'
+  },
+];
+
+const DEFAULT_SETTINGS={sitename:'LaoEdge',tagline:'ສະໝັກຜ່ານ IB ຂອງພວກເຮົາ ຮັບ Rebate ຄືນທຸກ Lot',defaultlink:'#',contact:''};
+
+function getBrokers(){try{const d=localStorage.getItem(BROKER_KEY);return d?JSON.parse(d):JSON.parse(JSON.stringify(DEFAULT_BROKERS));}catch{return JSON.parse(JSON.stringify(DEFAULT_BROKERS));}}
+function saveBrokers(a){localStorage.setItem(BROKER_KEY,JSON.stringify(a));}
+function getSettings(){try{const d=localStorage.getItem(SETTINGS_KEY);return d?{...DEFAULT_SETTINGS,...JSON.parse(d)}:{...DEFAULT_SETTINGS};}catch{return{...DEFAULT_SETTINGS};}}
+function saveSettingsData(s){localStorage.setItem(SETTINGS_KEY,JSON.stringify(s));}
+function getPw(){return localStorage.getItem(PW_KEY)||'admin123';}
+function savePw(pw){localStorage.setItem(PW_KEY,pw);}
+
+// ══ LOGO HELPER with favicon fallback ══
+const FAVICON_DOMAINS = {
+  'XM': 'xm.com',
+  'Vantage Markets': 'vantagemarkets.com',
+  'IUX Markets': 'iux.com',
+  'Exness': 'exness.com',
+  'Markets4you': 'markets4you.com',
+  'HFM (HF Markets)': 'hfm.com',
+};
+
+function logoHtml(b, size='48px', radius='12px'){
+  const style=`width:${size};height:${size};border-radius:${radius};overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;background:${b.bg||'#1a2030'};`;
+  const domain = FAVICON_DOMAINS[b.name];
+  // Try: 1) logoUrl  2) Google favicon (128px)  3) text fallback
+  const faviconUrl = domain ? `https://www.google.com/s2/favicons?domain=${domain}&sz=128` : '';
+  const primaryUrl = b.logoUrl || faviconUrl;
+
+  if(primaryUrl){
+    return `<div class="broker-logo-wrap" style="${style}">
+      <img src="${primaryUrl}" alt="${b.name}"
+        style="width:88%;height:88%;object-fit:contain;border-radius:4px;"
+        onerror="handleLogoError(this,'${faviconUrl}','${b.logo||'?'}','${b.bg||'#1a2030'}','${b.color||'#fff'}')">
+    </div>`;
+  }
+  return `<div class="broker-logo-wrap" style="${style}">
+    <span style="color:${b.color||'#fff'};font-size:0.78rem;font-weight:800;">${b.logo||'?'}</span>
+  </div>`;
+}
+
+// ══ RENDER ══
+function renderBrokers(){
+  const brokers=getBrokers();
+  const q=(document.getElementById('searchInput').value||'').toLowerCase();
+  const filtered=brokers.filter(b=>(b.name+b.reg+(b.tags||[]).join(' ')).toLowerCase().includes(q));
+  document.getElementById('resultCount').textContent=filtered.length;
+  document.getElementById('heroCount').textContent=brokers.length;
+  document.getElementById('heroMaxRebate').textContent='$'+brokers.reduce((m,b)=>Math.max(m,b.rebate||0),0);
+  document.getElementById('calcBroker').innerHTML=brokers.map(b=>`<option value="${b.rebate}">${b.name} — $${b.rebate}/Lot</option>`).join('');
+  calcRebate();
+
+  if(!filtered.length){
+    document.getElementById('brokerGrid').innerHTML=`<div style="text-align:center;padding:40px;color:var(--text-muted);font-size:0.88rem;">ບໍ່ພົບໂບຣກ</div>`;
+    return;
+  }
+
+  document.getElementById('brokerGrid').innerHTML=filtered.map(b=>{
+    const idx=brokers.indexOf(b);
+    const stars=renderStars(b.rating||0);
+    const tagsHtml=(b.tags||[]).map(t=>{const r=t.startsWith('*');return`<span class="tag ${r?'tag-reg':'tag-type'}">${r?'✓ '+t.slice(1):t}</span>`;}).join('');
+    return`<div class="broker-card" id="bc-${idx}">
+      <div class="card-header" onclick="toggleCard('bc-${idx}')">
+        ${logoHtml(b,'48px','12px')}
+        <div class="broker-info"><div class="broker-name">${b.name}</div><div class="broker-reg">${b.reg||''}</div></div>
+        <div class="header-right">
+          <div class="rating-row"><span class="stars">${stars}</span><span class="rating-num">${b.rating||'-'}</span></div>
+          <div class="rebate-badge">$${b.rebate||0}/Lot</div>
+        </div>
+        <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="card-detail" id="cd-bc-${idx}">
+        <div class="card-detail-inner">
+          ${b.note?`<div class="broker-note">${b.note}</div>`:''}
+          <div class="card-stats">
+            <div class="stat-cell"><div class="val">${b.spread||'-'}</div><div class="key">Spread</div></div>
+            <div class="stat-cell"><div class="val">${b.lev||'-'}</div><div class="key">Leverage</div></div>
+            <div class="stat-cell"><div class="val">${b.deposit||'-'}</div><div class="key">ຝາກຂັ້ນຕ່ຳ</div></div>
+          </div>
+          <div class="tags">${tagsHtml}</div>
+          <div class="card-actions">
+            <button class="btn-review" onclick="event.stopPropagation()">📖 ລີວິວ</button>
+            <button class="btn-register" onclick="event.stopPropagation();openLink('${b.link||'#'}')">ສະໝັກ + ຮັບ Rebate 🔥</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderStars(r){
+  let s='';const f=Math.floor(r);
+  for(let i=0;i<f;i++)s+='★';
+  if(r%1>=0.5)s+='½';
+  for(let i=f+(r%1>=0.5?1:0);i<5;i++)s+='☆';
+  return s;
+}
+function openLink(url){
+  if(url&&url!=='#')window.open(url,'_blank');
+  else alert('ຍັງບໍ່ໄດ້ຕັ້ງລິ້ງ IB — ເຂົ້າ Admin Panel ເພື່ອໃສ່ລິ້ງ');
+}
+
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});closeMenu();}
+function toggleMenu(){document.getElementById('hamburger').classList.toggle('open');document.getElementById('mobileMenu').classList.toggle('open');}
+function closeMenu(){document.getElementById('hamburger').classList.remove('open');document.getElementById('mobileMenu').classList.remove('open');}
+function toggleCard(id){
+  const card=document.getElementById(id),detail=document.getElementById('cd-'+id),open=card.classList.contains('expanded');
+  document.querySelectorAll('.broker-card').forEach(c=>c.classList.remove('expanded'));
+  document.querySelectorAll('.card-detail').forEach(d=>d.classList.remove('open'));
+  if(!open){card.classList.add('expanded');detail.classList.add('open');}
+}
+function calcRebate(){
+  const r=parseFloat(document.getElementById('calcBroker').value)||0;
+  const l=parseFloat(document.getElementById('lotsPerDay').value)||0;
+  const d=parseFloat(document.getElementById('daysPerMonth').value)||0;
+  const day=r*l,mon=day*d,yr=mon*12;
+  const f=n=>n>=1000?'$'+(n/1000).toFixed(1)+'K':'$'+n.toFixed(0);
+  document.getElementById('r1').textContent=f(day);
+  document.getElementById('r2').textContent=f(mon);
+  document.getElementById('r3').textContent=f(yr);
+}
+
+// ADMIN
+let adminUnlocked=false;
+function openAdmin(){document.getElementById('adminOverlay').classList.add('open');if(!adminUnlocked){document.getElementById('pwGate').style.display='flex';document.getElementById('adminContent').style.display='none';}}
+function closeAdmin(){document.getElementById('adminOverlay').classList.remove('open');}
+function handleOverlayClick(e){if(e.target===document.getElementById('adminOverlay'))closeAdmin();}
+function checkPw(){
+  if(document.getElementById('pwInput').value===getPw()){
+    adminUnlocked=true;
+    document.getElementById('pwGate').style.display='none';
+    document.getElementById('adminContent').style.display='block';
+    renderAdminList();applySettings();
+  }else{document.getElementById('pwError').textContent='❌ ລະຫັດຜ່ານບໍ່ຖືກ';document.getElementById('pwInput').value='';}
+}
+function switchTab(n){
+  const tabs=['list','add','settings'];
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',tabs[i]===n));
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+n).classList.add('active');
+  if(n==='list')renderAdminList();
+  if(n==='settings')loadSettingsForm();
+}
+function renderAdminList(){
+  const brokers=getBrokers();
+  document.getElementById('adminBrokerList').innerHTML=brokers.length?brokers.map((b,i)=>`
+    <div class="admin-broker-item">
+      <div class="abi-top">
+        ${logoHtml(b,'40px','9px')}
+        <div class="abi-name">${b.name}<br><span style="font-size:0.7rem;font-weight:400;color:var(--text-muted);">$${b.rebate}/Lot</span></div>
+        <div class="abi-actions">
+          <button class="btn-edit" onclick="editBroker(${i})">✏️</button>
+          <button class="btn-del" onclick="deleteBroker(${i})">🗑</button>
+        </div>
+      </div>
+      <div style="font-size:0.72rem;color:${b.link&&b.link!=='#'?'var(--green)':'var(--red)'};word-break:break-all;">
+        🔗 ${b.link&&b.link!=='#'?b.link:'⚠️ ຍັງບໍ່ໄດ້ໃສ່ລິ້ງ IB!'}
+      </div>
+    </div>`).join(''):`<p style="text-align:center;color:var(--text-muted);padding:30px;">ຍັງບໍ່ມີໂບຣກ</p>`;
+}
+function previewLogo(){
+  const url=document.getElementById('f-logourl').value;
+  const img=document.getElementById('logoPreviewImg');
+  if(url){img.src=url;img.style.display='block';}
+  else img.style.display='none';
+}
+function editBroker(i){
+  const b=getBrokers()[i];
+  document.getElementById('editIndex').value=i;
+  document.getElementById('f-name').value=b.name||'';
+  document.getElementById('f-logourl').value=b.logoUrl||'';
+  document.getElementById('f-logo').value=b.logo||'';
+  document.getElementById('f-bg').value=b.bg||'#1a2030';
+  document.getElementById('f-color').value=b.color||'#ffffff';
+  document.getElementById('f-reg').value=b.reg||'';
+  document.getElementById('f-rating').value=b.rating||'';
+  document.getElementById('f-rebate').value=b.rebate||'';
+  document.getElementById('f-spread').value=b.spread||'';
+  document.getElementById('f-lev').value=b.lev||'';
+  document.getElementById('f-deposit').value=b.deposit||'';
+  document.getElementById('f-tags').value=(b.tags||[]).join(', ');
+  document.getElementById('f-link').value=b.link||'';
+  document.getElementById('f-note').value=b.note||'';
+  previewLogo();
+  switchTab('add');
+}
+function deleteBroker(i){
+  if(!confirm('ລຶບໂບຣກນີ້?'))return;
+  const b=getBrokers();b.splice(i,1);saveBrokers(b);renderAdminList();renderBrokers();showToast('ລຶບສຳເລັດ');
+}
+function saveBroker(){
+  const name=document.getElementById('f-name').value.trim();
+  if(!name){alert('ກະລຸນາໃສ່ຊື່ໂບຣກ');return;}
+  const tags=document.getElementById('f-tags').value.split(',').map(t=>t.trim()).filter(Boolean);
+  const broker={
+    name,
+    logoUrl:document.getElementById('f-logourl').value.trim(),
+    logo:document.getElementById('f-logo').value.trim()||name.slice(0,2).toUpperCase(),
+    bg:document.getElementById('f-bg').value,
+    color:document.getElementById('f-color').value,
+    reg:document.getElementById('f-reg').value.trim(),
+    rating:parseFloat(document.getElementById('f-rating').value)||4.5,
+    rebate:parseFloat(document.getElementById('f-rebate').value)||0,
+    spread:document.getElementById('f-spread').value.trim(),
+    lev:document.getElementById('f-lev').value.trim(),
+    deposit:document.getElementById('f-deposit').value.trim(),
+    tags,link:document.getElementById('f-link').value.trim()||'#',
+    note:document.getElementById('f-note').value.trim(),
+  };
+  const brokers=getBrokers();
+  const idx=parseInt(document.getElementById('editIndex').value);
+  if(idx>=0)brokers[idx]=broker;else brokers.push(broker);
+  saveBrokers(brokers);renderBrokers();resetForm();switchTab('list');
+  showToast(idx>=0?'ອັບເດດສຳເລັດ!':'ເພີ່ມໂບຣກສຳເລັດ!');
+}
+function cancelEdit(){resetForm();switchTab('list');}
+function resetForm(){
+  document.getElementById('editIndex').value='-1';
+  ['f-name','f-logourl','f-logo','f-reg','f-spread','f-lev','f-deposit','f-tags','f-link','f-note'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('f-bg').value='#1a2030';
+  document.getElementById('f-color').value='#ffffff';
+  document.getElementById('f-rating').value='';document.getElementById('f-rebate').value='';
+  document.getElementById('logoPreviewImg').style.display='none';
+}
+function loadSettingsForm(){
+  const s=getSettings();
+  document.getElementById('s-sitename').value=s.sitename||'';
+  document.getElementById('s-tagline').value=s.tagline||'';
+  document.getElementById('s-defaultlink').value=s.defaultlink||'';
+  document.getElementById('s-contact').value=s.contact||'';
+}
+function saveSettings(){
+  const newpw=document.getElementById('s-newpw').value;
+  const s={sitename:document.getElementById('s-sitename').value.trim()||'LaoEdge',tagline:document.getElementById('s-tagline').value.trim(),defaultlink:document.getElementById('s-defaultlink').value.trim(),contact:document.getElementById('s-contact').value.trim()};
+  saveSettingsData(s);if(newpw)savePw(newpw);applySettings();showToast('ບັນທຶກສຳເລັດ!');
+}
+function applySettings(){
+  const s=getSettings();
+  document.getElementById('heroTagline').textContent=s.tagline||'';
+  document.getElementById('footerLogo').textContent=s.sitename||'LaoEdge';
+  document.getElementById('footerContact').textContent=s.contact?`📞 ${s.contact}`:'';
+  const nm=s.sitename||'LaoEdge',h=Math.ceil(nm.length/2);
+  document.querySelector('.logo').innerHTML=nm.slice(0,h)+`<span>${nm.slice(h)}</span>`;
+}
+function showToast(msg){const t=document.getElementById('toast');t.textContent='✓ '+msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);}
+
+document.addEventListener('click',e=>{
+  const m=document.getElementById('mobileMenu');
+  if(m.classList.contains('open')&&!m.contains(e.target)&&!document.getElementById('hamburger').contains(e.target))closeMenu();
+});
+
+function handleLogoError(img, faviconUrl, text, bg, color){
+  // Try favicon next if primary failed
+  if(faviconUrl && img.src !== faviconUrl){
+    img.src = faviconUrl;
+    img.style.width='70%';img.style.height='70%';
+    return;
+  }
+  // Final fallback: text
+  const wrap = img.parentElement;
+  wrap.innerHTML = `<span style="color:${color};font-size:0.78rem;font-weight:800;">${text}</span>`;
+}
+
+if(!localStorage.getItem(BROKER_KEY)){saveBrokers(DEFAULT_BROKERS);}
+renderBrokers();
+applySettings();
+</script>
+</body>
+</html>
