@@ -1,9 +1,10 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white p-10">
-      <h1 className="text-5xl font-bold text-yellow-400 mb-6">
-        ນາຍໜ້າໂບຣກເກີ Forex
-      </h1>
+    <h1 className="text-6xl font-extrabold text-yellow-400 mb-6 leading-tight">
+  ນາຍໜ້າ Forex <br />
+  ທີ່ດີທີ່ສຸດໃນລາວ
+</h1>
 
       <p className="text-gray-400 mb-10">
         ລວມ broker ທີ່ດີສຸດ
@@ -138,6 +139,27 @@ export default function Home() {
 </a>
         </div>
       </section>
+      <footer className="mt-20 text-center text-gray-500">
+  © 2026 Lao Forex Broker
+</footer>
+<div className="mt-10 text-center">
+  <a
+    href="https://t.me/RebateFXlaos"
+    target="_blank"
+    className="inline-block bg-blue-500 px-6 py-3 rounded-xl font-bold"
+  >
+    ຕິດຕໍ່ Telegram
+  </a>
+</div>
+<div className="mt-4 text-center">
+  <a
+    href="https://wa.me/8562029826898"
+    target="_blank"
+    className="inline-block bg-green-500 px-6 py-3 rounded-xl font-bold"
+  >
+    WhatsApp
+  </a>
+</div>
     </main>
   );
 }
