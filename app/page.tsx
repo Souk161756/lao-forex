@@ -1,6 +1,32 @@
 export default function Home() {
   return (
     <main className="bg-black min-h-screen text-white">
+      <nav className="flex items-center justify-between px-6 py-4 bg-[#0a0f1f] border-b border-gray-800 sticky top-0 z-50">
+  
+  <h1 className="text-2xl font-bold text-yellow-400">
+    LaoForex
+  </h1>
+
+  <div className="flex gap-3">
+    
+    <a
+      href="https://t.me/@RebateFXlaos"
+      target="_blank"
+      className="bg-blue-500 px-4 py-2 rounded-xl font-bold"
+    >
+      Telegram
+    </a>
+
+    <a
+      href="https://wa.me/8562029826898"
+      target="_blank"
+      className="bg-green-500 px-4 py-2 rounded-xl font-bold"
+    >
+      WhatsApp
+    </a>
+
+  </div>
+</nav>
 
       <nav className="flex items-center justify-between px-6 py-4 border-b border-gray-800">
         <h1 className="text-2xl font-bold text-yellow-400">
@@ -148,11 +174,10 @@ export default function Home() {
     ລົງທະບຽນ
   </a>
 </div>
-  >
+  
       </section>
       {/* Floating Buttons */}
 
-</div>
     </main>
   );
 }
