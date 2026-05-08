@@ -1,4 +1,8 @@
-export default function Home() {
+"use client";
+
+import { useState } from "react";
+
+export default function Home() const [search, setSearch] = useState("");
   return (
     <main className="bg-black min-h-screen text-white">
 
@@ -33,10 +37,12 @@ export default function Home() {
       {/* Search */}
       <div className="px-6 py-6">
         <input
-          type="text"
-          placeholder="Search broker..."
-          className="w-full bg-[#0f172a] border border-gray-700 rounded-2xl px-5 py-4 text-white text-lg outline-none"
-        />
+  type="text"
+  placeholder="Search broker..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+  className="w-full bg-[#0f172a] border border-gray-700 rounded-2xl px-5 py-4 text-white text-lg outline-none"
+/>
       </div>
 
       {/* Content */}
@@ -50,8 +56,8 @@ export default function Home() {
           ລວມ broker ຊັ້ນນໍາ ສຳລັບຄົນລາວ
         </p>
 
-        {/* XM */}
-        <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+        search === "" || "xm broker".includes(search.toLowerCase()) ? (
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
           <h2 className="text-3xl font-bold mb-4">XM Broker</h2>
 
           <div className="space-y-2 mb-6">
@@ -67,10 +73,10 @@ export default function Home() {
           >
             ລົງທະບຽນ
           </a>
-        </div>
+        ) : null
 
-        {/* Exness */}
-        <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+        search === "" || "Exness".includes(search.toLowerCase()) ? ( 
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
           <h2 className="text-3xl font-bold mb-4">Exness</h2>
 
           <div className="space-y-2 mb-6">
@@ -86,10 +92,10 @@ export default function Home() {
           >
             ລົງທະບຽນ
           </a>
-        </div>
+        ) : null
 
-        {/* Vantage */}
-        <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+        search === "" || "Vantage".includes(search.toLowerCase()) ? ( 
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8"></div>
           <h2 className="text-3xl font-bold mb-4">Vantage</h2>
 
           <div className="space-y-2 mb-6">
@@ -105,10 +111,10 @@ export default function Home() {
           >
             ລົງທະບຽນ
           </a>
-        </div>
+        ) : null
 
-        {/* IUX */}
-        <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+        search === "" || "IUX".includes(search.toLowerCase()) ? ( 
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
           <h2 className="text-3xl font-bold mb-4">IUX</h2>
 
           <div className="space-y-2 mb-6">
@@ -124,10 +130,10 @@ export default function Home() {
           >
             ລົງທະບຽນ
           </a>
-        </div>
+        ) : null
 
-        {/* Market4you */}
-        <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+        search === "" || "Market4you".includes(search.toLowerCase()) ? ( 
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8"></div>
           <h2 className="text-3xl font-bold mb-4">Market4you</h2>
 
           <div className="space-y-2 mb-6">
@@ -143,10 +149,10 @@ export default function Home() {
           >
             ລົງທະບຽນ
           </a>
-        </div>
+        ) : null
 
-        {/* HFM */}
-        <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+        search === "" || "HFM".includes(search.toLowerCase()) ? ( 
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8"></div>
           <h2 className="text-3xl font-bold mb-4">HFM</h2>
 
           <div className="space-y-2 mb-6">
@@ -162,7 +168,7 @@ export default function Home() {
           >
             ລົງທະບຽນ
           </a>
-        </div>
+        ) : null
 
       </section>
 
