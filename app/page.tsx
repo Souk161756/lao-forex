@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 
-export default function Home() const [search, setSearch] = useState("");
+export default function Home() {
+  const [search, setSearch] = useState("");
+
   return (
     <main className="bg-black min-h-screen text-white">
 
       {/* Navbar */}
       <nav className="flex items-center justify-between px-6 py-4 bg-[#0a0f1f] border-b border-gray-800 sticky top-0 z-50">
-        
+
         <h1 className="text-2xl font-bold text-yellow-400">
           LaoForex
         </h1>
@@ -37,12 +39,12 @@ export default function Home() const [search, setSearch] = useState("");
       {/* Search */}
       <div className="px-6 py-6">
         <input
-  type="text"
-  placeholder="Search broker..."
-  value={search}
-  onChange={(e) => setSearch(e.target.value)}
-  className="w-full bg-[#0f172a] border border-gray-700 rounded-2xl px-5 py-4 text-white text-lg outline-none"
-/>
+          type="text"
+          placeholder="Search broker..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full bg-[#0f172a] border border-gray-700 rounded-2xl px-5 py-4 text-white text-lg outline-none"
+        />
       </div>
 
       {/* Content */}
@@ -56,119 +58,149 @@ export default function Home() const [search, setSearch] = useState("");
           ລວມ broker ຊັ້ນນໍາ ສຳລັບຄົນລາວ
         </p>
 
-        search === "" || "xm broker".includes(search.toLowerCase()) ? (
-<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
-          <h2 className="text-3xl font-bold mb-4">XM Broker</h2>
+        {/* XM */}
+        {(search === "" ||
+          "xm broker".includes(search.toLowerCase())) && (
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
 
-          <div className="space-y-2 mb-6">
-            <p>⭐ Rating: 9.1/10</p>
-            <p>💰 Cashback: $3/Lot</p>
-            <p>⚡ Spread: 1.0 pip</p>
+            <h2 className="text-3xl font-bold mb-4">XM Broker</h2>
+
+            <div className="space-y-2 mb-6">
+              <p>⭐ Rating: 9.1/10</p>
+              <p>💰 Cashback: $3/Lot</p>
+              <p>⚡ Spread: 1.0 pip</p>
+            </div>
+
+            <a
+              href="https://affs.click/wLl9B"
+              target="_blank"
+              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
+            >
+              ລົງທະບຽນ
+            </a>
+
           </div>
+        )}
 
-          <a
-            href="https://affs.click/wLl9B"
-            target="_blank"
-            className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-          >
-            ລົງທະບຽນ
-          </a>
-        ) : null
+        {/* Exness */}
+        {(search === "" ||
+          "exness".includes(search.toLowerCase())) && (
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
 
-        search === "" || "Exness".includes(search.toLowerCase()) ? ( 
-<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
-          <h2 className="text-3xl font-bold mb-4">Exness</h2>
+            <h2 className="text-3xl font-bold mb-4">Exness</h2>
 
-          <div className="space-y-2 mb-6">
-            <p>⭐ Rating: 9.5/10</p>
-            <p>💰 Cashback: $5/Lot</p>
-            <p>⚡ Spread: 0.8 pip</p>
+            <div className="space-y-2 mb-6">
+              <p>⭐ Rating: 9.5/10</p>
+              <p>💰 Cashback: $5/Lot</p>
+              <p>⚡ Spread: 0.8 pip</p>
+            </div>
+
+            <a
+              href="https://one.exnessonelink.com/a/ocvhdpugv1"
+              target="_blank"
+              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
+            >
+              ລົງທະບຽນ
+            </a>
+
           </div>
+        )}
 
-          <a
-            href="https://one.exnessonelink.com/a/ocvhdpugv1"
-            target="_blank"
-            className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-          >
-            ລົງທະບຽນ
-          </a>
-        ) : null
+        {/* Vantage */}
+        {(search === "" ||
+          "vantage".includes(search.toLowerCase())) && (
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
 
-        search === "" || "Vantage".includes(search.toLowerCase()) ? ( 
-<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8"></div>
-          <h2 className="text-3xl font-bold mb-4">Vantage</h2>
+            <h2 className="text-3xl font-bold mb-4">Vantage</h2>
 
-          <div className="space-y-2 mb-6">
-            <p>⭐ Rating: 9.0/10</p>
-            <p>💰 Cashback: $4/Lot</p>
-            <p>⚡ Spread: 0.9 pip</p>
+            <div className="space-y-2 mb-6">
+              <p>⭐ Rating: 9.0/10</p>
+              <p>💰 Cashback: $4/Lot</p>
+              <p>⚡ Spread: 0.9 pip</p>
+            </div>
+
+            <a
+              href="https://vigco.co/la-com-inv/wmd8Y80S"
+              target="_blank"
+              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
+            >
+              ລົງທະບຽນ
+            </a>
+
           </div>
+        )}
 
-          <a
-            href="https://vigco.co/la-com-inv/wmd8Y80S"
-            target="_blank"
-            className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-          >
-            ລົງທະບຽນ
-          </a>
-        ) : null
+        {/* IUX */}
+        {(search === "" ||
+          "iux".includes(search.toLowerCase())) && (
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
 
-        search === "" || "IUX".includes(search.toLowerCase()) ? ( 
-<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
-          <h2 className="text-3xl font-bold mb-4">IUX</h2>
+            <h2 className="text-3xl font-bold mb-4">IUX</h2>
 
-          <div className="space-y-2 mb-6">
-            <p>⭐ Rating: 8.9/10</p>
-            <p>💰 Cashback: $4/Lot</p>
-            <p>⚡ Spread: 0.7 pip</p>
+            <div className="space-y-2 mb-6">
+              <p>⭐ Rating: 8.9/10</p>
+              <p>💰 Cashback: $4/Lot</p>
+              <p>⚡ Spread: 0.7 pip</p>
+            </div>
+
+            <a
+              href="https://iux.com/en/register?code=EPs5nw6M"
+              target="_blank"
+              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
+            >
+              ລົງທະບຽນ
+            </a>
+
           </div>
+        )}
 
-          <a
-            href="https://iux.com/en/register?code=EPs5nw6M"
-            target="_blank"
-            className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-          >
-            ລົງທະບຽນ
-          </a>
-        ) : null
+        {/* Market4you */}
+        {(search === "" ||
+          "market4you".includes(search.toLowerCase())) && (
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
 
-        search === "" || "Market4you".includes(search.toLowerCase()) ? ( 
-<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8"></div>
-          <h2 className="text-3xl font-bold mb-4">Market4you</h2>
+            <h2 className="text-3xl font-bold mb-4">Market4you</h2>
 
-          <div className="space-y-2 mb-6">
-            <p>⭐ Rating: 8.7/10</p>
-            <p>💰 Cashback: $3/Lot</p>
-            <p>⚡ Spread: 1.2 pip</p>
+            <div className="space-y-2 mb-6">
+              <p>⭐ Rating: 8.7/10</p>
+              <p>💰 Cashback: $3/Lot</p>
+              <p>⚡ Spread: 1.2 pip</p>
+            </div>
+
+            <a
+              href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
+              target="_blank"
+              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
+            >
+              ລົງທະບຽນ
+            </a>
+
           </div>
+        )}
 
-          <a
-            href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
-            target="_blank"
-            className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-          >
-            ລົງທະບຽນ
-          </a>
-        ) : null
+        {/* HFM */}
+        {(search === "" ||
+          "hfm".includes(search.toLowerCase())) && (
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
 
-        search === "" || "HFM".includes(search.toLowerCase()) ? ( 
-<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8"></div>
-          <h2 className="text-3xl font-bold mb-4">HFM</h2>
+            <h2 className="text-3xl font-bold mb-4">HFM</h2>
 
-          <div className="space-y-2 mb-6">
-            <p>⭐ Rating: 9.0/10</p>
-            <p>💰 Cashback: $5/Lot</p>
-            <p>⚡ Spread: 0.9 pip</p>
+            <div className="space-y-2 mb-6">
+              <p>⭐ Rating: 9.0/10</p>
+              <p>💰 Cashback: $5/Lot</p>
+              <p>⚡ Spread: 0.9 pip</p>
+            </div>
+
+            <a
+              href="https://register.hfm.com/sv/en/new-live-account/?refid=30421077"
+              target="_blank"
+              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
+            >
+              ລົງທະບຽນ
+            </a>
+
           </div>
-
-          <a
-            href="https://register.hfm.com/sv/en/new-live-account/?refid=30421077"
-            target="_blank"
-            className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-          >
-            ລົງທະບຽນ
-          </a>
-        ) : null
+        )}
 
       </section>
 
