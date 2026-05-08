@@ -277,9 +277,8 @@ export default function Home() {
       ເປີດບັນຊີ Market4you
     </a>
 
-  </div>
+    </div>
 )}
-
 {/* HFM */}
 {(search === "" ||
   "hfm".includes(search.toLowerCase())) && (
