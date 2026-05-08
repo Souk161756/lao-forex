@@ -59,148 +59,268 @@ export default function Home() {
         </p>
 
         {/* XM */}
-        {(search === "" ||
-          "xm broker".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+{(search === "" ||
+  "xm broker".includes(search.toLowerCase())) && (
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8 hover:border-yellow-400 transition">
 
-            <h2 className="text-3xl font-bold mb-4">XM Broker</h2>
+    <div className="flex items-center justify-between mb-4">
+      <h2 className="text-3xl font-bold">XM Broker</h2>
 
-            <div className="space-y-2 mb-6">
-              <p>⭐ Rating: 9.1/10</p>
-              <p>💰 Cashback: $3/Lot</p>
-              <p>⚡ Spread: 1.0 pip</p>
-            </div>
+      <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+        Recommended
+      </span>
+    </div>
 
-            <a
-              href="https://affs.click/wLl9B"
-              target="_blank"
-              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-            >
-              ລົງທະບຽນ
-            </a>
+    <div className="grid md:grid-cols-2 gap-4 mb-6">
 
-          </div>
-        )}
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⭐ Rating</p>
+        <h3 className="text-2xl font-bold text-yellow-400">9.1/10</h3>
+      </div>
 
-        {/* Exness */}
-        {(search === "" ||
-          "exness".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💰 Cashback</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$3/Lot</h3>
+      </div>
 
-            <h2 className="text-3xl font-bold mb-4">Exness</h2>
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⚡ Spread</p>
+        <h3 className="text-2xl font-bold text-yellow-400">1.0 pip</h3>
+      </div>
 
-            <div className="space-y-2 mb-6">
-              <p>⭐ Rating: 9.5/10</p>
-              <p>💰 Cashback: $5/Lot</p>
-              <p>⚡ Spread: 0.8 pip</p>
-            </div>
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💳 Min Deposit</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$5</h3>
+      </div>
 
-            <a
-              href="https://one.exnessonelink.com/a/ocvhdpugv1"
-              target="_blank"
-              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-            >
-              ລົງທະບຽນ
-            </a>
+    </div>
 
-          </div>
-        )}
+    <a
+      href="https://affs.click/wLl9B"
+      target="_blank"
+      className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+    >
+      ເປີດບັນຊີ XM
+    </a>
 
-        {/* Vantage */}
-        {(search === "" ||
-          "vantage".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+  </div>
+)}
 
-            <h2 className="text-3xl font-bold mb-4">Vantage</h2>
+{/* Exness */}
+{(search === "" ||
+  "exness".includes(search.toLowerCase())) && (
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8 hover:border-yellow-400 transition">
 
-            <div className="space-y-2 mb-6">
-              <p>⭐ Rating: 9.0/10</p>
-              <p>💰 Cashback: $4/Lot</p>
-              <p>⚡ Spread: 0.9 pip</p>
-            </div>
+    <div className="flex items-center justify-between mb-4">
+      <h2 className="text-3xl font-bold">Exness</h2>
 
-            <a
-              href="https://vigco.co/la-com-inv/wmd8Y80S"
-              target="_blank"
-              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-            >
-              ລົງທະບຽນ
-            </a>
+      <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+        Popular
+      </span>
+    </div>
 
-          </div>
-        )}
+    <div className="grid md:grid-cols-2 gap-4 mb-6">
 
-        {/* IUX */}
-        {(search === "" ||
-          "iux".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⭐ Rating</p>
+        <h3 className="text-2xl font-bold text-yellow-400">9.5/10</h3>
+      </div>
 
-            <h2 className="text-3xl font-bold mb-4">IUX</h2>
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💰 Cashback</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$5/Lot</h3>
+      </div>
 
-            <div className="space-y-2 mb-6">
-              <p>⭐ Rating: 8.9/10</p>
-              <p>💰 Cashback: $4/Lot</p>
-              <p>⚡ Spread: 0.7 pip</p>
-            </div>
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⚡ Spread</p>
+        <h3 className="text-2xl font-bold text-yellow-400">0.8 pip</h3>
+      </div>
 
-            <a
-              href="https://iux.com/en/register?code=EPs5nw6M"
-              target="_blank"
-              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-            >
-              ລົງທະບຽນ
-            </a>
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💳 Min Deposit</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$10</h3>
+      </div>
 
-          </div>
-        )}
+    </div>
 
-        {/* Market4you */}
-        {(search === "" ||
-          "market4you".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+    <a
+      href="https://one.exnessonelink.com/a/ocvhdpugv1"
+      target="_blank"
+      className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+    >
+      ເປີດບັນຊີ Exness
+    </a>
 
-            <h2 className="text-3xl font-bold mb-4">Market4you</h2>
+  </div>
+)}
 
-            <div className="space-y-2 mb-6">
-              <p>⭐ Rating: 8.7/10</p>
-              <p>💰 Cashback: $3/Lot</p>
-              <p>⚡ Spread: 1.2 pip</p>
-            </div>
+{/* Vantage */}
+{(search === "" ||
+  "vantage".includes(search.toLowerCase())) && (
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8 hover:border-yellow-400 transition">
 
-            <a
-              href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
-              target="_blank"
-              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-            >
-              ລົງທະບຽນ
-            </a>
+    <h2 className="text-3xl font-bold mb-4">Vantage</h2>
 
-          </div>
-        )}
+    <div className="grid md:grid-cols-2 gap-4 mb-6">
 
-        {/* HFM */}
-        {(search === "" ||
-          "hfm".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⭐ Rating</p>
+        <h3 className="text-2xl font-bold text-yellow-400">9.0/10</h3>
+      </div>
 
-            <h2 className="text-3xl font-bold mb-4">HFM</h2>
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💰 Cashback</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$4/Lot</h3>
+      </div>
 
-            <div className="space-y-2 mb-6">
-              <p>⭐ Rating: 9.0/10</p>
-              <p>💰 Cashback: $5/Lot</p>
-              <p>⚡ Spread: 0.9 pip</p>
-            </div>
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⚡ Spread</p>
+        <h3 className="text-2xl font-bold text-yellow-400">0.9 pip</h3>
+      </div>
 
-            <a
-              href="https://register.hfm.com/sv/en/new-live-account/?refid=30421077"
-              target="_blank"
-              className="block w-full bg-yellow-400 text-black py-3 rounded-xl font-bold text-center"
-            >
-              ລົງທະບຽນ
-            </a>
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💳 Min Deposit</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$50</h3>
+      </div>
 
-          </div>
-        )}
+    </div>
+
+    <a
+      href="https://vigco.co/la-com-inv/wmd8Y80S"
+      target="_blank"
+      className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+    >
+      ເປີດບັນຊີ Vantage
+    </a>
+
+  </div>
+)}
+
+{/* IUX */}
+{(search === "" ||
+  "iux".includes(search.toLowerCase())) && (
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8 hover:border-yellow-400 transition">
+
+    <h2 className="text-3xl font-bold mb-4">IUX</h2>
+
+    <div className="grid md:grid-cols-2 gap-4 mb-6">
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⭐ Rating</p>
+        <h3 className="text-2xl font-bold text-yellow-400">8.9/10</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💰 Cashback</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$4/Lot</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⚡ Spread</p>
+        <h3 className="text-2xl font-bold text-yellow-400">0.7 pip</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💳 Min Deposit</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$10</h3>
+      </div>
+
+    </div>
+
+    <a
+      href="https://iux.com/en/register?code=EPs5nw6M"
+      target="_blank"
+      className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+    >
+      ເປີດບັນຊີ IUX
+    </a>
+
+  </div>
+)}
+
+{/* Market4you */}
+{(search === "" ||
+  "market4you".includes(search.toLowerCase())) && (
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8 hover:border-yellow-400 transition">
+
+    <h2 className="text-3xl font-bold mb-4">Market4you</h2>
+
+    <div className="grid md:grid-cols-2 gap-4 mb-6">
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⭐ Rating</p>
+        <h3 className="text-2xl font-bold text-yellow-400">8.7/10</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💰 Cashback</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$3/Lot</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⚡ Spread</p>
+        <h3 className="text-2xl font-bold text-yellow-400">1.2 pip</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💳 Min Deposit</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$1</h3>
+      </div>
+
+    </div>
+
+    <a
+      href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
+      target="_blank"
+      className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+    >
+      ເປີດບັນຊີ Market4you
+    </a>
+
+  </div>
+)}
+
+{/* HFM */}
+{(search === "" ||
+  "hfm".includes(search.toLowerCase())) && (
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8 hover:border-yellow-400 transition">
+
+    <h2 className="text-3xl font-bold mb-4">HFM</h2>
+
+    <div className="grid md:grid-cols-2 gap-4 mb-6">
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⭐ Rating</p>
+        <h3 className="text-2xl font-bold text-yellow-400">9.0/10</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💰 Cashback</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$5/Lot</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">⚡ Spread</p>
+        <h3 className="text-2xl font-bold text-yellow-400">0.9 pip</h3>
+      </div>
+
+      <div className="bg-[#111827] rounded-2xl p-4">
+        <p className="text-gray-400 text-sm">💳 Min Deposit</p>
+        <h3 className="text-2xl font-bold text-yellow-400">$5</h3>
+      </div>
+
+    </div>
+
+    <a
+      href="https://register.hfm.com/sv/en/new-live-account/?refid=30421077"
+      target="_blank"
+      className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+    >
+      ເປີດບັນຊີ HFM
+    </a>
+
+  </div>
+)}
 
       </section>
 
