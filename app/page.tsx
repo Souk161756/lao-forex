@@ -418,28 +418,149 @@ export default function Home() {
     </div>
 
     {/* ARTICLE 2 */}
-    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+    {/* XM */}
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
 
-      <span className="bg-blue-400 text-black px-4 py-2 rounded-full text-sm font-black">
-        ⚡ XM
-      </span>
+  <span className="bg-blue-400 text-black px-4 py-2 rounded-full text-sm font-black">
+    ⚡ XM
+  </span>
 
-      <h3 className="text-3xl font-black mt-6 mb-4">
-        XM Review Laos
-      </h3>
+  <h3 className="text-3xl font-black mt-6 mb-4">
+    XM Review Laos
+  </h3>
 
-      <p className="text-gray-400 leading-8 mb-8">
-        XM ดีไหม? ถอนเร็วไหม?
-      </p>
+  <p className="text-gray-400 leading-8 mb-8">
+    XM ดีไหม? ถอนเร็วไหม?
+  </p>
 
-      <a
-        href="/xm"
-        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
-      >
-        📖 Read Review
-      </a>
+  <a
+    href="/xm"
+    className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+  >
+    📖 Read Review
+  </a>
 
-    </div>
+</div>
+
+{/* EXNESS */}
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+  <span className="bg-green-400 text-black px-4 py-2 rounded-full text-sm font-black">
+    🚀 Exness
+  </span>
+
+  <h3 className="text-3xl font-black mt-6 mb-4">
+    Exness Review Laos
+  </h3>
+
+  <p className="text-gray-400 leading-8 mb-8">
+    Exness ถอนเร็วไหม?
+  </p>
+
+  <a
+    href="/exness"
+    className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+  >
+    📖 Read Review
+  </a>
+
+</div>
+
+{/* VANTAGE */}
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+  <span className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-black">
+    💎 Vantage
+  </span>
+
+  <h3 className="text-3xl font-black mt-6 mb-4">
+    Vantage Review Laos
+  </h3>
+
+  <p className="text-gray-400 leading-8 mb-8">
+    Vantage cashback สูงไหม?
+  </p>
+
+  <a
+    href="/vantage"
+    className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+  >
+    📖 Read Review
+  </a>
+
+</div>
+
+{/* IUX */}
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+  <span className="bg-pink-400 text-black px-4 py-2 rounded-full text-sm font-black">
+    💰 IUX
+  </span>
+
+  <h3 className="text-3xl font-black mt-6 mb-4">
+    IUX Review Laos
+  </h3>
+
+  <p className="text-gray-400 leading-8 mb-8">
+    IUX spread ต่ำจริงไหม?
+  </p>
+
+  <a
+    href="/iux"
+    className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+  >
+    📖 Read Review
+  </a>
+
+</div>
+
+{/* MARKET4YOU */}
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+  <span className="bg-orange-400 text-black px-4 py-2 rounded-full text-sm font-black">
+    🎁 Market4you
+  </span>
+
+  <h3 className="text-3xl font-black mt-6 mb-4">
+    Market4you Review Laos
+  </h3>
+
+  <p className="text-gray-400 leading-8 mb-8">
+    โบนัส Market4you ดีไหม?
+  </p>
+
+  <a
+    href="/market4you"
+    className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+  >
+    📖 Read Review
+  </a>
+
+</div>
+
+{/* HFM */}
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+  <span className="bg-teal-400 text-black px-4 py-2 rounded-full text-sm font-black">
+    ✅ HFM
+  </span>
+
+  <h3 className="text-3xl font-black mt-6 mb-4">
+    HFM Review Laos
+  </h3>
+
+  <p className="text-gray-400 leading-8 mb-8">
+    HFM น่าเชื่อถือไหม?
+  </p>
+
+  <a
+    href="/hfm"
+    className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+  >
+    📖 Read Review
+  </a>
+
+</div>
 
     {/* ARTICLE 3 */}
     <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
