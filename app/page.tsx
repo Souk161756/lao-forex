@@ -238,13 +238,26 @@ export default function Home() {
 
                 </div>
 
-                <a
-                 href={`/${broker.name.toLowerCase().replace(" broker", "")}`}
-                  target="_blank"
-                  className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
-                >
-                  ເປີດບັນຊີ {broker.name}
-                </a>
+                <div className="grid grid-cols-2 gap-4">
+
+  {/* REVIEW BUTTON */}
+  <a
+    href={`/${broker.name.toLowerCase().replace(" broker", "")}`}
+    className="bg-[#111827] hover:bg-[#1f2937] border border-gray-700 transition py-4 rounded-2xl font-bold text-center text-lg"
+  >
+    📖 Read Review
+  </a>
+
+  {/* OPEN ACCOUNT */}
+  <a
+    href={broker.link}
+    target="_blank"
+    className="bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+  >
+    🚀 Open Account
+  </a>
+
+</div>
 
               </div>
             ))}
