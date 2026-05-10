@@ -19,8 +19,8 @@ export default function XMPage() {
           </div>
 
           <p className="text-gray-400 text-lg leading-8 mb-10">
-            XM ແມ່ນ broker Forex ທີ່ນິຍົມຫຼາຍໃນລາວ
-            ມີ spread ຕ່ຳ ຖອນໄວ ແລະ support ດີ
+            XM ເປັນ broker Forex ທີ່ນິຍົມຫຼາຍໃນລາວ
+            ມີ spread ຕ່ຳ ແລະຖອນໄວ
           </p>
 
           <div className="grid md:grid-cols-2 gap-5 mb-10">
@@ -51,42 +51,6 @@ export default function XMPage() {
               <h3 className="text-4xl font-black text-yellow-400">
                 $30
               </h3>
-            </div>
-
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-10">
-
-            <div>
-
-              <h2 className="text-3xl font-black mb-5 text-green-400">
-                ✅ Pros
-              </h2>
-
-              <ul className="space-y-4 text-gray-300">
-
-                <li>✔️ Withdraw Fast</li>
-                <li>✔️ Low Spread</li>
-                <li>✔️ Bonus Available</li>
-                <li>✔️ Trusted Broker</li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-3xl font-black mb-5 text-red-400">
-                ❌ Cons
-              </h2>
-
-              <ul className="space-y-4 text-gray-300">
-
-                <li>✖️ Verification takes time</li>
-                <li>✖️ Some countries restricted</li>
-
-              </ul>
-
             </div>
 
           </div>
