@@ -239,7 +239,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href={broker.link}
+                 href={`/${broker.name.toLowerCase().replace(" broker", "")}`}
                   target="_blank"
                   className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
                 >
