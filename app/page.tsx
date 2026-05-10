@@ -627,6 +627,78 @@ export default function Home() {
   </div>
 
 </footer>
+{/* FOOTER */}
+<footer className="border-t border-gray-800 mt-20">
+
+  <div className="max-w-7xl mx-auto px-6 py-16">
+
+    <div className="grid md:grid-cols-3 gap-10">
+
+      {/* BRAND */}
+      <div>
+
+        <h2 className="text-3xl font-black text-yellow-400 mb-4">
+          LaoForex
+        </h2>
+
+        <p className="text-gray-400 leading-8">
+          เว็บไซต์รวม broker Forex รีวิว และ cashback
+          สำหรับคนลาว
+        </p>
+
+      </div>
+
+      {/* LINKS */}
+      <div>
+
+        <h3 className="text-2xl font-black mb-5">
+          Quick Links
+        </h3>
+
+        <div className="flex flex-col gap-4 text-gray-400">
+
+          <a href="/">Home</a>
+
+          <a href="/blog">Blog</a>
+
+          <a href="/reviews">Reviews</a>
+
+        </div>
+
+      </div>
+
+      {/* BROKERS */}
+      <div>
+
+        <h3 className="text-2xl font-black mb-5">
+          Top Brokers
+        </h3>
+
+        <div className="flex flex-col gap-4 text-gray-400">
+
+          <a href="/xm">XM</a>
+
+          <a href="/exness">Exness</a>
+
+          <a href="/vantage">Vantage</a>
+
+          <a href="/iux">IUX</a>
+
+          <a href="/hfm">HFM</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+      © 2026 LaoForex.org — All Rights Reserved
+    </div>
+
+  </div>
+
+</footer>
     </main>
    
   );
