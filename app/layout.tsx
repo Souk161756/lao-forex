@@ -1,11 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "LaoForex",
-  description: "Forex Brokers Laos",
-  icons: {
-    icon: "/logo.png",
-  },
+  title: "LaoForex.org - Best Forex Brokers Laos",
+  description:
+    "รีวิว Forex Brokers ในลาว เปรียบเทียบ XM Exness Vantage IUX HFM และ cashback Forex ล่าสุด",
 };
 
 export default function RootLayout({
