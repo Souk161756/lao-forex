@@ -73,36 +73,36 @@ export default function Home() {
         {/* XM */}
         {(search === "" ||
           "xm broker".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8 hover:border-yellow-400 transition">
+          <div className="bg-[#0f172a] border border-yellow-400 rounded-3xl p-6 mb-8 hover:scale-[1.01] transition">
 
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-3xl font-bold">XM Broker</h2>
+              <h2 className="text-4xl font-black">XM Broker</h2>
 
               <span className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-black">
                 🏆 TOP 1
               </span>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
 
-              <div className="bg-[#111827] rounded-2xl p-4">
-                <p className="text-gray-400 text-sm">⭐ Rating</p>
-                <h3 className="text-2xl font-bold text-yellow-400">9.1/10</h3>
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⭐ Rating</p>
+                <p className="text-4xl font-black text-yellow-400">9.1/10</p>
               </div>
 
-              <div className="bg-[#111827] rounded-2xl p-4">
-                <p className="text-gray-400 text-sm">💰 Cashback</p>
-                <h3 className="text-2xl font-bold text-yellow-400">$3/Lot</h3>
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💰 Cashback</p>
+                <p className="text-4xl font-black text-yellow-400">$3/Lot</p>
               </div>
 
-              <div className="bg-[#111827] rounded-2xl p-4">
-                <p className="text-gray-400 text-sm">⚡ Spread</p>
-                <h3 className="text-2xl font-bold text-yellow-400">1.0 pip</h3>
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⚡ Spread</p>
+                <p className="text-4xl font-black text-yellow-400">1.0 pip</p>
               </div>
 
-              <div className="bg-[#111827] rounded-2xl p-4">
-                <p className="text-gray-400 text-sm">💳 Min Deposit</p>
-                <h3 className="text-2xl font-bold text-yellow-400">$5</h3>
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💳 Min Deposit</p>
+                <p className="text-4xl font-black text-yellow-400">$5</p>
               </div>
 
             </div>
@@ -121,31 +121,36 @@ export default function Home() {
         {/* Exness */}
         {(search === "" ||
           "exness".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8 hover:border-blue-400 transition">
+          <div className="bg-[#0f172a] border border-blue-400 rounded-3xl p-6 mb-8 hover:scale-[1.01] transition">
 
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-3xl font-bold">Exness</h2>
+              <h2 className="text-4xl font-black">Exness</h2>
 
               <span className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-black">
                 🔥 Popular
               </span>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
 
-              <div className="bg-[#111827] rounded-2xl p-4">
-                <p className="text-gray-400 text-sm">⭐ Rating</p>
-                <h3 className="text-2xl font-bold text-yellow-400">9.5/10</h3>
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⭐ Rating</p>
+                <p className="text-4xl font-black text-yellow-400">9.5/10</p>
               </div>
 
-              <div className="bg-[#111827] rounded-2xl p-4">
-                <p className="text-gray-400 text-sm">💰 Cashback</p>
-                <h3 className="text-2xl font-bold text-yellow-400">$5/Lot</h3>
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💰 Cashback</p>
+                <p className="text-4xl font-black text-yellow-400">$5/Lot</p>
               </div>
 
-              <div className="bg-[#111827] rounded-2xl p-4">
-                <p className="text-gray-400 text-sm">⚡ Spread</p>
-                <h3 className="text-2xl font-bold text-yellow-400">0.8 pip</h3>
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⚡ Spread</p>
+                <p className="text-4xl font-black text-yellow-400">0.8 pip</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💳 Min Deposit</p>
+                <p className="text-4xl font-black text-yellow-400">$10</p>
               </div>
 
             </div>
@@ -164,14 +169,38 @@ export default function Home() {
         {/* Vantage */}
         {(search === "" ||
           "vantage".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+          <div className="bg-[#0f172a] border border-green-500 rounded-3xl p-6 mb-8 hover:scale-[1.01] transition">
 
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-3xl font-bold">Vantage</h2>
+              <h2 className="text-4xl font-black">Vantage</h2>
 
               <span className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-black">
                 ⚡ Fast Withdraw
               </span>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⭐ Rating</p>
+                <p className="text-4xl font-black text-yellow-400">9.0/10</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💰 Cashback</p>
+                <p className="text-4xl font-black text-yellow-400">$4/Lot</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⚡ Spread</p>
+                <p className="text-4xl font-black text-yellow-400">0.9 pip</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💳 Min Deposit</p>
+                <p className="text-4xl font-black text-yellow-400">$50</p>
+              </div>
+
             </div>
 
             <a
@@ -188,14 +217,38 @@ export default function Home() {
         {/* IUX */}
         {(search === "" ||
           "iux".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
+          <div className="bg-[#0f172a] border border-pink-500 rounded-3xl p-6 mb-8 hover:scale-[1.01] transition">
 
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-3xl font-bold">IUX</h2>
+              <h2 className="text-4xl font-black">IUX</h2>
 
               <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-black">
                 💎 Low Spread
               </span>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⭐ Rating</p>
+                <p className="text-4xl font-black text-yellow-400">8.9/10</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💰 Cashback</p>
+                <p className="text-4xl font-black text-yellow-400">$4/Lot</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⚡ Spread</p>
+                <p className="text-4xl font-black text-yellow-400">0.7 pip</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💳 Min Deposit</p>
+                <p className="text-4xl font-black text-yellow-400">$10</p>
+              </div>
+
             </div>
 
             <a
@@ -204,54 +257,6 @@ export default function Home() {
               className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
             >
               ເປີດບັນຊີ IUX
-            </a>
-
-          </div>
-        )}
-
-        {/* Market4you */}
-        {(search === "" ||
-          "market4you".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
-
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-3xl font-bold">Market4you</h2>
-
-              <span className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-black">
-                🎁 Bonus
-              </span>
-            </div>
-
-            <a
-              href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
-              target="_blank"
-              className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
-            >
-              ເປີດບັນຊີ Market4you
-            </a>
-
-          </div>
-        )}
-
-        {/* HFM */}
-        {(search === "" ||
-          "hfm".includes(search.toLowerCase())) && (
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-6 mb-8">
-
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-3xl font-bold">HFM</h2>
-
-              <span className="bg-cyan-500 text-white px-4 py-2 rounded-full text-sm font-black">
-                ✅ Trusted
-              </span>
-            </div>
-
-            <a
-              href="https://register.hfm.com/sv/en/new-live-account/?refid=30421077"
-              target="_blank"
-              className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
-            >
-              ເປີດບັນຊີ HFM
             </a>
 
           </div>
