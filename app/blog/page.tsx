@@ -158,6 +158,29 @@ export default function BlogPage() {
 
           </div>
 
+{/* MARKET4YOU */}
+<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+  <div className="bg-orange-400 text-black inline-block px-4 py-2 rounded-full font-black mb-6">
+    🎁 MARKET4YOU
+  </div>
+
+  <h2 className="text-5xl font-black mb-6">
+    Market4you Review Laos
+  </h2>
+
+  <p className="text-gray-400 text-xl mb-8">
+    รีวิว Market4you โบนัสและ cashback ล่าสุด
+  </p>
+
+  <a
+    href="/blog/market4you-review-laos"
+    className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
+  >
+    📖 Read Review
+  </a>
+
+</div>
         </div>
 
       </div>
