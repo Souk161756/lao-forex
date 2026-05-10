@@ -372,7 +372,102 @@ export default function Home() {
         </div>
 
       </footer>
+{/* BLOG SECTION */}
+<section className="max-w-6xl mx-auto px-6 py-24">
 
+  <div className="text-center mb-16">
+
+    <div className="inline-block bg-yellow-400/20 text-yellow-400 px-5 py-2 rounded-full text-sm font-bold mb-6">
+      🔥 FOREX BLOG
+    </div>
+
+    <h2 className="text-5xl font-black text-white mb-6">
+      Forex Articles Laos
+    </h2>
+
+    <p className="text-gray-400 text-lg">
+      ອ່ານບົດຄວາມ Forex ແລະ broker reviews ສຳລັບຄົນລາວ
+    </p>
+
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-8">
+
+    {/* ARTICLE 1 */}
+    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+      <span className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-black">
+        🔥 Popular
+      </span>
+
+      <h3 className="text-3xl font-black mt-6 mb-4">
+        Best Forex Broker Laos
+      </h3>
+
+      <p className="text-gray-400 leading-8 mb-8">
+        ລວມ broker Forex ທີ່ດີສຸດໃນລາວ
+      </p>
+
+      <a
+        href="/blog/best-forex-broker-laos"
+        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+      >
+        📖 Read Article
+      </a>
+
+    </div>
+
+    {/* ARTICLE 2 */}
+    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+      <span className="bg-blue-400 text-black px-4 py-2 rounded-full text-sm font-black">
+        ⚡ XM
+      </span>
+
+      <h3 className="text-3xl font-black mt-6 mb-4">
+        XM Review Laos
+      </h3>
+
+      <p className="text-gray-400 leading-8 mb-8">
+        XM ดีไหม? ถอนเร็วไหม?
+      </p>
+
+      <a
+        href="/xm"
+        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+      >
+        📖 Read Review
+      </a>
+
+    </div>
+
+    {/* ARTICLE 3 */}
+    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
+
+      <span className="bg-green-400 text-black px-4 py-2 rounded-full text-sm font-black">
+        💰 Cashback
+      </span>
+
+      <h3 className="text-3xl font-black mt-6 mb-4">
+        Forex Cashback Laos
+      </h3>
+
+      <p className="text-gray-400 leading-8 mb-8">
+        ວິທີຮັບ cashback Forex ສູງສຸດ
+      </p>
+
+      <a
+        href="/blog"
+        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
+      >
+        📖 Read More
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
     </main>
   );
 }
