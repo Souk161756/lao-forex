@@ -540,6 +540,93 @@ export default function Home() {
   </div>
 
 </section>
+{/* FOOTER */}
+<footer className="border-t border-gray-800 mt-24">
+
+  <div className="max-w-7xl mx-auto px-6 py-16">
+
+    <div className="grid md:grid-cols-3 gap-12">
+
+      {/* LOGO */}
+      <div>
+
+        <h3 className="text-4xl font-black text-yellow-400 mb-4">
+          LaoForex
+        </h3>
+
+        <p className="text-gray-400 leading-8">
+          Forex Brokers Laos
+          ລວມ broker Forex
+          ແລະ cashback ສຳລັບຄົນລາວ
+        </p>
+
+      </div>
+
+      {/* LINKS */}
+      <div>
+
+        <h4 className="text-2xl font-black mb-6">
+          Quick Links
+        </h4>
+
+        <div className="space-y-4">
+
+          <a href="/" className="block text-gray-400 hover:text-yellow-400">
+            Home
+          </a>
+
+          <a href="/reviews" className="block text-gray-400 hover:text-yellow-400">
+            Reviews
+          </a>
+
+          <a href="/blog" className="block text-gray-400 hover:text-yellow-400">
+            Blog
+          </a>
+
+        </div>
+
+      </div>
+
+      {/* BROKERS */}
+      <div>
+
+        <h4 className="text-2xl font-black mb-6">
+          Top Brokers
+        </h4>
+
+        <div className="space-y-4">
+
+          <a href="/xm" className="block text-gray-400 hover:text-yellow-400">
+            XM Broker
+          </a>
+
+          <a href="/exness" className="block text-gray-400 hover:text-yellow-400">
+            Exness
+          </a>
+
+          <a href="/vantage" className="block text-gray-400 hover:text-yellow-400">
+            Vantage
+          </a>
+
+          <a href="/iux" className="block text-gray-400 hover:text-yellow-400">
+            IUX
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+
+      © 2026 LaoForex.org — All Rights Reserved
+
+    </div>
+
+  </div>
+
+</footer>
     </main>
   );
 }
