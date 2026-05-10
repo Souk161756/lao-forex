@@ -27,7 +27,7 @@ export default function Home() {
       badge: "🔥 Popular",
       badgeColor: "bg-blue-500 text-white",
       border: "border-blue-400",
-      link: "https://one.exnessonelink.com/a/ocvhdpugv1",
+      link: "https://one.exnessonelink.com/boarding/sign-up/a/ocvhdpugv1?lng=th",
     },
 
     {
