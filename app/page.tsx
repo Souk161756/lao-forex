@@ -50,13 +50,25 @@ export default function Home() {
       {/* Content */}
       <section className="max-w-6xl mx-auto px-6 py-10">
 
-        <h1 className="text-5xl font-bold text-yellow-400 mb-6">
-          ນາຍໜ້າ Forex ທີ່ດີສຸດໃນລາວ
-        </h1>
+        <div className="text-center mb-16">
 
-        <p className="text-gray-400 mb-10">
-          ລວມ broker ຊັ້ນນໍາ ສຳລັບຄົນລາວ
-        </p>
+  <div className="inline-block bg-yellow-400/20 text-yellow-400 px-5 py-2 rounded-full text-sm font-bold mb-6">
+    🔥 TOP FOREX BROKERS IN LAOS
+  </div>
+
+  <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
+    ນາຍໜ້າ Forex
+    <br />
+    ທີ່ດີສຸດໃນລາວ
+  </h1>
+
+  <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-8">
+    ປຽບທຽບ broker Forex ຊັ້ນນໍາ
+    ສຳລັບຄົນລາວ
+    ພ້ອມ cashback ແລະ bonus ສູງສຸດ
+  </p>
+
+</div>
 
         {/* XM */}
 {(search === "" ||
