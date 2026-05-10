@@ -262,6 +262,102 @@ export default function Home() {
           </div>
         )}
 
+        {/* Market4you */}
+        {(search === "" ||
+          "market4you".includes(search.toLowerCase())) && (
+          <div className="bg-[#0f172a] border border-orange-500 rounded-3xl p-6 mb-8 hover:scale-[1.01] transition">
+
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-4xl font-black">Market4you</h2>
+
+              <span className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-black">
+                🎁 Bonus
+              </span>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⭐ Rating</p>
+                <p className="text-4xl font-black text-yellow-400">8.7/10</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💰 Cashback</p>
+                <p className="text-4xl font-black text-yellow-400">$3/Lot</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⚡ Spread</p>
+                <p className="text-4xl font-black text-yellow-400">1.2 pip</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💳 Min Deposit</p>
+                <p className="text-4xl font-black text-yellow-400">$1</p>
+              </div>
+
+            </div>
+
+            <a
+              href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
+              target="_blank"
+              className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+            >
+              ເປີດບັນຊີ Market4you
+            </a>
+
+          </div>
+        )}
+
+        {/* HFM */}
+        {(search === "" ||
+          "hfm".includes(search.toLowerCase())) && (
+          <div className="bg-[#0f172a] border border-cyan-500 rounded-3xl p-6 mb-8 hover:scale-[1.01] transition">
+
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-4xl font-black">HFM</h2>
+
+              <span className="bg-cyan-500 text-white px-4 py-2 rounded-full text-sm font-black">
+                ✅ Trusted
+              </span>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⭐ Rating</p>
+                <p className="text-4xl font-black text-yellow-400">9.0/10</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💰 Cashback</p>
+                <p className="text-4xl font-black text-yellow-400">$5/Lot</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">⚡ Spread</p>
+                <p className="text-4xl font-black text-yellow-400">0.9 pip</p>
+              </div>
+
+              <div className="bg-[#111827] rounded-2xl p-5">
+                <p className="text-gray-400 mb-2">💳 Min Deposit</p>
+                <p className="text-4xl font-black text-yellow-400">$0</p>
+              </div>
+
+            </div>
+
+            <a
+              href="https://register.hfm.com/sv/en/new-live-account/?refid=30421077"
+              target="_blank"
+              className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+            >
+              ເປີດບັນຊີ HFM
+            </a>
+
+          </div>
+        )}
+
       </section>
 
     </main>
