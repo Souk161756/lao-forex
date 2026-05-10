@@ -102,7 +102,7 @@ export default function Home() {
 
               <div className="bg-[#111827] rounded-2xl p-5">
                 <p className="text-gray-400 mb-2">💳 Min Deposit</p>
-                <p className="text-4xl font-black text-yellow-400">$5</p>
+                <p className="text-4xl font-black text-yellow-400">$30</p>
               </div>
 
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
 
               <div className="bg-[#111827] rounded-2xl p-5">
                 <p className="text-gray-400 mb-2">💰 Cashback</p>
-                <p className="text-4xl font-black text-yellow-400">$5/Lot</p>
+                <p className="text-4xl font-black text-yellow-400">$3/Lot</p>
               </div>
 
               <div className="bg-[#111827] rounded-2xl p-5">
@@ -236,7 +236,7 @@ export default function Home() {
 
               <div className="bg-[#111827] rounded-2xl p-5">
                 <p className="text-gray-400 mb-2">💰 Cashback</p>
-                <p className="text-4xl font-black text-yellow-400">$4/Lot</p>
+                <p className="text-4xl font-black text-yellow-400">$3/Lot</p>
               </div>
 
               <div className="bg-[#111827] rounded-2xl p-5">
@@ -246,7 +246,7 @@ export default function Home() {
 
               <div className="bg-[#111827] rounded-2xl p-5">
                 <p className="text-gray-400 mb-2">💳 Min Deposit</p>
-                <p className="text-4xl font-black text-yellow-400">$10</p>
+                <p className="text-4xl font-black text-yellow-400">$50</p>
               </div>
 
             </div>
@@ -294,7 +294,7 @@ export default function Home() {
 
               <div className="bg-[#111827] rounded-2xl p-5">
                 <p className="text-gray-400 mb-2">💳 Min Deposit</p>
-                <p className="text-4xl font-black text-yellow-400">$1</p>
+                <p className="text-4xl font-black text-yellow-400">$30</p>
               </div>
 
             </div>
@@ -342,7 +342,7 @@ export default function Home() {
 
               <div className="bg-[#111827] rounded-2xl p-5">
                 <p className="text-gray-400 mb-2">💳 Min Deposit</p>
-                <p className="text-4xl font-black text-yellow-400">$0</p>
+                <p className="text-4xl font-black text-yellow-400">$30</p>
               </div>
 
             </div>
