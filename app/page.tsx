@@ -359,7 +359,84 @@ export default function Home() {
         )}
 
       </section>
+{/* Floating Buttons */}
+<div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
 
+  <a
+    href="https://t.me/RebateFXlaos"
+    target="_blank"
+    className="bg-blue-500 hover:bg-blue-400 w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg transition"
+  >
+    ✈️
+  </a>
+
+  <a
+    href="https://wa.me/8562029826898"
+    target="_blank"
+    className="bg-green-500 hover:bg-green-400 w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg transition"
+  >
+    💬
+  </a>
+
+</div>
+
+{/* Footer */}
+<footer className="border-t border-gray-800 mt-20">
+
+  <div className="max-w-6xl mx-auto px-6 py-10">
+
+    <div className="grid md:grid-cols-3 gap-10">
+
+      <div>
+        <h2 className="text-3xl font-black text-yellow-400 mb-4">
+          LaoForex
+        </h2>
+
+        <p className="text-gray-400 leading-7">
+          ລວມ broker Forex ທີ່ດີສຸດໃນລາວ
+          ພ້ອມ cashback ແລະ bonus
+          ສຳລັບນັກເທຣດຄົນລາວ
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-bold mb-4">
+          Contact
+        </h3>
+
+        <div className="space-y-3 text-gray-400">
+
+          <p>Telegram: @RebateFXlaos</p>
+
+          <p>WhatsApp: +856 20 2982 6898</p>
+
+        </div>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-bold mb-4">
+          Top Brokers
+        </h3>
+
+        <div className="space-y-3 text-gray-400">
+
+          <p>XM Broker</p>
+          <p>Exness</p>
+          <p>Vantage</p>
+          <p>IUX</p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+      © 2026 LaoForex.org - All Rights Reserved
+    </div>
+
+  </div>
+
+</footer>
     </main>
   );
 }
