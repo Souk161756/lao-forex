@@ -167,7 +167,7 @@ export default function Home() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
-            ນາຍໜ້າ Forex
+            ໂບກເກີ້ Forex
             <br />
             ທີ່ດີສຸດໃນລາວ
           </h1>
