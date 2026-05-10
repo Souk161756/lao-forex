@@ -179,7 +179,58 @@ export default function Home() {
           </p>
 
         </div>
+      {/* STATS */}
+<div className="grid md:grid-cols-4 gap-6 mb-20">
 
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
+
+    <h3 className="text-5xl font-black text-yellow-400 mb-3">
+      6+
+    </h3>
+
+    <p className="text-gray-400 text-lg">
+      Top Brokers
+    </p>
+
+  </div>
+
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
+
+    <h3 className="text-5xl font-black text-yellow-400 mb-3">
+      $5/Lot
+    </h3>
+
+    <p className="text-gray-400 text-lg">
+      Max Cashback
+    </p>
+
+  </div>
+
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
+
+    <h3 className="text-5xl font-black text-yellow-400 mb-3">
+      24/7
+    </h3>
+
+    <p className="text-gray-400 text-lg">
+      Support
+    </p>
+
+  </div>
+
+  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
+
+    <h3 className="text-5xl font-black text-yellow-400 mb-3">
+      100%
+    </h3>
+
+    <p className="text-gray-400 text-lg">
+      Free Reviews
+    </p>
+
+  </div>
+
+</div>
         {/* BROKERS */}
         <div id="brokers">
 
