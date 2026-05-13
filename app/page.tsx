@@ -199,7 +199,7 @@ export default function Home() {
           </h1>
 
           <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-8">
-            ປຽບທຽບ broker Forex ຊັ້ນນໍາ
+            ປຽບທຽບ ໂບກເກີ້ Forex ຊັ້ນນໍາ
             ສຳລັບຄົນລາວ
             ພ້ອມ cashback ແລະ bonus ສູງສຸດ
           </p>
@@ -377,10 +377,11 @@ export default function Home() {
                 LaoForex
               </h2>
 
-              <p className="text-gray-400 leading-8">
-                ເວັບໄຊລວມ broker Forex ຣີວິວ ແລະ cashback
-                ສຳລັບຄົນລາວ
-              </p>
+              <p className="text-gray-400 leading-8 text-lg max-w-sm">
+  ເວັບໄຊລວມໂບກເກີ້ Forex,
+  ຣີວິວ ແລະ cashback
+  ສຳລັບຄົນລາວ
+</p>
 
             </div>
 
