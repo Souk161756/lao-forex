@@ -104,48 +104,45 @@ export default function Home() {
                 Forex Brokers Laos
               </p>
             </div>
+
           </div>
 
-          <div className="hidden md:flex items-center gap-8 font-bold">
+          <div className="hidden md:flex items-center gap-8 text-lg font-bold">
 
-            <div className="hidden md:flex items-center gap-8 text-lg font-bold">
+            <a
+              href="/"
+              className="text-white hover:text-yellow-400 transition"
+            >
+              Home
+            </a>
 
-  <a
-    href="/"
-    className="text-white hover:text-yellow-400 transition"
-  >
-    Home
-  </a>
+            <a
+              href="/reviews"
+              className="text-white hover:text-yellow-400 transition"
+            >
+              Reviews
+            </a>
 
-  <a
-    href="/reviews"
-    className="text-white hover:text-yellow-400 transition"
-  >
-    Reviews
-  </a>
+            <a
+              href="/blog"
+              className="text-white hover:text-yellow-400 transition"
+            >
+              Blog
+            </a>
 
-  <a
-    href="/blog"
-    className="text-white hover:text-yellow-400 transition"
-  >
-    Blog
-  </a>
+            <a
+              href="/blog/forex-cashback-laos"
+              className="text-white hover:text-yellow-400 transition"
+            >
+              Cashback
+            </a>
 
-  <a
-    href="/blog/forex-cashback-laos"
-    className="text-white hover:text-yellow-400 transition"
-  >
-    Cashback
-  </a>
-
-  <a
-    href="#brokers"
-    className="text-white hover:text-yellow-400 transition"
-  >
-    Brokers
-  </a>
-
-</div>
+            <a
+              href="#brokers"
+              className="text-white hover:text-yellow-400 transition"
+            >
+              Brokers
+            </a>
 
           </div>
 
@@ -175,6 +172,7 @@ export default function Home() {
 
       {/* SEARCH */}
       <div className="px-6 py-6">
+
         <input
           type="text"
           placeholder="Search broker..."
@@ -182,6 +180,7 @@ export default function Home() {
           onChange={(e) => setSearch(e.target.value)}
           className="w-full bg-[#0f172a] border border-gray-700 rounded-2xl px-5 py-4 text-white text-lg outline-none"
         />
+
       </div>
 
       {/* HERO */}
@@ -206,58 +205,60 @@ export default function Home() {
           </p>
 
         </div>
-      {/* STATS */}
-<div className="grid md:grid-cols-4 gap-6 mb-20">
 
-  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
+        {/* STATS */}
+        <div className="grid md:grid-cols-4 gap-6 mb-20">
 
-    <h3 className="text-5xl font-black text-yellow-400 mb-3">
-      6+
-    </h3>
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
 
-    <p className="text-gray-400 text-lg">
-      Top Brokers
-    </p>
+            <h3 className="text-5xl font-black text-yellow-400 mb-3">
+              6+
+            </h3>
 
-  </div>
+            <p className="text-gray-400 text-lg">
+              Top Brokers
+            </p>
 
-  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
+          </div>
 
-    <h3 className="text-5xl font-black text-yellow-400 mb-3">
-      $5/Lot
-    </h3>
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
 
-    <p className="text-gray-400 text-lg">
-      Max Cashback
-    </p>
+            <h3 className="text-5xl font-black text-yellow-400 mb-3">
+              $5/Lot
+            </h3>
 
-  </div>
+            <p className="text-gray-400 text-lg">
+              Max Cashback
+            </p>
 
-  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
+          </div>
 
-    <h3 className="text-5xl font-black text-yellow-400 mb-3">
-      24/7
-    </h3>
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
 
-    <p className="text-gray-400 text-lg">
-      Support
-    </p>
+            <h3 className="text-5xl font-black text-yellow-400 mb-3">
+              24/7
+            </h3>
 
-  </div>
+            <p className="text-gray-400 text-lg">
+              Support
+            </p>
 
-  <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
+          </div>
 
-    <h3 className="text-5xl font-black text-yellow-400 mb-3">
-      100%
-    </h3>
+          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8 text-center">
 
-    <p className="text-gray-400 text-lg">
-      Free Reviews
-    </p>
+            <h3 className="text-5xl font-black text-yellow-400 mb-3">
+              100%
+            </h3>
 
-  </div>
+            <p className="text-gray-400 text-lg">
+              Free Reviews
+            </p>
 
-</div>
+          </div>
+
+        </div>
+
         {/* BROKERS */}
         <div id="brokers">
 
@@ -287,132 +288,121 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-4 mb-8">
 
                   <div className="bg-[#111827] rounded-2xl p-5">
-                    <p className="text-gray-400 mb-2">⭐ Rating</p>
+
+                    <p className="text-gray-400 mb-2">
+                      ⭐ Rating
+                    </p>
+
                     <p className="text-4xl font-black text-yellow-400">
                       {broker.rating}
                     </p>
+
                   </div>
 
                   <div className="bg-[#111827] rounded-2xl p-5">
-                    <p className="text-gray-400 mb-2">💰 Cashback</p>
+
+                    <p className="text-gray-400 mb-2">
+                      💰 Cashback
+                    </p>
+
                     <p className="text-4xl font-black text-yellow-400">
                       {broker.cashback}
                     </p>
+
                   </div>
 
                   <div className="bg-[#111827] rounded-2xl p-5">
-                    <p className="text-gray-400 mb-2">⚡ Spread</p>
+
+                    <p className="text-gray-400 mb-2">
+                      ⚡ Spread
+                    </p>
+
                     <p className="text-4xl font-black text-yellow-400">
                       {broker.spread}
                     </p>
+
                   </div>
 
                   <div className="bg-[#111827] rounded-2xl p-5">
-                    <p className="text-gray-400 mb-2">💳 Min Deposit</p>
+
+                    <p className="text-gray-400 mb-2">
+                      💳 Min Deposit
+                    </p>
+
                     <p className="text-4xl font-black text-yellow-400">
                       {broker.deposit}
                     </p>
+
                   </div>
 
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
 
-  {/* REVIEW BUTTON */}
-  <a
-    href={`/${broker.name.toLowerCase().replace(" broker", "")}`}
-    className="bg-[#111827] hover:bg-[#1f2937] border border-gray-700 transition py-4 rounded-2xl font-bold text-center text-lg"
-  >
-    📖 Read Review
-  </a>
+                  <a
+                    href={`/${broker.name.toLowerCase().replace(" broker", "")}`}
+                    className="bg-[#111827] hover:bg-[#1f2937] border border-gray-700 transition py-4 rounded-2xl font-bold text-center text-lg"
+                  >
+                    📖 Read Review
+                  </a>
 
-  {/* OPEN ACCOUNT */}
-  <a
-    href={broker.link}
-    target="_blank"
-    className="bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
-  >
-    🚀 Open Account
-  </a>
+                  <a
+                    href={broker.link}
+                    target="_blank"
+                    className="bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl font-bold text-center text-lg"
+                  >
+                    🚀 Open Account
+                  </a>
 
-</div>
+                </div>
 
               </div>
+
             ))}
 
         </div>
 
       </section>
 
-      {/* FLOATING BUTTONS */}
-      <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-
-        <a
-          href="https://t.me/RebateFXlaos"
-          target="_blank"
-          className="bg-blue-500 hover:bg-blue-400 w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg transition"
-        >
-          ✈️
-        </a>
-
-        <a
-          href="https://wa.me/8562029826898"
-          target="_blank"
-          className="bg-green-500 hover:bg-green-400 w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg transition"
-        >
-          💬
-        </a>
-
-      </div>
-
       {/* FOOTER */}
       <footer className="border-t border-gray-800 mt-20">
 
-        <div className="max-w-6xl mx-auto px-6 py-10">
+        <div className="max-w-7xl mx-auto px-6 py-16">
 
           <div className="grid md:grid-cols-3 gap-10">
 
             <div>
 
-              <div className="flex items-center gap-3 mb-4">
+              <h2 className="text-3xl font-black text-yellow-400 mb-4">
+                LaoForex
+              </h2>
 
-                <img
-                  src="/logo.png"
-                  alt="LaoForex"
-                  className="w-14 h-14 object-contain"
-                />
-
-                <div>
-                  <h2 className="text-3xl font-black text-yellow-400">
-                    LaoForex
-                  </h2>
-
-                  <p className="text-gray-400 text-sm">
-                    Forex Brokers Laos
-                  </p>
-                </div>
-
-              </div>
-
-              <p className="text-gray-400 leading-7">
-                ລວມ broker Forex ທີ່ດີສຸດໃນລາວ
-                ພ້ອມ cashback ແລະ bonus
-                ສຳລັບນັກເທຣດຄົນລາວ
+              <p className="text-gray-400 leading-8">
+                ເວັບໄຊລວມ broker Forex ຣີວິວ ແລະ cashback
+                ສຳລັບຄົນລາວ
               </p>
 
             </div>
 
             <div>
 
-              <h3 className="text-xl font-bold mb-4">
-                Contact
+              <h3 className="text-2xl font-black mb-5">
+                Quick Links
               </h3>
 
-              <div className="space-y-3 text-gray-400">
+              <div className="flex flex-col gap-4 text-gray-400">
 
-                <p>Telegram: @RebateFXlaos</p>
+                <a href="/" className="hover:text-yellow-400 transition">
+                  Home
+                </a>
 
-                <p>WhatsApp: +856 20 2982 6898</p>
+                <a href="/blog" className="hover:text-yellow-400 transition">
+                  Blog
+                </a>
+
+                <a href="/reviews" className="hover:text-yellow-400 transition">
+                  Reviews
+                </a>
 
               </div>
 
@@ -420,16 +410,31 @@ export default function Home() {
 
             <div>
 
-              <h3 className="text-xl font-bold mb-4">
+              <h3 className="text-2xl font-black mb-5">
                 Top Brokers
               </h3>
 
-              <div className="space-y-3 text-gray-400">
+              <div className="flex flex-col gap-4 text-gray-400">
 
-                <p>XM Broker</p>
-                <p>Exness</p>
-                <p>Vantage</p>
-                <p>IUX</p>
+                <a href="/xm" className="hover:text-yellow-400 transition">
+                  XM
+                </a>
+
+                <a href="/exness" className="hover:text-yellow-400 transition">
+                  Exness
+                </a>
+
+                <a href="/vantage" className="hover:text-yellow-400 transition">
+                  Vantage
+                </a>
+
+                <a href="/iux" className="hover:text-yellow-400 transition">
+                  IUX
+                </a>
+
+                <a href="/hfm" className="hover:text-yellow-400 transition">
+                  HFM
+                </a>
 
               </div>
 
@@ -437,280 +442,16 @@ export default function Home() {
 
           </div>
 
-          <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
 
-            © 2026 LaoForex.org - All Rights Reserved
-
-            <p className="mt-4 text-sm">
-              Risk Warning: Trading Forex and CFDs involves risk.
-            </p>
+            © 2026 LaoForex.org — All Rights Reserved
 
           </div>
 
         </div>
 
       </footer>
-{/* BLOG SECTION */}
-<section className="max-w-7xl mx-auto px-6 py-24">
 
-  <div className="text-center mb-16">
-
-    <div className="inline-block bg-yellow-400/20 text-yellow-400 px-5 py-2 rounded-full text-sm font-bold mb-6">
-      🔥 FOREX REVIEWS
-    </div>
-
-    <h2 className="text-5xl font-black text-white mb-6">
-      Broker Reviews Laos
-    </h2>
-
-    <p className="text-gray-400 text-lg">
-      ລວມ broker reviews ສຳລັບຄົນລາວ
-    </p>
-
-  </div>
-
-  <div className="grid md:grid-cols-3 gap-8">
-
-    {/* XM */}
-    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-      <span className="bg-blue-400 text-black px-4 py-2 rounded-full text-sm font-black">
-        ⚡ XM
-      </span>
-
-      <h3 className="text-3xl font-black mt-6 mb-4">
-        XM Review Laos
-      </h3>
-
-      <p className="text-gray-400 leading-8 mb-8">
-        XM ดีไหม? ถอนเร็วไหม?
-      </p>
-
-      <a
-        href="/xm"
-        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
-      >
-        📖 Read Review
-      </a>
-
-    </div>
-
-    {/* EXNESS */}
-    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-      <span className="bg-green-400 text-black px-4 py-2 rounded-full text-sm font-black">
-        🚀 Exness
-      </span>
-
-      <h3 className="text-3xl font-black mt-6 mb-4">
-        Exness Review Laos
-      </h3>
-
-      <p className="text-gray-400 leading-8 mb-8">
-        Exness ถอนเร็วไหม?
-      </p>
-
-      <a
-        href="/exness"
-        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
-      >
-        📖 Read Review
-      </a>
-
-    </div>
-
-    {/* VANTAGE */}
-    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-      <span className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-black">
-        💎 Vantage
-      </span>
-
-      <h3 className="text-3xl font-black mt-6 mb-4">
-        Vantage Review Laos
-      </h3>
-
-      <p className="text-gray-400 leading-8 mb-8">
-        Vantage cashback สูงไหม?
-      </p>
-
-      <a
-        href="/vantage"
-        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
-      >
-        📖 Read Review
-      </a>
-
-    </div>
-
-    {/* IUX */}
-    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-      <span className="bg-pink-400 text-black px-4 py-2 rounded-full text-sm font-black">
-        💰 IUX
-      </span>
-
-      <h3 className="text-3xl font-black mt-6 mb-4">
-        IUX Review Laos
-      </h3>
-
-      <p className="text-gray-400 leading-8 mb-8">
-        IUX spread ต่ำจริงไหม?
-      </p>
-
-      <a
-        href="/iux"
-        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
-      >
-        📖 Read Review
-      </a>
-
-    </div>
-
-    {/* MARKET4YOU */}
-    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-      <span className="bg-orange-400 text-black px-4 py-2 rounded-full text-sm font-black">
-        🎁 Market4you
-      </span>
-
-      <h3 className="text-3xl font-black mt-6 mb-4">
-        Market4you Review Laos
-      </h3>
-
-      <p className="text-gray-400 leading-8 mb-8">
-        โบนัส Market4you ดีไหม?
-      </p>
-
-      <a
-        href="/market4you"
-        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
-      >
-        📖 Read Review
-      </a>
-
-    </div>
-
-    {/* HFM */}
-    <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-      <span className="bg-teal-400 text-black px-4 py-2 rounded-full text-sm font-black">
-        ✅ HFM
-      </span>
-
-      <h3 className="text-3xl font-black mt-6 mb-4">
-        HFM Review Laos
-      </h3>
-
-      <p className="text-gray-400 leading-8 mb-8">
-        HFM น่าเชื่อถือไหม?
-      </p>
-
-      <a
-        href="/hfm"
-        className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black"
-      >
-        📖 Read Review
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-{/* FOOTER */}
-<footer className="border-t border-gray-800 mt-20">
-
-  <div className="max-w-7xl mx-auto px-6 py-16">
-
-    <div className="grid md:grid-cols-3 gap-10">
-
-      {/* BRAND */}
-      <div>
-
-        <h2 className="text-3xl font-black text-yellow-400 mb-4">
-          LaoForex
-        </h2>
-
-        <p className="text-gray-400 leading-8">
-          เว็บไซต์รวม broker Forex รีวิว และ cashback
-          สำหรับคนลาว
-        </p>
-
-      </div>
-
-      {/* LINKS */}
-      <div>
-
-        <h3 className="text-2xl font-black mb-5">
-          Quick Links
-        </h3>
-
-        <div className="flex flex-col gap-4 text-gray-400">
-
-          <a href="/" className="hover:text-yellow-400 transition">
-            Home
-          </a>
-
-          <a href="/blog" className="hover:text-yellow-400 transition">
-            Blog
-          </a>
-
-          <a href="/reviews" className="hover:text-yellow-400 transition">
-            Reviews
-          </a>
-
-        </div>
-
-      </div>
-
-      {/* BROKERS */}
-      <div>
-
-        <h3 className="text-2xl font-black mb-5">
-          Top Brokers
-        </h3>
-
-        <div className="flex flex-col gap-4 text-gray-400">
-
-          <a href="/xm" className="hover:text-yellow-400 transition">
-            XM
-          </a>
-
-          <a href="/exness" className="hover:text-yellow-400 transition">
-            Exness
-          </a>
-
-          <a href="/vantage" className="hover:text-yellow-400 transition">
-            Vantage
-          </a>
-
-          <a href="/iux" className="hover:text-yellow-400 transition">
-            IUX
-          </a>
-
-          <a href="/hfm" className="hover:text-yellow-400 transition">
-            HFM
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-
-      © 2026 LaoForex.org — All Rights Reserved
-
-    </div>
-
-  </div>
-
-</footer>
-
-</main>
-
-   
+    </main>
   );
 }
