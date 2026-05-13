@@ -108,17 +108,44 @@ export default function Home() {
 
           <div className="hidden md:flex items-center gap-8 font-bold">
 
-            <a href="/" className="hover:text-yellow-400 transition">
-              Home
-            </a>
+            <div className="hidden md:flex items-center gap-8 text-lg font-bold">
 
-            <a href="/reviews" className="hover:text-yellow-400 transition">
-              Reviews
-            </a>
+  <a
+    href="/"
+    className="text-white hover:text-yellow-400 transition"
+  >
+    Home
+  </a>
 
-            <a href="#brokers" className="hover:text-yellow-400 transition">
-              Brokers
-            </a>
+  <a
+    href="/reviews"
+    className="text-white hover:text-yellow-400 transition"
+  >
+    Reviews
+  </a>
+
+  <a
+    href="/blog"
+    className="text-white hover:text-yellow-400 transition"
+  >
+    Blog
+  </a>
+
+  <a
+    href="/blog/forex-cashback-laos"
+    className="text-white hover:text-yellow-400 transition"
+  >
+    Cashback
+  </a>
+
+  <a
+    href="#brokers"
+    className="text-white hover:text-yellow-400 transition"
+  >
+    Brokers
+  </a>
+
+</div>
 
           </div>
 
