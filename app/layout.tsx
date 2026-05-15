@@ -27,11 +27,9 @@ export default function RootLayout({
       gtag('config', 'G-KE4H9CXRXN');
     `,
   }}
-/>
-        </body>
-        <script
+/><script
   async
-  src="https://www.googletagmanager.com/gtag/js?id=G-KE4H9XCRXN\"
+  src="https://www.googletagmanager.com/gtag/js?id=G-KE4H9XCRXN"
 />
 
 <script
@@ -45,6 +43,10 @@ export default function RootLayout({
     `,
   }}
 />
+        </body>
+   
+    `,
+
     </html>
   );
 }
