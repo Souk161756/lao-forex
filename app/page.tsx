@@ -2,28 +2,6 @@
 
 import { useState } from "react";
 
-export const metadata = {
-  title: "LaoForex.org | Best Forex Brokers In Laos",
-  description:
-    "ປຽບທຽບ Forex Brokers ສໍາລັບຄົນລາວ, cashback rebate, spread, bonus ແລະ ຣີວິວ broker ແບບລະອຽດ.",
-  keywords: [
-    "Forex Laos",
-    "Best Forex Broker Laos",
-    "Exness Laos",
-    "XM Laos",
-    "Vantage Laos",
-    "Forex Broker Laos",
-  ],
-  openGraph: {
-    title: "LaoForex.org",
-    description:
-      "Forex Brokers, Cashback Rebate ແລະ Forex Reviews ສໍາລັບຄົນລາວ",
-    url: "https://www.laoforex.org",
-    siteName: "LaoForex",
-    type: "website",
-  },
-};
-
 export default function Home() {
   const [search, setSearch] = useState("");
 
