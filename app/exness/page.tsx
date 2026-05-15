@@ -1,64 +1,79 @@
 export default function ExnessPage() {
   return (
-    <main className="bg-black min-h-screen text-white px-6 py-16">
+    <main className="bg-black text-white min-h-screen px-6 py-20">
+      <div className="max-w-6xl mx-auto">
 
-      <div className="max-w-5xl mx-auto">
+        <h1 className="text-5xl font-black text-yellow-400 mb-8">
+          Exness ດີບໍ? ຣີວິວ Exness ສໍາລັບຄົນລາວ
+        </h1>
 
-        <div className="bg-[#0f172a] border border-blue-400 rounded-3xl p-10">
+        <p className="text-xl text-gray-300 leading-9 mb-16">
+          Exness ເປັນ broker Forex ທີ່ນິຍົມຫຼາຍໃນລາວ.
+          ມີ spread ຕໍ່າ, leverage ສູງ ແລະ ຝາກຖອນໄວ.
+        </p>
 
-          <div className="flex items-center justify-between mb-10">
+        <div className="grid md:grid-cols-4 gap-6 mb-20">
 
-            <h1 className="text-5xl font-black">
-              Exness Broker Review
-            </h1>
-
-            <span className="bg-blue-500 text-white px-5 py-3 rounded-full font-black">
-              🔥 Popular
-            </span>
-
+          <div className="bg-[#0f172a] p-8 rounded-3xl">
+            <p className="text-gray-400">Spread</p>
+            <h3 className="text-3xl font-black text-yellow-400">
+              0.0 pip
+            </h3>
           </div>
 
-          <p className="text-gray-400 text-lg leading-8 mb-10">
-            Exness ເປັນ broker ທີ່ນັກເທຣດລາວນິຍົມຫຼາຍ
-            ຖອນໄວ ຝາກໄວ ແລະ spread ຕ່ຳ
+          <div className="bg-[#0f172a] p-8 rounded-3xl">
+            <p className="text-gray-400">Leverage</p>
+            <h3 className="text-3xl font-black text-yellow-400">
+              Unlimited
+            </h3>
+          </div>
+
+          <div className="bg-[#0f172a] p-8 rounded-3xl">
+            <p className="text-gray-400">Deposit</p>
+            <h3 className="text-3xl font-black text-yellow-400">
+              $20
+            </h3>
+          </div>
+
+          <div className="bg-[#0f172a] p-8 rounded-3xl">
+            <p className="text-gray-400">Rating</p>
+            <h3 className="text-3xl font-black text-yellow-400">
+              9.5/10
+            </h3>
+          </div>
+
+        </div>
+
+        <div className="bg-[#0f172a] rounded-[40px] p-10 mb-16">
+
+          <h2 className="text-4xl font-black mb-8 text-yellow-400">
+            ຈຸດເດັ່ນຂອງ Exness
+          </h2>
+
+          <div className="space-y-5 text-lg text-gray-300">
+            <p>✅ ຝາກຖອນໄວ</p>
+            <p>✅ Spread ຕໍ່າ</p>
+            <p>✅ ຮອງຮັບ MT4 ແລະ MT5</p>
+            <p>✅ leverage ສູງ</p>
+            <p>✅ ເໝາະສໍາລັບ scalping</p>
+          </div>
+
+        </div>
+
+        <div className="bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-[40px] p-12 text-black text-center">
+
+          <h2 className="text-5xl font-black mb-6">
+            ເປີດບັນຊີ Exness
+          </h2>
+
+          <p className="text-xl mb-10">
+            ສະໝັກ Exness ຜ່ານ link ດ້ານລຸ່ມ.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-5 mb-10">
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">⭐ Rating</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                9.5/10
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">💰 Cashback</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                $5/Lot
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">⚡ Spread</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                0.8 pip
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">💳 Min Deposit</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                $10
-              </h3>
-            </div>
-
-          </div>
-
           <a
-            href="https://one.exnessonelink.com/a/ocvhdpugv1"
+            href="https://one.exnesstrack.org/a/yourlink"
             target="_blank"
-            className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-5 rounded-2xl text-center text-2xl font-black"
+            className="bg-black text-white px-10 py-5 rounded-2xl text-xl font-black inline-block"
           >
             ເປີດບັນຊີ Exness
           </a>
@@ -66,7 +81,6 @@ export default function ExnessPage() {
         </div>
 
       </div>
-
     </main>
   );
 }

@@ -1,72 +1,35 @@
-export default function Market4youPage() {
+// app/market4you/page.tsx
+
+export default function Market4YouPage() {
   return (
-    <main className="bg-black min-h-screen text-white px-6 py-16">
+    <main className="bg-black text-white min-h-screen px-6 py-20">
+      <div className="max-w-6xl mx-auto">
 
-      <div className="max-w-5xl mx-auto">
+        <h1 className="text-5xl font-black text-yellow-400 mb-8">
+          Market4You ດີບໍ? ຣີວິວ Market4You ສໍາລັບຄົນລາວ
+        </h1>
 
-        <div className="bg-[#0f172a] border border-orange-500 rounded-3xl p-10">
+        <p className="text-xl text-gray-300 leading-9 mb-16">
+          Market4You ເປັນ broker ທີ່ເໝາະສໍາລັບມືໃໝ່.
+        </p>
 
-          <div className="flex items-center justify-between mb-10">
+        <div className="bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-[40px] p-12 text-black text-center">
 
-            <h1 className="text-5xl font-black">
-              Market4you Review
-            </h1>
-
-            <span className="bg-orange-500 text-white px-5 py-3 rounded-full font-black">
-              🎁 Bonus
-            </span>
-
-          </div>
-
-          <p className="text-gray-400 text-lg leading-8 mb-10">
-            Market4you ເປັນ broker ທີ່ມີ bonus ແລະ cashback ດີ
-            ເໝາະສຳລັບນັກເທຣດມືໃໝ່
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-5 mb-10">
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">⭐ Rating</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                8.7/10
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">💰 Cashback</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                $3/Lot
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">⚡ Spread</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                1.2 pip
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">💳 Min Deposit</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                $30
-              </h3>
-            </div>
-
-          </div>
+          <h2 className="text-5xl font-black mb-6">
+            ເປີດບັນຊີ Market4You
+          </h2>
 
           <a
             href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
             target="_blank"
-            className="block w-full bg-yellow-400 hover:bg-yellow-300 transition text-black py-5 rounded-2xl text-center text-2xl font-black"
+            className="bg-black text-white px-10 py-5 rounded-2xl text-xl font-black inline-block"
           >
-            ເປີດບັນຊີ Market4you
+            ເປີດບັນຊີ Market4You
           </a>
 
         </div>
 
       </div>
-
     </main>
   );
 }

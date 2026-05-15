@@ -1,59 +1,28 @@
+// app/vantage/page.tsx
+
 export default function VantagePage() {
   return (
-    <main className="bg-black min-h-screen text-white px-6 py-16">
+    <main className="bg-black text-white min-h-screen px-6 py-20">
+      <div className="max-w-6xl mx-auto">
 
-      <div className="max-w-5xl mx-auto">
+        <h1 className="text-5xl font-black text-yellow-400 mb-8">
+          Vantage ດີບໍ? ຣີວິວ Vantage ສໍາລັບຄົນລາວ
+        </h1>
 
-        <div className="bg-[#0f172a] border border-green-500 rounded-3xl p-10">
+        <p className="text-xl text-gray-300 leading-9 mb-16">
+          Vantage ເປັນ broker ທີ່ execution ໄວ ແລະ spread ຕໍ່າ.
+        </p>
 
-          <div className="flex items-center justify-between mb-10">
+        <div className="bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-[40px] p-12 text-black text-center">
 
-            <h1 className="text-5xl font-black">
-              Vantage Review
-            </h1>
-
-            <span className="bg-green-500 text-white px-5 py-3 rounded-full font-black">
-              ⚡ Fast Withdraw
-            </span>
-
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-5 mb-10">
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">⭐ Rating</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                9.0/10
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">💰 Cashback</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                $4/Lot
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">⚡ Spread</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                0.9 pip
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">💳 Min Deposit</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                $50
-              </h3>
-            </div>
-
-          </div>
+          <h2 className="text-5xl font-black mb-6">
+            ເປີດບັນຊີ Vantage
+          </h2>
 
           <a
             href="https://vigco.co/la-com-inv/wmd8Y80S"
             target="_blank"
-            className="block w-full bg-yellow-400 py-5 rounded-2xl text-black text-center text-2xl font-black"
+            className="bg-black text-white px-10 py-5 rounded-2xl text-xl font-black inline-block"
           >
             ເປີດບັນຊີ Vantage
           </a>
@@ -61,7 +30,6 @@ export default function VantagePage() {
         </div>
 
       </div>
-
     </main>
   );
 }

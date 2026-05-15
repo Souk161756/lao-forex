@@ -1,59 +1,60 @@
+// app/iux/page.tsx
+
 export default function IUXPage() {
   return (
-    <main className="bg-black min-h-screen text-white px-6 py-16">
+    <main className="bg-black text-white min-h-screen px-6 py-20">
+      <div className="max-w-6xl mx-auto">
 
-      <div className="max-w-5xl mx-auto">
+        <h1 className="text-5xl font-black text-yellow-400 mb-8">
+          IUX ດີບໍ? ຣີວິວ IUX ສໍາລັບຄົນລາວ
+        </h1>
 
-        <div className="bg-[#0f172a] border border-pink-500 rounded-3xl p-10">
+        <p className="text-xl text-gray-300 leading-9 mb-16">
+          IUX ເປັນ broker ທີ່ spread ຕໍ່າ ແລະ rebate ດີ.
+        </p>
 
-          <div className="flex items-center justify-between mb-10">
+        <div className="grid md:grid-cols-4 gap-6 mb-20">
 
-            <h1 className="text-5xl font-black">
-              IUX Review
-            </h1>
-
-            <span className="bg-pink-500 text-white px-5 py-3 rounded-full font-black">
-              💎 Low Spread
-            </span>
-
+          <div className="bg-[#0f172a] p-8 rounded-3xl">
+            <p className="text-gray-400">Spread</p>
+            <h3 className="text-3xl font-black text-yellow-400">
+              0.2 pip
+            </h3>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-5 mb-10">
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">⭐ Rating</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                8.9/10
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">💰 Cashback</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                $4/Lot
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">⚡ Spread</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                0.7 pip
-              </h3>
-            </div>
-
-            <div className="bg-[#111827] rounded-2xl p-5">
-              <p className="text-gray-400 mb-2">💳 Min Deposit</p>
-              <h3 className="text-4xl font-black text-yellow-400">
-                $50
-              </h3>
-            </div>
-
+          <div className="bg-[#0f172a] p-8 rounded-3xl">
+            <p className="text-gray-400">Leverage</p>
+            <h3 className="text-3xl font-black text-yellow-400">
+              1:3000
+            </h3>
           </div>
+
+          <div className="bg-[#0f172a] p-8 rounded-3xl">
+            <p className="text-gray-400">Deposit</p>
+            <h3 className="text-3xl font-black text-yellow-400">
+              $10
+            </h3>
+          </div>
+
+          <div className="bg-[#0f172a] p-8 rounded-3xl">
+            <p className="text-gray-400">Rating</p>
+            <h3 className="text-3xl font-black text-yellow-400">
+              9.2/10
+            </h3>
+          </div>
+
+        </div>
+
+        <div className="bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-[40px] p-12 text-black text-center">
+
+          <h2 className="text-5xl font-black mb-6">
+            ເປີດບັນຊີ IUX
+          </h2>
 
           <a
             href="https://iux.com/en/register?code=EPs5nw6M"
             target="_blank"
-            className="block w-full bg-yellow-400 py-5 rounded-2xl text-black text-center text-2xl font-black"
+            className="bg-black text-white px-10 py-5 rounded-2xl text-xl font-black inline-block"
           >
             ເປີດບັນຊີ IUX
           </a>
@@ -61,7 +62,6 @@ export default function IUXPage() {
         </div>
 
       </div>
-
     </main>
   );
 }
