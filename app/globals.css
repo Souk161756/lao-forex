@@ -27,10 +27,9 @@
 }
 
 body {
-  font-family: 'Saysettha', sans-serif;
+body {
   background: var(--background);
   color: var(--foreground);
-  body {
-  font-family: "saysattha Lao", sans-serif;
+  font-family: 'Saysettha', sans-serif;
 }
 }
