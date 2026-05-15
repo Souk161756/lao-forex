@@ -653,6 +653,11 @@ export default function Home() {
       </a>
 
       </footer>
+      <div className="flex gap-6 justify-center mt-8 text-gray-400">
+  <a href="/privacy-policy">Privacy Policy</a>
+  <a href="/disclaimer">Disclaimer</a>
+  <a href="/contact">Contact</a>
+</div>
     </main>
   );
 }
