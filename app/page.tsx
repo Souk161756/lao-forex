@@ -440,6 +440,126 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COMPARISON TABLE */}
+      <section className="max-w-7xl mx-auto px-6 pb-20">
+        <div className="bg-[#0f172a] border border-white/5 rounded-[40px] overflow-hidden">
+          <div className="p-8 border-b border-white/5">
+            <p className="text-yellow-400 uppercase tracking-widest text-sm font-bold mb-3">
+              Comparison
+            </p>
+
+            <h2 className="text-4xl font-black">
+              ປຽບທຽບ Forex Brokers
+            </h2>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[800px]">
+              <thead>
+                <tr className="border-b border-white/5 bg-black/20 text-left">
+                  <th className="p-6 text-yellow-400">Broker</th>
+                  <th className="p-6 text-yellow-400">Rating</th>
+                  <th className="p-6 text-yellow-400">Spread</th>
+                  <th className="p-6 text-yellow-400">Cashback</th>
+                  <th className="p-6 text-yellow-400">Deposit</th>
+                  <th className="p-6 text-yellow-400">Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {brokers.map((broker) => (
+                  <tr
+                    key={broker.name}
+                    className="border-b border-white/5 hover:bg-white/5 transition"
+                  >
+                    <td className="p-6 font-black text-xl">
+                      {broker.name}
+                    </td>
+
+                    <td className="p-6 text-yellow-400 font-bold">
+                      {broker.rating}
+                    </td>
+
+                    <td className="p-6 text-gray-300">
+                      {broker.spread}
+                    </td>
+
+                    <td className="p-6 text-gray-300">
+                      {broker.cashback}
+                    </td>
+
+                    <td className="p-6 text-gray-300">
+                      {broker.deposit}
+                    </td>
+
+                    <td className="p-6">
+                      <a
+                        href={broker.link}
+                        target="_blank"
+                        className="bg-yellow-400 hover:bg-yellow-300 transition text-black px-5 py-3 rounded-xl font-black"
+                      >
+                        Open
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG SECTION */}
+      <section className="max-w-7xl mx-auto px-6 pb-20">
+        <div className="flex items-center justify-between mb-10 flex-wrap gap-4">
+          <div>
+            <p className="text-yellow-400 uppercase tracking-widest text-sm font-bold mb-3">
+              BLOG
+            </p>
+
+            <h2 className="text-4xl font-black">
+              Forex Articles Laos
+            </h2>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Forex ແມ່ນຫຍັງ?",
+              desc: "ຮຽນພື້ນຖານ Forex ສໍາລັບຜູ້ເລີ່ມຕົ້ນ.",
+            },
+            {
+              title: "Best Forex Broker Laos",
+              desc: "ປຽບທຽບ broker ສໍາລັບຄົນລາວ.",
+            },
+            {
+              title: "Exness Review Laos",
+              desc: "ຣີວິວ Exness ແບບລະອຽດ.",
+            },
+          ].map((post) => (
+            <div
+              key={post.title}
+              className="bg-[#0f172a] border border-white/5 rounded-[32px] p-8 hover:-translate-y-1 transition"
+            >
+              <div className="w-full h-44 rounded-2xl bg-gradient-to-br from-yellow-400/20 to-transparent mb-6" />
+
+              <h3 className="text-2xl font-black mb-4">
+                {post.title}
+              </h3>
+
+              <p className="text-gray-400 leading-8">
+                {post.desc}
+              </p>
+
+              <button className="mt-8 text-yellow-400 font-bold">
+                Read More →
+              </button>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* DISCLAIMER */}
       <section className="max-w-7xl mx-auto px-6 pb-20">
         <div className="bg-red-500/10 border border-red-500/20 rounded-[32px] p-8">
