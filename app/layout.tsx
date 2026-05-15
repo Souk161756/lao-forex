@@ -29,6 +29,22 @@ export default function RootLayout({
   }}
 />
         </body>
+        <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-KE4H9XCRXN\"
+/>
+
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KE4H9XCRXN');
+    `,
+  }}
+/>
     </html>
   );
 }
