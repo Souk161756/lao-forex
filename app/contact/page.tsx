@@ -11,6 +11,9 @@ export default function Contact() {
             <p>
               Telegram: @laoforex
             </p>
+            <p>
+              WhatsApp: +8562029826898
+            </p>
 
             <p>
               Email: support@laoforex.org
