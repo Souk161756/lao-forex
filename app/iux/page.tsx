@@ -229,7 +229,7 @@ export default function IUXPage() {
           </p>
 
           <a
-            href="PASTE_YOUR_IUX_LINK"
+            href="https://iux.com/en/register?code=EPs5nw6M"
             target="_blank"
             className="bg-black hover:scale-105 transition text-white px-12 py-6 rounded-3xl text-2xl font-black inline-block"
           >

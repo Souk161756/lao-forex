@@ -34,8 +34,7 @@ export default function Home() {
       badge: "🥈 ອັນດັບ 2",
       badgeColor: "bg-gray-300 text-black",
       border: "border-gray-400/40",
-      link:
-        "https://one.exnessonelink.com/boarding/sign-up/a/ocvhdpugv1?lng=th",
+      link: "https://one.exnessonelink.com/boarding/sign-up/a/ocvhdpugv1?lng=th",
       review: "/exness",
     },
 
