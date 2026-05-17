@@ -134,10 +134,10 @@ export default function Home() {
             </a>
 
             <a
-              href="/reviews"
+              href="/ລີວິວ"
               className="hover:text-yellow-400 transition"
             >
-              Reviews
+              ລີວິວ
             </a>
 
             <a href="/blog" className="hover:text-yellow-400 transition">
@@ -145,10 +145,10 @@ export default function Home() {
             </a>
 
             <a
-              href="#brokers"
+              href="#ໂບກເກີ້"
               className="hover:text-yellow-400 transition"
             >
-              Brokers
+              ໂບກເກີ້
             </a>
           </div>
         </div>
@@ -166,14 +166,14 @@ export default function Home() {
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight mb-8">
               ປຽບທຽບ
-              <span className="text-yellow-400"> Forex Brokers </span>
+              <span className="text-yellow-400"> ຟໍເຣັກ ໂບກເກີ້ </span>
               <br />
               ທີ່ດີສຸດໃນລາວ
             </h1>
 
             <p className="text-gray-400 text-lg leading-9 max-w-3xl mx-auto">
               ຣີວິວໂບກເກີ້ Forex ສໍາລັບຄົນລາວ,
-              cashback rebate, spread, ຄວາມໜ້າເຊື່ອຖື
+              ຮັບເງິນຄືນການເທຣດ, ສະເປຣດ, ຄວາມໜ້າເຊື່ອຖື
               ແລະ ປະສົບການໃຊ້ງານຈິງ.
             </p>
 
@@ -182,7 +182,7 @@ export default function Home() {
                 href="#brokers"
                 className="bg-yellow-400 hover:bg-yellow-300 transition text-black px-8 py-4 rounded-2xl font-black text-lg"
               >
-                🚀 ເລືອກ Broker
+                🚀 ເລືອກ ໂບກເກີ້
               </a>
 
               <a
