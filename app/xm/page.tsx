@@ -33,7 +33,7 @@ export default function XMPage() {
           <div className="bg-[#0f172a] p-8 rounded-3xl">
             <p className="text-gray-400">Deposit</p>
             <h3 className="text-3xl font-black text-yellow-400">
-              $5
+              $30
             </h3>
           </div>
 
