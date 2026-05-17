@@ -1,44 +1,53 @@
 export default function XMPage() {
   return (
-    <main className="bg-black text-white min-h-screen">
+    <main className="bg-[#050816] text-white min-h-screen overflow-hidden">
 
       {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 pt-24 pb-20">
+      <section className="relative max-w-7xl mx-auto px-6 pt-24 pb-24">
 
-        <div className="inline-flex items-center gap-3 bg-blue-500/10 border border-blue-500/20 text-blue-400 px-5 py-2 rounded-full mb-8">
-          <span>🔥</span>
-          <span className="font-bold">
-            XM Review Laos 2026
-          </span>
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 blur-[120px]" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400 blur-[150px]" />
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-black leading-tight mb-8 max-w-5xl">
-          XM ດີບໍ?
-          ຣີວິວ XM ສໍາລັບຄົນລາວ
-        </h1>
+        <div className="relative z-10">
 
-        <p className="text-gray-300 text-xl leading-10 max-w-4xl mb-12">
-          XM ເປັນ Forex Broker ທີ່ຄົນລາວນິຍົມຫຼາຍ.
-          ມີ bonus, support ດີ, ຝາກຖອນງ່າຍ
-          ແລະ ເໝາະສໍາລັບມືໃໝ່.
-        </p>
+          <div className="inline-flex items-center gap-3 bg-blue-500/10 border border-blue-500/20 text-blue-300 px-5 py-2 rounded-full mb-8">
+            <span>🔥</span>
+            <span className="font-bold">
+              ຣີວິວ XM ສຳລັບຄົນລາວ 2026
+            </span>
+          </div>
 
-        <div className="flex flex-wrap gap-5">
+          <h1 className="text-5xl md:text-7xl font-black leading-tight max-w-5xl mb-8">
+            XM ດີບໍ?
+            <br />
+            ໂບກເກີ້ທີ່ຄົນລາວນິຍົມຫຼາຍ
+          </h1>
 
-          <a
-            href="PASTE_YOUR_XM_LINK"
-            target="_blank"
-            className="bg-blue-500 hover:bg-blue-400 transition text-white px-10 py-5 rounded-2xl font-black text-xl"
-          >
-            ເປີດບັນຊີ XM
-          </a>
+          <p className="text-gray-300 text-xl leading-10 max-w-3xl mb-12">
+            ຝາກຖອນງ່າຍ • ມີ Bonus • ໃຊ້ MT4/MT5 •
+            ເໝາະສຳລັບມືໃໝ່ ແລະ trader ສາຍ Scalping
+          </p>
 
-          <a
-            href="#review"
-            className="border border-white/10 hover:border-blue-400 transition px-10 py-5 rounded-2xl font-bold text-xl"
-          >
-            ອ່ານຣີວິວ
-          </a>
+          <div className="flex flex-wrap gap-5">
+
+            <a
+              href="https://affs.click/wLl9B"
+              target="_blank"
+              className="bg-blue-600 hover:bg-blue-500 transition text-white px-10 py-5 rounded-3xl font-black text-xl shadow-2xl"
+            >
+              ສະໝັກ XM →
+            </a>
+
+            <a
+              href="#review"
+              className="border border-white/10 hover:border-blue-400 transition px-10 py-5 rounded-3xl font-bold text-xl bg-white/5"
+            >
+              ອ່ານຣີວິວ
+            </a>
+
+          </div>
 
         </div>
 
@@ -47,12 +56,12 @@ export default function XMPage() {
       {/* STATS */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
 
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
           <div className="bg-[#0f172a] rounded-[32px] p-8 border border-white/5">
-            <p className="text-gray-400 mb-3">Bonus</p>
+            <p className="text-gray-400 mb-3">ໂບນັດ</p>
             <h3 className="text-4xl font-black text-blue-400">
-              Yes
+              ມີ
             </h3>
           </div>
 
@@ -64,17 +73,69 @@ export default function XMPage() {
           </div>
 
           <div className="bg-[#0f172a] rounded-[32px] p-8 border border-white/5">
-            <p className="text-gray-400 mb-3">Deposit</p>
+            <p className="text-gray-400 mb-3">ຝາກເລີ່ມຕົ້ນ</p>
             <h3 className="text-4xl font-black text-blue-400">
               $5
             </h3>
           </div>
 
           <div className="bg-[#0f172a] rounded-[32px] p-8 border border-white/5">
-            <p className="text-gray-400 mb-3">Rating</p>
+            <p className="text-gray-400 mb-3">ຄະແນນ</p>
             <h3 className="text-4xl font-black text-blue-400">
               9.1/10
             </h3>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* PREMIUM CARD */}
+      <section className="max-w-7xl mx-auto px-6 pb-24">
+
+        <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-r from-[#991b1b] to-[#dc2626] p-10 shadow-2xl">
+
+          <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full blur-3xl" />
+
+          <div className="relative flex flex-col md:flex-row items-center justify-between gap-10">
+
+            <div className="flex items-center gap-6">
+
+              <div className="bg-white rounded-[28px] p-4">
+                <img
+                  src="/xm-logo.png"
+                  alt="XM"
+                  className="w-24 h-24 object-contain"
+                />
+              </div>
+
+              <div>
+
+                <div className="inline-block bg-white/20 text-white px-4 py-2 rounded-full mb-4">
+                  ⭐ ອັນດັບ 1 ສຳລັບ Trader ລາວ
+                </div>
+
+                <h2 className="text-5xl font-black mb-4">
+                  XM Global
+                </h2>
+
+                <p className="text-white/80 text-xl leading-10 max-w-2xl">
+                  ຝາກຖອນຜ່ານທະນາຄານລາວ • ມີ Bonus •
+                  ຮອງຮັບ MT4/MT5 • ເໝາະສຳລັບມືໃໝ່
+                </p>
+
+              </div>
+
+            </div>
+
+            <a
+              href="https://affs.click/wLl9B"
+              target="_blank"
+              className="bg-blue-600 hover:bg-blue-500 transition text-white px-12 py-6 rounded-3xl text-2xl font-black shadow-2xl"
+            >
+              ສະໝັກເລີຍ →
+            </a>
+
           </div>
 
         </div>
@@ -93,21 +154,22 @@ export default function XMPage() {
             XM ດີບໍ?
           </h2>
 
-          <div className="space-y-8 text-lg text-gray-300 leading-10">
+          <div className="space-y-8 text-xl text-gray-300 leading-[50px]">
 
             <p>
-              XM ເປັນ broker ທີ່ຄົນລາວນິຍົມຫຼາຍ
-              ເນື່ອງຈາກ bonus ດີ ແລະ support ດີ.
+              XM ແມ່ນ Forex Broker ທີ່ຄົນລາວນິຍົມຫຼາຍ
+              ເນື່ອງຈາກມີ Bonus, support ດີ
+              ແລະ ຝາກຖອນສະດວກ.
             </p>
 
             <p>
-              ເໝາະສໍາລັບມືໃໝ່ ເພາະ deposit ຂັ້ນຕໍ່າ
-              ແລະ ໃຊ້ MT4/MT5 ໄດ້ງ່າຍ.
+              ເໝາະສຳລັບມືໃໝ່ ເພາະເປີດບັນຊີງ່າຍ,
+              ຝາກເງິນຂັ້ນຕໍ່າ ແລະ ໃຊ້ MT4/MT5 ໄດ້.
             </p>
 
             <p>
-              ນອກຈາກນັ້ນ XM ຍັງມີ forex,
-              gold, crypto ແລະ indices ໃຫ້ເທຣດ.
+              ສາມາດເທຣດ Forex, ຄຳ, Crypto,
+              Indices ແລະ ນ້ຳມັນ ໄດ້ໃນ broker ດຽວ.
             </p>
 
           </div>
@@ -121,128 +183,32 @@ export default function XMPage() {
 
         <div className="grid md:grid-cols-2 gap-8">
 
-          <div className="bg-[#0f172a] rounded-[40px] p-10 border border-green-500/20">
+          <div className="bg-[#07151f] rounded-[40px] p-10 border border-green-500/20">
 
             <h2 className="text-4xl font-black text-green-400 mb-10">
               ຂໍ້ດີ
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-300">
-              <p>✅ ມີ bonus</p>
-              <p>✅ Support ດີ</p>
-              <p>✅ ເໝາະສໍາລັບມືໃໝ່</p>
-              <p>✅ ຝາກເງິນຂັ້ນຕໍ່າ</p>
-              <p>✅ ນິຍົມໃນລາວ</p>
-              <p>✅ MT4 / MT5</p>
+            <div className="space-y-6 text-xl text-gray-300 leading-10">
+              <p>✅ ມີໂບນັດສຳລັບມືໃໝ່</p>
+              <p>✅ ຄົນລາວນິຍົມຫຼາຍ</p>
+              <p>✅ ຝາກຖອນງ່າຍ</p>
+              <p>✅ ຮອງຮັບ MT4 / MT5</p>
+              <p>✅ ເລີ່ມຕົ້ນເງິນນ້ອຍໄດ້</p>
             </div>
 
           </div>
 
-          <div className="bg-[#0f172a] rounded-[40px] p-10 border border-red-500/20">
+          <div className="bg-[#1a0f14] rounded-[40px] p-10 border border-red-500/20">
 
             <h2 className="text-4xl font-black text-red-400 mb-10">
               ຂໍ້ເສຍ
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-300">
-              <p>❌ Spread ສູງກວ່າ IUX</p>
-              <p>❌ Scalping ອາດບໍ່ໄວເທົ່າ Exness</p>
-              <p>❌ ບາງ bonus ຖອນບໍ່ໄດ້</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ACCOUNT TYPES */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
-
-        <div className="mb-12">
-
-          <p className="text-blue-400 uppercase tracking-widest text-sm font-bold mb-3">
-            Accounts
-          </p>
-
-          <h2 className="text-5xl font-black">
-            ປະເພດບັນຊີ XM
-          </h2>
-
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-
-          <div className="bg-[#0f172a] rounded-[32px] p-10 border border-white/5">
-
-            <h3 className="text-3xl font-black mb-6 text-blue-400">
-              Micro
-            </h3>
-
-            <div className="space-y-4 text-gray-300 text-lg">
-              <p>Lot ນ້ອຍ</p>
-              <p>ເໝາະສໍາລັບມືໃໝ່</p>
-              <p>Deposit ຕໍ່າ</p>
-            </div>
-
-          </div>
-
-          <div className="bg-[#0f172a] rounded-[32px] p-10 border border-white/5">
-
-            <h3 className="text-3xl font-black mb-6 text-blue-400">
-              Standard
-            </h3>
-
-            <div className="space-y-4 text-gray-300 text-lg">
-              <p>ນິຍົມທີ່ສຸດ</p>
-              <p>ເໝາະສໍາລັບ Forex</p>
-              <p>ໃຊ້ MT4/MT5</p>
-            </div>
-
-          </div>
-
-          <div className="bg-[#0f172a] rounded-[32px] p-10 border border-white/5">
-
-            <h3 className="text-3xl font-black mb-6 text-blue-400">
-              Ultra Low
-            </h3>
-
-            <div className="space-y-4 text-gray-300 text-lg">
-              <p>Spread ຕໍ່າ</p>
-              <p>Execution ໄວ</p>
-              <p>Scalping ໄດ້</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* BONUS */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
-
-        <div className="bg-[#0f172a] rounded-[40px] p-12 border border-blue-500/20">
-
-          <h2 className="text-5xl font-black mb-10 text-blue-400">
-            Bonus ແລະ Promotion
-          </h2>
-
-          <div className="space-y-8 text-lg text-gray-300 leading-10">
-
-            <p>
-              XM ຂຶ້ນຊື່ເລື່ອງ bonus ແລະ promotion
-              ສໍາລັບ trader ມືໃໝ່.
-            </p>
-
-            <p>
-              ບາງຊ່ວງອາດມີ:
-            </p>
-
-            <div className="space-y-4">
-              <p>🎁 Welcome Bonus</p>
-              <p>🎁 Deposit Bonus</p>
-              <p>🎁 Loyalty Program</p>
+            <div className="space-y-6 text-xl text-gray-300 leading-10">
+              <p>❌ Spread ບາງຄູ່ສູງ</p>
+              <p>❌ Scalping ບໍ່ໄວເທົ່າ Exness</p>
+              <p>❌ ບາງ Bonus ຖອນບໍ່ໄດ້</p>
             </div>
 
           </div>
@@ -254,24 +220,33 @@ export default function XMPage() {
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-6 pb-32">
 
-        <div className="bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[50px] p-16 text-center text-white">
+        <div className="relative overflow-hidden rounded-[50px] bg-gradient-to-r from-blue-600 to-cyan-400 p-16 text-center">
 
-          <h2 className="text-6xl font-black mb-8">
-            ເປີດບັນຊີ XM
-          </h2>
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute left-0 top-0 w-96 h-96 bg-white blur-[140px]" />
+          </div>
 
-          <p className="text-2xl max-w-3xl mx-auto mb-12 leading-10">
-            ສະໝັກ XM ຜ່ານ link ດ້ານລຸ່ມ
-            ເພື່ອຮັບ support ແລະ rebate.
-          </p>
+          <div className="relative z-10">
 
-          <a
-            href="https://affs.click/wLl9B"
-            target="_blank"
-            className="bg-black hover:scale-105 transition text-white px-12 py-6 rounded-3xl text-2xl font-black inline-block"
-          >
-            ເປີດບັນຊີ XM
-          </a>
+            <h2 className="text-6xl font-black mb-8">
+              ເປີດບັນຊີ XM
+            </h2>
+
+            <p className="text-2xl leading-10 max-w-3xl mx-auto mb-12">
+              ສະໝັກຜ່ານລິ້ງນີ້
+              ເພື່ອຮັບ support ແລະ rebate
+              ສຳລັບຄົນລາວ
+            </p>
+
+            <a
+              href="https://affs.click/wLl9B"
+              target="_blank"
+              className="bg-black hover:scale-105 transition inline-block text-white px-12 py-6 rounded-3xl text-2xl font-black"
+            >
+              ສະໝັກ XM →
+            </a>
+
+          </div>
 
         </div>
 

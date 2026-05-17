@@ -388,7 +388,7 @@ export default function Home() {
 
               <p className="text-gray-400 leading-8">
                 leverage ສູງ,
-                ຝາກຖອນໄວ ແລະ spread ດີ.
+                ຝາກຖອນໄວ ແລະ ສະເປຣດຕໍ່າດີ.
               </p>
             </div>
 
@@ -399,7 +399,7 @@ export default function Home() {
 
               <p className="text-gray-400 leading-8">
                 ເໝາະສໍາລັບ scalping,
-                rebate cashback ແລະ raw spread.
+                ຮັບເງິນຄືນ ແລະ ສະເປຣດຕໍ່າ.
               </p>
             </div>
 
@@ -426,7 +426,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-4xl font-black">
-              ປຽບທຽບ Forex Brokers
+              ປຽບທຽບ ຟໍເຣັກ ໂບກເກີ້
             </h2>
           </div>
 
@@ -495,7 +495,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-4xl font-black">
-              Forex Articles Laos
+              ບົດຄວາມຟໍເຣັກສໍາລັບຄົນລາວ
             </h2>
           </div>
         </div>
@@ -507,11 +507,11 @@ export default function Home() {
               desc: "ຮຽນພື້ນຖານ Forex ສໍາລັບຜູ້ເລີ່ມຕົ້ນ.",
             },
             {
-              title: "Best Forex Broker Laos",
-              desc: "ປຽບທຽບ broker ສໍາລັບຄົນລາວ.",
+              title: "ໂບກເກີ້ຟໍເຣັກທີ່ດີໃນລາວ",
+              desc: "ປຽບທຽບໂບກເກີ້ທີ່ນ່າໃຊ້ໃນລາວ.",
             },
             {
-              title: "Exness Review Laos",
+              title: "ຣີວິວ Exness ສໍາລັບຄົນລາວ",
               desc: "ຣີວິວ Exness ແບບລະອຽດ.",
             },
           ].map((post) => (
@@ -530,7 +530,7 @@ export default function Home() {
               </p>
 
               <button className="mt-8 text-yellow-400 font-bold">
-                Read More →
+                ອ່ານເພີ່ມ →
               </button>
             </div>
           ))}
@@ -591,7 +591,7 @@ export default function Home() {
                   href="/reviews"
                   className="hover:text-yellow-400 transition"
                 >
-                  Reviews
+                  ລີວິວ
                 </a>
 
                 <a
