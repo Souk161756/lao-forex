@@ -1,190 +1,92 @@
-export default function BlogPage() {
+export default function BestForexBrokerLaos() {
   return (
-    <main className="bg-black min-h-screen text-white px-6 py-20">
+    <main className="bg-black min-h-screen text-white px-6 py-16">
+      <div className="max-w-5xl mx-auto">
 
-      <div className="max-w-7xl mx-auto">
+        <div className="mb-10">
+          <span className="bg-yellow-400 text-black px-4 py-2 rounded-full font-black">
+            🔥 ໂບກເກີ້ Forex ລາວ
+          </span>
+        </div>
 
-        <h1 className="text-6xl font-black text-yellow-400 mb-6 text-center">
-          Forex Blog Laos
+        <h1 className="text-6xl font-black leading-tight mb-8">
+          ໂບກເກີ້ Forex ທີ່ດີສຸດໃນລາວ 2026
         </h1>
 
-        <p className="text-gray-400 text-xl text-center mb-16">
-          ລວມບົດຄວາມ Forex ແລະ broker reviews ສຳລັບຄົນລາວ
+        <p className="text-gray-400 text-xl leading-9 mb-14">
+          ລວມໂບກເກີ້ Forex ທີ່ດີສຸດໃນລາວ · Spread ຕໍ່າ · ຖອນໄວ · Cashback ສູງ
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8">
-
-          {/* BEST BROKER */}
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-            <div className="bg-yellow-400 text-black inline-block px-4 py-2 rounded-full font-black mb-6">
-              🔥 Popular
-            </div>
-
-            <h2 className="text-5xl font-black mb-6">
-              Best Forex Broker Laos
-            </h2>
-
-            <p className="text-gray-400 text-xl mb-8">
-              ລວມ broker Forex ທີ່ດີສຸດໃນລາວ
-            </p>
-
-            <a
-              href="/blog/best-forex-broker-laos"
-              className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
-            >
-              📖 Read Article
-            </a>
-
-          </div>
+        <div className="space-y-10">
 
           {/* XM */}
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-            <div className="bg-blue-400 text-black inline-block px-4 py-2 rounded-full font-black mb-6">
-              ⚡ XM
-            </div>
-
-            <h2 className="text-5xl font-black mb-6">
-              XM Review Laos
-            </h2>
-
-            <p className="text-gray-400 text-xl mb-8">
-              XM ดีไหม? ถอนเร็วไหม?
+          <div className="bg-[#0f172a] border border-yellow-400 rounded-3xl p-8">
+            <h2 className="text-4xl font-black mb-6">🏆 XM ໂບກເກີ້</h2>
+            <p className="text-gray-400 leading-8 mb-8">
+              XM ເປັນໂບກເກີ້ຍອດນິຍົມໃນລາວ · Support ດີ · ຝາກ-ຖອນ BCEL ໄດ້
             </p>
-
-            <a
-              href="/blog/xm-review-laos"
-              className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
-            >
-              📖 Read Review
+            <a href="/xm" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
+              📖 ອ່ານລີວິວ XM
             </a>
-
           </div>
 
           {/* EXNESS */}
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-            <div className="bg-green-400 text-black inline-block px-4 py-2 rounded-full font-black mb-6">
-              🚀 EXNESS
-            </div>
-
-            <h2 className="text-5xl font-black mb-6">
-              Exness Review Laos
-            </h2>
-
-            <p className="text-gray-400 text-xl mb-8">
-              รีวิว Exness แบบละเอียด
+          <div className="bg-[#0f172a] border border-blue-400 rounded-3xl p-8">
+            <h2 className="text-4xl font-black mb-6">⚡ Exness</h2>
+            <p className="text-gray-400 leading-8 mb-8">
+              Exness ເໝາະສໍາລັບ Scalping · ຖອນເງິນໄວ 24/7 · Leverage ສູງ
             </p>
-
-            <a
-              href="/blog/exness-review-laos"
-              className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
-            >
-              📖 Read Review
+            <a href="/exness" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
+              📖 ອ່ານລີວິວ Exness
             </a>
-
           </div>
 
           {/* VANTAGE */}
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-            <div className="bg-cyan-400 text-black inline-block px-4 py-2 rounded-full font-black mb-6">
-              💎 VANTAGE
-            </div>
-
-            <h2 className="text-5xl font-black mb-6">
-              Vantage Review Laos
-            </h2>
-
-            <p className="text-gray-400 text-xl mb-8">
-              รีวิว Vantage และ cashback
+          <div className="bg-[#0f172a] border border-green-400 rounded-3xl p-8">
+            <h2 className="text-4xl font-black mb-6">🚀 Vantage</h2>
+            <p className="text-gray-400 leading-8 mb-8">
+              Vantage ມີ Cashback ດີທີ່ສຸດ $4/Lot · ຖອນໄວ · Regulated
             </p>
-
-            <a
-              href="/blog/vantage-review-laos"
-              className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
-            >
-              📖 Read Review
+            <a href="/vantage" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
+              📖 ອ່ານລີວິວ Vantage
             </a>
-
           </div>
 
           {/* IUX */}
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-            <div className="bg-pink-400 text-black inline-block px-4 py-2 rounded-full font-black mb-6">
-              💰 IUX
-            </div>
-
-            <h2 className="text-5xl font-black mb-6">
-              IUX Review Laos
-            </h2>
-
-            <p className="text-gray-400 text-xl mb-8">
-              รีวิว IUX สำหรับมือใหม่
+          <div className="bg-[#0f172a] border border-pink-400 rounded-3xl p-8">
+            <h2 className="text-4xl font-black mb-6">💎 IUX</h2>
+            <p className="text-gray-400 leading-8 mb-8">
+              IUX ມີ Spread ຕໍ່ານ 0.9pip · Bonus ດີ · UI ທັນສະໄໝ
             </p>
-
-            <a
-              href="/blog/iux-review-laos"
-              className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
-            >
-              📖 Read Review
+            <a href="/iux" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
+              📖 ອ່ານລີວິວ IUX
             </a>
+          </div>
 
+          {/* MARKET4YOU */}
+          <div className="bg-[#0f172a] border border-orange-400 rounded-3xl p-8">
+            <h2 className="text-4xl font-black mb-6">🎁 Market4you</h2>
+            <p className="text-gray-400 leading-8 mb-8">
+              Market4you ເໝາະສໍາລັບມືໃໝ່ · ຝາກຕໍ່າ $10 · Bonus ດີ
+            </p>
+            <a href="/market4you" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
+              📖 ອ່ານລີວິວ Market4you
+            </a>
           </div>
 
           {/* HFM */}
-          <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-            <div className="bg-teal-400 text-black inline-block px-4 py-2 rounded-full font-black mb-6">
-              ✅ HFM
-            </div>
-
-            <h2 className="text-5xl font-black mb-6">
-              HFM Review Laos
-            </h2>
-
-            <p className="text-gray-400 text-xl mb-8">
-              รีวิว HFM และโบนัสล่าสุด
+          <div className="bg-[#0f172a] border border-cyan-400 rounded-3xl p-8">
+            <h2 className="text-4xl font-black mb-6">✅ HFM</h2>
+            <p className="text-gray-400 leading-8 mb-8">
+              HFM ເປັນໂບກເກີ້ທີ່ໜ້າເຊື່ອຖື · ມີ License ຫຼາຍ · Regulated
             </p>
-
-            <a
-              href="/blog/hfm-review-laos"
-              className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
-            >
-              📖 Read Review
+            <a href="/hfm" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
+              📖 ອ່ານລີວິວ HFM
             </a>
-
           </div>
 
-{/* MARKET4YOU */}
-<div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-8">
-
-  <div className="bg-orange-400 text-black inline-block px-4 py-2 rounded-full font-black mb-6">
-    🎁 MARKET4YOU
-  </div>
-
-  <h2 className="text-5xl font-black mb-6">
-    Market4you Review Laos
-  </h2>
-
-  <p className="text-gray-400 text-xl mb-8">
-    รีวิว Market4you โบนัสและ cashback ล่าสุด
-  </p>
-
-  <a
-    href="/blog/market4you-review-laos"
-    className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
-  >
-    📖 Read Review
-  </a>
-
-</div>
         </div>
-
       </div>
-
     </main>
   );
 }
