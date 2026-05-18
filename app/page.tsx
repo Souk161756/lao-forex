@@ -17,11 +17,11 @@ export default function Home() {
       .then((data) => {
         if (data.items?.length > 0) {
           setNews(data.items.map((item: { title: string; date: string; url: string }) => ({
-            tag: "Forex",
-            title: item.title,
-            time: item.date ? new Date(item.date).toLocaleDateString("lo-LA") : "",
-            color: "#facc15",
-            href: item.url,
+  tag: "Forex",
+  title: item.title,
+  time: item.date ? new Date(item.date).toLocaleDateString("lo-LA") : "",
+  color: "#facc15",
+  href: item.url,
 })));
         }
       })
