@@ -1,48 +1,49 @@
 export default function ExnessReviewLaos() {
   return (
-    <main className="bg-black text-white min-h-screen px-6 py-20">
-      <div className="max-w-5xl mx-auto">
-
-        <div className="bg-green-400/20 text-green-400 inline-block px-5 py-2 rounded-full text-sm font-black mb-8">
+    <main className="min-h-screen text-white px-5 py-16"
+      style={{ background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
+      <div className="max-w-3xl mx-auto">
+        <a href="/blog" className="inline-flex items-center gap-2 text-gray-500 text-sm mb-8 hover:text-yellow-400 transition-colors">← ກັບລາຍການໂບກເກີ້</a>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-6"
+          style={{ background: "rgba(74,222,128,0.08)", border: "1px solid rgba(74,222,128,0.2)", color: "#4ade80" }}>
           🚀 ລີວິວ EXNESS
         </div>
-
-        <h1 className="text-6xl font-black mb-10 leading-tight">
-          ລີວິວ Exness ສໍາລັບຄົນລາວ 2026
-        </h1>
-
-        <p className="text-gray-300 text-xl leading-10 mb-10">
-          Exness ເປັນໂບກເກີ້ Forex ທີ່ໄດ້ຮັບຄວາມນິຍົມສູງ ·
-          ຖອນເງິນໄວ · ໃຊ້ງານງ່າຍ · ຝາກ-ຖອນ BCEL ໄດ້
-        </p>
-
-        <div className="bg-[#0f172a] border border-gray-800 rounded-3xl p-10 mb-8">
-          <h2 className="text-4xl font-black mb-6">Exness ດີບໍ?</h2>
-          <p className="text-gray-300 leading-10 text-lg">
-            Exness ເໝາະສໍາລັບຜູ້ທີ່ເທຣດຈິງຈັງ · Spread ຕໍ່າ ·
-            ຖອນໄວ 24/7 · Leverage ສູງສຸດ 1:2000
-          </p>
+        <div className="flex items-center gap-4 mb-6">
+          <img src="/brokers/exness.png" alt="Exness" className="w-16 h-16 rounded-2xl object-contain"
+            style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }}
+            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+          <div>
+            <h1 className="font-black text-3xl">ລີວິວ Exness 2026</h1>
+            <p className="text-gray-400 text-sm">ສໍາລັບຄົນລາວ</p>
+          </div>
         </div>
-
-        <div className="bg-[#0f172a] border border-green-400/30 rounded-3xl p-10 mb-8">
-          <h2 className="text-4xl font-black mb-6">ຂໍ້ດີ Exness</h2>
-          <ul className="text-gray-300 leading-10 text-lg space-y-2">
-            <li>✅ ຖອນເງິນໄວ Instant 24/7</li>
-            <li>✅ Spread EURUSD ເລີ່ມ 0.0 pip</li>
-            <li>✅ Leverage ສູງສຸດ 1:2000</li>
-            <li>✅ ຝາກ-ຖອນ BCEL ໄດ້</li>
-            <li>✅ Regulated ໂດຍ FCA, CySEC</li>
+        <div className="grid grid-cols-2 gap-3 mb-8">
+          {[{ label: "ຝາກຕໍ່າ", value: "$20" }, { label: "Leverage", value: "1:2000" }, { label: "Spread", value: "1.0 pip" }, { label: "ຄະແນນ", value: "4.6/5" }].map(s => (
+            <div key={s.label} className="rounded-xl p-4 text-center"
+              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
+              <div className="text-xs text-gray-500 mb-1">{s.label}</div>
+              <div className="font-black text-green-400">{s.value}</div>
+            </div>
+          ))}
+        </div>
+        <div className="rounded-2xl p-6 mb-4" style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)" }}>
+          <h2 className="font-black text-xl mb-3 text-green-400">Exness ດີບໍ?</h2>
+          <p className="text-gray-300 text-sm" style={{ lineHeight: "2" }}>Exness ເໝາະສໍາລັບຜູ້ທີ່ເທຣດຈິງຈັງ · Spread ຕໍ່າ · ຖອນໄວ 24/7 · Leverage ສູງສຸດ 1:2000</p>
+        </div>
+        <div className="rounded-2xl p-6 mb-6" style={{ background: "rgba(74,222,128,0.04)", border: "1px solid rgba(74,222,128,0.2)" }}>
+          <h2 className="font-black text-xl mb-4 text-green-400">ຂໍ້ດີ Exness</h2>
+          <ul className="space-y-2 text-gray-300 text-sm" style={{ lineHeight: "2" }}>
+            {["ຖອນເງິນໄວ Instant 24/7", "Spread EURUSD ເລີ່ມ 0.0 pip", "Leverage ສູງສຸດ 1:2000", "ຝາກ-ຖອນ BCEL ໄດ້", "Regulated ໂດຍ FCA, CySEC"].map(p => (
+              <li key={p} className="flex gap-2"><span className="text-green-400">✅</span>{p}</li>
+            ))}
           </ul>
         </div>
-
-        <a
-          href="https://one.exnessonelink.com/boarding/sign-up/a/ocvhdpugv1?lng=th"
-          target="_blank"
-          className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl"
-        >
+        <a href="https://one.exnessonelink.com/boarding/sign-up/a/ocvhdpugv1?lng=th" target="_blank"
+          className="block text-center py-4 rounded-2xl font-black text-black text-lg transition-all hover:scale-[1.02] mb-3"
+          style={{ background: "linear-gradient(135deg, #facc15, #f97316)" }}>
           🚀 ສະໝັກເປີດບັນຊີ Exness
         </a>
-
+        <p className="text-center text-gray-600 text-xs">⚠️ Forex ມີຄວາມສ່ຽງສູງ · ລົງທຶນສະເພາະເງິນທີ່ຍອມສູນໄດ້</p>
       </div>
     </main>
   );
