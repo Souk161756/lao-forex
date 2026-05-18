@@ -189,8 +189,8 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-400">
             <a href="/" className="hover:text-yellow-400 transition-colors">ໜ້າຫຼັກ</a>
-            <a href="/ລີວິວ" className="hover:text-yellow-400 transition-colors">ລີວິວ</a>
-            <a href="/blog" className="hover:text-yellow-400 transition-colors">ບົດຄວາມ</a>
+            <a href="/reviews" className="hover:text-yellow-400 transition-colors">ລີວິວ</a>
+            <a href="/blog/how-to-start-forex-laos" className="hover:text-yellow-400 transition-colors">ບົດຄວາມ</a>
             <a href="#brokers" className="hover:text-yellow-400 transition-colors">ໂບກເກີ້</a>
             <a
               href="https://t.me/laoforex"
@@ -231,7 +231,7 @@ export default function Home() {
               style={{ background: "linear-gradient(135deg, #facc15, #f97316)", boxShadow: "0 16px 60px rgba(250,204,21,0.25)" }}>
               🚀 ເບິ່ງໂບກເກີ້
             </a>
-            <a href="/blog" className="font-bold px-10 py-4 rounded-2xl text-lg text-white transition-all hover:scale-105"
+            <a href="/blog/how-to-start-forex-laos" className="font-bold px-10 py-4 rounded-2xl text-lg text-white transition-all hover:scale-105"
               style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", backdropFilter: "blur(12px)" }}>
               📚 ຮຽນ Forex
             </a>
@@ -391,7 +391,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               { name: "🥇 XM", desc: "ເໝາະສໍາລັບຜູ້ເລີ່ມຕົ້ນ · Bonus ດີ · Support ໃຊ້ງ່າຍ · ຝາກ-ຖອນ BCEL ໄດ້" },
-              { name: "🥈 Exness", desc: "Leverage ສູງ · ຖອນໄວ 24/7 · Spread ຕໍ່າ · ເໝາະສໍາລັບ Scalping" },
+              { name: "🥈 Exness", desc: "Leverage ບໍ່ຈໍາກັດ · ຖອນໄວ 24/7 · Spread ຕໍ່າ · ເໝາະສໍາລັບ Scalping" },
               { name: "🥉 Vantage", desc: "Cashback ສູງສຸດ $4/Lot · ເໝາະສໍາລັບ Volume Trader · Regulated" },
               { name: "⭐ IUX", desc: "Spread ຕໍ່ານ 0.9pip · UI ທັນສະໄໝ · ໃຊ້ງານງ່າຍ · ຄ່າ Commission ຕໍ່າ" },
             ].map((g) => (
@@ -471,8 +471,8 @@ export default function Home() {
               <h3 className="font-black mb-4 text-sm uppercase tracking-widest text-gray-400">ລິ້ງດ່ວນ</h3>
               <div className="flex flex-col gap-3 text-sm text-gray-500">
                 <a href="/" className="hover:text-yellow-400 transition-colors">ໜ້າຫຼັກ</a>
-                <a href="/ລີວິວ" className="hover:text-yellow-400 transition-colors">ລີວິວ</a>
-                <a href="/blog" className="hover:text-yellow-400 transition-colors">ບົດຄວາມ</a>
+                <a href="/reviews" className="hover:text-yellow-400 transition-colors">ລີວິວ</a>
+                <a href="/blog/how-to-start-forex-laos" className="hover:text-yellow-400 transition-colors">ບົດຄວາມ</a>
                 <a href="/privacy-policy" className="hover:text-yellow-400 transition-colors">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</a>
                 <a href="/disclaimer" className="hover:text-yellow-400 transition-colors">ຂໍ້ຈໍາກັດ</a>
                 <a href="/contact" className="hover:text-yellow-400 transition-colors">ຕິດຕໍ່</a>
