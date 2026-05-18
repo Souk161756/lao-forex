@@ -5,28 +5,37 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [search, setSearch] = useState("");
   const [news, setNews] = useState([
-    { tag: "ຂ່າວ", title: "XAUUSD ທອງຄໍາຂຶ້ນສູງ $2,400 ຫຼັງ Fed ສົ່ງສັນຍານ", time: "2 ຊມ ກ່ອນ", color: "#facc15", href: "/blog" },
-    { tag: "ວິເຄາະ", title: "EUR/USD ດ້ານ 1.0850 — ລໍຖ້າຂໍ້ມູນ CPI ສະຫະລັດ", time: "4 ຊມ ກ່ອນ", color: "#60a5fa", href: "/blog" },
-    { tag: "ໂບກເກີ້", title: "XM ເພີ່ມ Bonus Promotion ພິເສດເດືອນນີ້", time: "6 ຊມ ກ່ອນ", color: "#fb923c", href: "/xm" },
-    { tag: "ຄູ່ມື", title: "ວິທີຝາກເງິນ BCEL ເຂົ້າ Forex — ຄູ່ມືສໍາລັບຄົນລາວ", time: "1 ວັນ ກ່ອນ", color: "#4ade80", href: "/blog/how-to-start-forex-laos" },
-  ]);
+   
+  {
+    tag: "ທອງຄໍາ",
+    title: "XAUUSD ຮັກສາລະດັບ $3,200 ຫຼັງຕະຫຼາດລໍຖ້າຂໍ້ມູນ Fed Minutes",
+    time: "18 ພ.ພ. 2026",
+    color: "#facc15",
+    href: "https://www.investing.com/commodities/gold",
+  },
+  {
+    tag: "ວິເຄາະ",
+    title: "ນັກວິເຄາະຄາດທອງຄໍາຂຶ້ນທົດສອບ $3,300 ໃນໄລຍະສັ້ນ",
+    time: "18 ພ.ພ. 2026",
+    color: "#fb923c",
+    href: "https://www.investing.com/commodities/gold",
+  },
+  {
+    tag: "Forex",
+    title: "USD ອ່ອນຄ່າ — EUR/USD ດີດຂຶ້ນເໜືອ 1.1200 ໃນຕອນເຊົ້າ",
+    time: "18 ພ.ພ. 2026",
+    color: "#60a5fa",
+    href: "https://www.investing.com/currencies/eur-usd",
+  },
+  {
+    tag: "ຄູ່ມື",
+    title: "ວິທີເທຣດ XAUUSD ສໍາລັບຄົນລາວ — Entry Point ແລະ Stop Loss",
+    time: "18 ພ.ພ. 2026",
+    color: "#4ade80",
+    href: "/blog/how-to-start-forex-laos",
+  },
+]);
 
-  useEffect(() => {
-    fetch("/api/news")
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.items?.length > 0) {
-          setNews(data.items.map((item: { title: string; date: string }) => ({
-            tag: "Forex",
-            title: item.title,
-            time: item.date ? new Date(item.date).toLocaleDateString("lo-LA") : "",
-            color: "#facc15",
-            href: "/blog",
-          })));
-        }
-      })
-      .catch(() => {});
-  }, []);
 
   const brokers = [
     {
