@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [search, setSearch] = useState("");
   const [news, setNews] = useState([
-    { tag: "ຂ່າວ", title: "XAUUSD ທອງຄໍາຂຶ້ນສູງ $2,400 ຫຼັງ Fed ສົ່ງສັນຍານ", time: "2 ຊມ ກ່ອນ", color: "#facc15" },
-    { tag: "ວິເຄາະ", title: "EUR/USD ດ້ານ 1.0850 — ລໍຖ້າຂໍ້ມູນ CPI ສະຫະລັດ", time: "4 ຊມ ກ່ອນ", color: "#60a5fa" },
-    { tag: "ໂບກເກີ້", title: "XM ເພີ່ມ Bonus Promotion ພິເສດເດືອນນີ້", time: "6 ຊມ ກ່ອນ", color: "#fb923c" },
-    { tag: "ຄູ່ມື", title: "ວິທີຝາກເງິນ BCEL ເຂົ້າ Forex — ຄູ່ມືສໍາລັບຄົນລາວ", time: "1 ວັນ ກ່ອນ", color: "#4ade80" },
+    { tag: "ຂ່າວ", title: "XAUUSD ທອງຄໍາຂຶ້ນສູງ $2,400 ຫຼັງ Fed ສົ່ງສັນຍານ", time: "2 ຊມ ກ່ອນ", color: "#facc15", href: "/blog" },
+    { tag: "ວິເຄາະ", title: "EUR/USD ດ້ານ 1.0850 — ລໍຖ້າຂໍ້ມູນ CPI ສະຫະລັດ", time: "4 ຊມ ກ່ອນ", color: "#60a5fa", href: "/blog" },
+    { tag: "ໂບກເກີ້", title: "XM ເພີ່ມ Bonus Promotion ພິເສດເດືອນນີ້", time: "6 ຊມ ກ່ອນ", color: "#fb923c", href: "/xm" },
+    { tag: "ຄູ່ມື", title: "ວິທີຝາກເງິນ BCEL ເຂົ້າ Forex — ຄູ່ມືສໍາລັບຄົນລາວ", time: "1 ວັນ ກ່ອນ", color: "#4ade80", href: "/blog/how-to-start-forex-laos" },
   ]);
 
   useEffect(() => {
@@ -21,6 +21,7 @@ export default function Home() {
             title: item.title,
             time: item.date ? new Date(item.date).toLocaleDateString("lo-LA") : "",
             color: "#facc15",
+            href: "/blog",
           })));
         }
       })
@@ -187,14 +188,10 @@ export default function Home() {
             <a href="#brokers" className="hover:text-yellow-400 transition-colors">ໂບກເກີ້</a>
             <a href="https://wa.me/8562029826898" target="_blank"
               className="flex items-center gap-1.5 text-white px-3 py-2 rounded-full text-xs font-bold hover:opacity-90 transition"
-              style={{ background: "#25D366" }}>
-              💬 WhatsApp
-            </a>
+              style={{ background: "#25D366" }}>💬 WhatsApp</a>
             <a href="https://t.me/laoforex" target="_blank"
               className="flex items-center gap-1.5 text-white px-3 py-2 rounded-full text-xs font-bold hover:opacity-90 transition"
-              style={{ background: "#229ED9" }}>
-              ✈️ Telegram
-            </a>
+              style={{ background: "#229ED9" }}>✈️ Telegram</a>
           </div>
           <div className="md:hidden flex items-center gap-2">
             <a href="https://wa.me/8562029826898" target="_blank"
@@ -281,7 +278,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-2 gap-3">
           {news.map((n, i) => (
-            <a key={i} href="/blog"
+            <a key={i} href={n.href}
               className="flex items-start gap-4 p-4 rounded-2xl transition-all hover:-translate-y-0.5"
               style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)" }}>
               <div className="flex-shrink-0 px-2.5 py-1 rounded-lg text-[10px] font-black mt-0.5"
