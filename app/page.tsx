@@ -5,48 +5,24 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [search, setSearch] = useState("");
   const [news, setNews] = useState([
-  {
-    tag: "ທອງຄໍາ",
-    title: "XAUUSD ຂຶ້ນທົດສອບ $2,400 ຫຼັງ Fed ສົ່ງສັນຍານຫຼຸດດອກເບ້ຍ",
-    time: "ວັນນີ້",
-    color: "#facc15",
-    href: "https://www.investing.com/commodities/gold",
-  },
-  {
-    tag: "ວິເຄາະ",
-    title: "ທອງຄໍາດ້ານ $2,350 — ນັກວິເຄາະຄາດຂຶ້ນ $2,500 ທ້າຍປີ",
-    time: "ວານນີ້",
-    color: "#fb923c",
-    href: "https://www.investing.com/commodities/gold",
-  },
-  {
-    tag: "Forex",
-    title: "USD ອ່ອນຄ່າຫຼັງຂໍ້ມູນ CPI ຕໍ່າກວ່າຄາດ — EUR/USD ຂຶ້ນ",
-    time: "2 ວັນ ກ່ອນ",
-    color: "#60a5fa",
-    href: "https://www.investing.com/currencies/eur-usd",
-  },
-  {
-    tag: "ຄູ່ມື",
-    title: "ວິທີເທຣດ XAUUSD ສໍາລັບຄົນລາວ — Entry Point ແລະ Stop Loss",
-    time: "3 ວັນ ກ່ອນ",
-    color: "#4ade80",
-    href: "/blog/how-to-start-forex-laos",
-  },
-]);
+    { tag: "ຂ່າວ", title: "XAUUSD ທອງຄໍາຂຶ້ນສູງ $2,400 ຫຼັງ Fed ສົ່ງສັນຍານ", time: "2 ຊມ ກ່ອນ", color: "#facc15", href: "/blog" },
+    { tag: "ວິເຄາະ", title: "EUR/USD ດ້ານ 1.0850 — ລໍຖ້າຂໍ້ມູນ CPI ສະຫະລັດ", time: "4 ຊມ ກ່ອນ", color: "#60a5fa", href: "/blog" },
+    { tag: "ໂບກເກີ້", title: "XM ເພີ່ມ Bonus Promotion ພິເສດເດືອນນີ້", time: "6 ຊມ ກ່ອນ", color: "#fb923c", href: "/xm" },
+    { tag: "ຄູ່ມື", title: "ວິທີຝາກເງິນ BCEL ເຂົ້າ Forex — ຄູ່ມືສໍາລັບຄົນລາວ", time: "1 ວັນ ກ່ອນ", color: "#4ade80", href: "/blog/how-to-start-forex-laos" },
+  ]);
 
   useEffect(() => {
     fetch("/api/news")
       .then((r) => r.json())
       .then((data) => {
         if (data.items?.length > 0) {
-          setNews(data.items.map((item: { title: string; date: string; url: string }) => ({
-  tag: "Forex",
-  title: item.title,
-  time: item.date ? new Date(item.date).toLocaleDateString("lo-LA") : "",
-  color: "#facc15",
-  href: item.url,
-})));
+          setNews(data.items.map((item: { title: string; date: string }) => ({
+            tag: "Forex",
+            title: item.title,
+            time: item.date ? new Date(item.date).toLocaleDateString("lo-LA") : "",
+            color: "#facc15",
+            href: "/blog",
+          })));
         }
       })
       .catch(() => {});
