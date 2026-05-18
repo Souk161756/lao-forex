@@ -19,6 +19,17 @@ export default function BestForexBrokerLaos() {
 
         <div className="space-y-10">
 
+          {/* GUIDE */}
+          <div className="bg-[#0f172a] border border-blue-400 rounded-3xl p-8">
+            <h2 className="text-4xl font-black mb-6">📚 ວິທີເລີ່ມຕົ້ນ Forex</h2>
+            <p className="text-gray-400 leading-8 mb-8">
+              ຄູ່ມືຄົບ · ຕັ້ງແຕ່ Forex ແມ່ນຫຍັງ · ຄໍາສັບພື້ນຖານ · ຂັ້ນຕອນເລີ່ມຕົ້ນ · Tips ສໍາລັບມືໃໝ່
+            </p>
+            <a href="/blog/how-to-start-forex-laos" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
+              📖 ອ່ານຄູ່ມື Forex
+            </a>
+          </div>
+
           {/* XM */}
           <div className="bg-[#0f172a] border border-yellow-400 rounded-3xl p-8">
             <h2 className="text-4xl font-black mb-6">🏆 XM ໂບກເກີ້</h2>
