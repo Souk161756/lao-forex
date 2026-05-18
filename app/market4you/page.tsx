@@ -1,259 +1,50 @@
-export default function Market4YouPage() {
+export default function Market4youReviewLaos() {
   return (
-    <main className="bg-[#050816] text-white min-h-screen overflow-hidden">
-
-      {/* HERO */}
-      <section className="relative max-w-7xl mx-auto px-6 pt-24 pb-24">
-
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 blur-[120px]" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-500 blur-[150px]" />
+    <main className="min-h-screen text-white px-5 py-16"
+      style={{ background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
+      <div className="max-w-3xl mx-auto">
+        <a href="/blog" className="inline-flex items-center gap-2 text-gray-500 text-sm mb-8 hover:text-yellow-400 transition-colors">← ກັບລາຍການໂບກເກີ້</a>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-6"
+          style={{ background: "rgba(251,146,60,0.08)", border: "1px solid rgba(251,146,60,0.2)", color: "#fb923c" }}>
+          🎁 ລີວິວ MARKET4YOU
         </div>
-
-        <div className="relative z-10">
-
-          <div className="inline-flex items-center gap-3 bg-purple-500/10 border border-purple-500/20 text-purple-300 px-5 py-2 rounded-full mb-8">
-            <span>🚀</span>
-            <span className="font-bold">
-              ຣີວິວ Market4You ສຳລັບຄົນລາວ 2026
-            </span>
+        <div className="flex items-center gap-4 mb-6">
+          <img src="/brokers/market4you.png" alt="Market4you" className="w-16 h-16 rounded-2xl object-contain"
+            style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }}
+            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+          <div>
+            <h1 className="font-black text-3xl">ລີວິວ Market4you 2026</h1>
+            <p className="text-gray-400 text-sm">ສໍາລັບຄົນລາວ</p>
           </div>
-
-          <h1 className="text-5xl md:text-7xl font-black leading-tight max-w-5xl mb-8">
-            Market4You ດີບໍ?
-            <br />
-            ໂບກເກີ້ສຳລັບມືໃໝ່
-          </h1>
-
-          <p className="text-gray-300 text-xl leading-10 max-w-3xl mb-12">
-            ຝາກເລີ່ມຕົ້ນນ້ອຍ • ມີ Bonus •
-            ໃຊ້ MT4/MT5 ໄດ້ • ເໝາະສຳລັບຄົນເລີ່ມ Forex
-          </p>
-
-          <div className="flex flex-wrap gap-5">
-
-            <a
-              href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
-              target="_blank"
-              className="bg-purple-500 hover:bg-purple-400 transition text-white px-10 py-5 rounded-3xl font-black text-xl shadow-2xl"
-            >
-              ສະໝັກ Market4You →
-            </a>
-
-            <a
-              href="#review"
-              className="border border-white/10 hover:border-purple-400 transition px-10 py-5 rounded-3xl font-bold text-xl bg-white/5"
-            >
-              ອ່ານຣີວິວ
-            </a>
-
-          </div>
-
         </div>
-
-      </section>
-
-      {/* STATS */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-          <div className="bg-[#0f172a] rounded-[32px] p-8 border border-white/5">
-            <p className="text-gray-400 mb-3">ຝາກເລີ່ມຕົ້ນ</p>
-            <h3 className="text-4xl font-black text-purple-400">
-              ຕ່ຳ
-            </h3>
-          </div>
-
-          <div className="bg-[#0f172a] rounded-[32px] p-8 border border-white/5">
-            <p className="text-gray-400 mb-3">Platform</p>
-            <h3 className="text-4xl font-black text-purple-400">
-              MT4/MT5
-            </h3>
-          </div>
-
-          <div className="bg-[#0f172a] rounded-[32px] p-8 border border-white/5">
-            <p className="text-gray-400 mb-3">ໂບນັດ</p>
-            <h3 className="text-4xl font-black text-purple-400">
-              ມີ
-            </h3>
-          </div>
-
-          <div className="bg-[#0f172a] rounded-[32px] p-8 border border-white/5">
-            <p className="text-gray-400 mb-3">ຄະແນນ</p>
-            <h3 className="text-4xl font-black text-purple-400">
-              8.9/10
-            </h3>
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* PREMIUM CARD */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
-
-        <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-r from-purple-500 to-pink-500 p-10 shadow-2xl">
-
-          <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full blur-3xl" />
-
-          <div className="relative flex flex-col md:flex-row items-center justify-between gap-10">
-
-            <div className="flex items-center gap-6">
-
-              <div className="bg-white rounded-[28px] p-4">
-                <img
-                  src="/market4you-logo.png"
-                  alt="Market4You"
-                  className="w-24 h-24 object-contain"
-                />
-              </div>
-
-              <div>
-
-                <div className="inline-block bg-white/20 text-white px-4 py-2 rounded-full mb-4">
-                  🚀 ເໝາະສຳລັບມືໃໝ່
-                </div>
-
-                <h2 className="text-5xl font-black mb-4">
-                  Market4You
-                </h2>
-
-                <p className="text-white/80 text-xl leading-10 max-w-2xl">
-                  ຝາກເງິນນ້ອຍ • ມີ Bonus •
-                  ໃຊ້ MT4/MT5 ໄດ້ • ເໝາະສຳລັບຄົນເລີ່ມເທຣດ
-                </p>
-
-              </div>
-
+        <div className="grid grid-cols-2 gap-3 mb-8">
+          {[{ label: "ຝາກຕໍ່າ", value: "$10" }, { label: "Cashback", value: "$3/Lot" }, { label: "Spread", value: "1.5 pip" }, { label: "ຄະແນນ", value: "3.9/5" }].map(s => (
+            <div key={s.label} className="rounded-xl p-4 text-center"
+              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
+              <div className="text-xs text-gray-500 mb-1">{s.label}</div>
+              <div className="font-black text-orange-400">{s.value}</div>
             </div>
-
-            <a
-              href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
-              target="_blank"
-              className="bg-black hover:scale-105 transition text-white px-12 py-6 rounded-3xl text-2xl font-black shadow-2xl"
-            >
-              ສະໝັກເລີຍ →
-            </a>
-
-          </div>
-
+          ))}
         </div>
-
-      </section>
-
-      {/* REVIEW */}
-      <section
-        id="review"
-        className="max-w-7xl mx-auto px-6 pb-24"
-      >
-
-        <div className="bg-[#0f172a] rounded-[40px] p-12 border border-white/5">
-
-          <h2 className="text-5xl font-black mb-10 text-purple-400">
-            Market4You ດີບໍ?
-          </h2>
-
-          <div className="space-y-8 text-xl text-gray-300 leading-[50px]">
-
-            <p>
-              Market4You ເປັນ broker ທີ່ເໝາະສຳລັບມືໃໝ່
-              ເນື່ອງຈາກຝາກເງິນຂັ້ນຕ່ຳ
-              ແລະ ເປີດບັນຊີງ່າຍ.
-            </p>
-
-            <p>
-              ມີ Bonus,
-              ຮອງຮັບ MT4/MT5
-              ແລະ ສາມາດເທຣດ Forex,
-              ຄຳ ແລະ Indices ໄດ້.
-            </p>
-
-            <p>
-              ເໝາະສຳລັບຄົນທີ່ຢາກເລີ່ມ Forex
-              ດ້ວຍທຶນນ້ອຍ.
-            </p>
-
-          </div>
-
+        <div className="rounded-2xl p-6 mb-4" style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)" }}>
+          <h2 className="font-black text-xl mb-3 text-orange-400">Market4you ດີບໍ?</h2>
+          <p className="text-gray-300 text-sm" style={{ lineHeight: "2" }}>Market4you ຝາກຂັ້ນຕໍ່າພຽງ $10 · ເປີດບັນຊີງ່າຍ · ມີ Bonus ສໍາລັບລູກຄ້າໃໝ່</p>
         </div>
-
-      </section>
-
-      {/* PROS CONS */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
-
-        <div className="grid md:grid-cols-2 gap-8">
-
-          <div className="bg-[#07151f] rounded-[40px] p-10 border border-green-500/20">
-
-            <h2 className="text-4xl font-black text-green-400 mb-10">
-              ຂໍ້ດີ
-            </h2>
-
-            <div className="space-y-6 text-xl text-gray-300 leading-10">
-              <p>✅ ຝາກເລີ່ມຕົ້ນຕ່ຳ</p>
-              <p>✅ ມີໂບນັດ</p>
-              <p>✅ ເໝາະສຳລັບມືໃໝ່</p>
-              <p>✅ ໃຊ້ MT4 / MT5 ໄດ້</p>
-              <p>✅ ເປີດບັນຊີງ່າຍ</p>
-            </div>
-
-          </div>
-
-          <div className="bg-[#1a0f14] rounded-[40px] p-10 border border-red-500/20">
-
-            <h2 className="text-4xl font-black text-red-400 mb-10">
-              ຂໍ້ເສຍ
-            </h2>
-
-            <div className="space-y-6 text-xl text-gray-300 leading-10">
-              <p>❌ Spread ບາງຄູ່ສູງ</p>
-              <p>❌ Execution ບໍ່ໄວເທົ່າ IUX</p>
-              <p>❌ ມືໃໝ່ຄວນຝຶກ demo ກ່ອນ</p>
-            </div>
-
-          </div>
-
+        <div className="rounded-2xl p-6 mb-6" style={{ background: "rgba(251,146,60,0.04)", border: "1px solid rgba(251,146,60,0.2)" }}>
+          <h2 className="font-black text-xl mb-4 text-orange-400">ຂໍ້ດີ Market4you</h2>
+          <ul className="space-y-2 text-gray-300 text-sm" style={{ lineHeight: "2" }}>
+            {["ຝາກຂັ້ນຕໍ່າພຽງ $10", "Cashback $3/Lot", "Spread 1.5 pip EURUSD", "Bonus ສໍາລັບລູກຄ້າໃໝ່", "ເປີດບັນຊີງ່າຍ ໄວ"].map(p => (
+              <li key={p} className="flex gap-2"><span className="text-orange-400">✅</span>{p}</li>
+            ))}
+          </ul>
         </div>
-
-      </section>
-
-      {/* CTA */}
-      <section className="max-w-7xl mx-auto px-6 pb-32">
-
-        <div className="relative overflow-hidden rounded-[50px] bg-gradient-to-r from-purple-500 to-pink-400 p-16 text-center">
-
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute left-0 top-0 w-96 h-96 bg-white blur-[140px]" />
-          </div>
-
-          <div className="relative z-10">
-
-            <h2 className="text-6xl font-black mb-8">
-              ເປີດບັນຊີ Market4You
-            </h2>
-
-            <p className="text-2xl leading-10 max-w-3xl mx-auto mb-12 text-white/90">
-              ສະໝັກຜ່ານລິ້ງນີ້
-              ເພື່ອຮັບ support ແລະ rebate
-              ສຳລັບຄົນລາວ
-            </p>
-
-            <a
-              href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj"
-              target="_blank"
-              className="bg-black hover:scale-105 transition inline-block text-white px-12 py-6 rounded-3xl text-2xl font-black"
-            >
-              ສະໝັກ Market4You →
-            </a>
-
-          </div>
-
-        </div>
-
-      </section>
-
+        <a href="https://account.markets4you.online/en/user-registration/?affid=bpblvtj" target="_blank"
+          className="block text-center py-4 rounded-2xl font-black text-black text-lg transition-all hover:scale-[1.02] mb-3"
+          style={{ background: "linear-gradient(135deg, #facc15, #f97316)" }}>
+          🚀 ສະໝັກເປີດບັນຊີ Market4you
+        </a>
+        <p className="text-center text-gray-600 text-xs">⚠️ Forex ມີຄວາມສ່ຽງສູງ · ລົງທຶນສະເພາະເງິນທີ່ຍອມສູນໄດ້</p>
+      </div>
     </main>
   );
 }
