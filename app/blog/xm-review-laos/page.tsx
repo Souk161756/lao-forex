@@ -21,8 +21,7 @@ export default function XMReviewLaos() {
         </div>
         <div className="flex items-center gap-4 mb-6">
           <img src="/brokers/xm.png" alt="XM" className="w-16 h-16 rounded-2xl object-contain"
-            style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }}
-            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+            style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)"  }} />
           <div>
             <h1 className="font-black text-3xl">ລີວິວ XM 2026</h1>
             <p className="text-gray-400 text-sm">ສໍາລັບຄົນລາວ</p>
