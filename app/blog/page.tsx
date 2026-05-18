@@ -1,102 +1,164 @@
 export default function BestForexBrokerLaos() {
-  return (
-    <main className="bg-black min-h-screen text-white px-6 py-16">
-      <div className="max-w-5xl mx-auto">
+  const brokers = [
+    {
+      icon: "🥇",
+      name: "XM ໂບກເກີ້",
+      desc: "ໂບກເກີ້ຍອດນິຍົມໃນລາວ · Bonus $30 ຟຣີ · Support ດີ · ຝາກ-ຖອນ BCEL ໄດ້",
+      tag: "ແນະນໍາ",
+      tagColor: "text-yellow-400 bg-yellow-400/10 border border-yellow-400/20",
+      border: "rgba(250,204,21,0.3)",
+      glow: "rgba(250,204,21,0.06)",
+      href: "/xm",
+    },
+    {
+      icon: "🥈",
+      name: "Exness",
+      desc: "ຖອນໄວ 24/7 · Leverage ສູງ 1:2000 · Spread ຕໍ່າ · ເໝາະສໍາລັບ Scalping",
+      tag: "ຖອນໄວ",
+      tagColor: "text-blue-400 bg-blue-400/10 border border-blue-400/20",
+      border: "rgba(148,163,184,0.3)",
+      glow: "rgba(148,163,184,0.06)",
+      href: "/exness",
+    },
+    {
+      icon: "🥉",
+      name: "Vantage",
+      desc: "Cashback ສູງສຸດ $4/Lot · ຖອນໄວ · Regulated ASIC, FCA",
+      tag: "Cashback ສູງ",
+      tagColor: "text-orange-400 bg-orange-400/10 border border-orange-400/20",
+      border: "rgba(251,146,60,0.3)",
+      glow: "rgba(251,146,60,0.06)",
+      href: "/vantage",
+    },
+    {
+      icon: "💎",
+      name: "IUX",
+      desc: "Spread ຕໍ່ານ 0.9pip · UI ທັນສະໄໝ · Leverage 1:3000 · Bonus ດີ",
+      tag: "Spread ຕໍ່າ",
+      tagColor: "text-pink-400 bg-pink-400/10 border border-pink-400/20",
+      border: "rgba(244,114,182,0.3)",
+      glow: "rgba(244,114,182,0.06)",
+      href: "/iux",
+    },
+    {
+      icon: "✅",
+      name: "HFM",
+      desc: "ໂບກເກີ້ທີ່ໜ້າເຊື່ອຖື · License ຫຼາຍ · Regulated FCA, CySEC",
+      tag: "Regulated",
+      tagColor: "text-cyan-400 bg-cyan-400/10 border border-cyan-400/20",
+      border: "rgba(34,211,238,0.3)",
+      glow: "rgba(34,211,238,0.06)",
+      href: "/hfm",
+    },
+    {
+      icon: "🎁",
+      name: "Market4you",
+      desc: "ຝາກຕໍ່າ $10 · ເໝາະສໍາລັບມືໃໝ່ · Bonus ສໍາລັບລູກຄ້າໃໝ່",
+      tag: "ຝາກຕໍ່າ $10",
+      tagColor: "text-green-400 bg-green-400/10 border border-green-400/20",
+      border: "rgba(74,222,128,0.3)",
+      glow: "rgba(74,222,128,0.06)",
+      href: "/market4you",
+    },
+  ];
 
-        <div className="mb-10">
-          <span className="bg-yellow-400 text-black px-4 py-2 rounded-full font-black">
-            🔥 ໂບກເກີ້ Forex ລາວ
-          </span>
+  return (
+    <main
+      className="min-h-screen text-white px-5 py-16"
+      style={{ background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}
+    >
+      <div className="max-w-3xl mx-auto">
+
+        {/* BACK */}
+        <a href="/" className="inline-flex items-center gap-2 text-gray-500 text-sm mb-8 hover:text-yellow-400 transition-colors">
+          ← ກັບໜ້າຫຼັກ
+        </a>
+
+        {/* BADGE */}
+        <div
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-6"
+          style={{ background: "rgba(250,204,21,0.08)", border: "1px solid rgba(250,204,21,0.2)", color: "#facc15" }}
+        >
+          🔥 ໂບກເກີ້ Forex ລາວ
         </div>
 
-        <h1 className="text-6xl font-black leading-tight mb-8">
+        {/* TITLE */}
+        <h1 className="font-black leading-tight mb-4" style={{ fontSize: "clamp(1.8rem, 6vw, 3rem)" }}>
           ໂບກເກີ້ Forex ທີ່ດີສຸດໃນລາວ 2026
         </h1>
-
-        <p className="text-gray-400 text-xl leading-9 mb-14">
-          ລວມໂບກເກີ້ Forex ທີ່ດີສຸດໃນລາວ · Spread ຕໍ່າ · ຖອນໄວ · Cashback ສູງ
+        <p className="text-gray-400 text-base mb-10" style={{ lineHeight: "2" }}>
+          ທົດສອບຈິງ · ຝາກ-ຖອນ BCEL · ກວດ Spread · Support ພາສາລາວ
         </p>
 
-        <div className="space-y-10">
-
-          {/* GUIDE */}
-          <div className="bg-[#0f172a] border border-blue-400 rounded-3xl p-8">
-            <h2 className="text-4xl font-black mb-6">📚 ວິທີເລີ່ມຕົ້ນ Forex</h2>
-            <p className="text-gray-400 leading-8 mb-8">
-              ຄູ່ມືຄົບ · ຕັ້ງແຕ່ Forex ແມ່ນຫຍັງ · ຄໍາສັບພື້ນຖານ · ຂັ້ນຕອນເລີ່ມຕົ້ນ · Tips ສໍາລັບມືໃໝ່
-            </p>
-            <a href="/blog/how-to-start-forex-laos" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
-              📖 ອ່ານຄູ່ມື Forex
-            </a>
+        {/* GUIDE CARD */}
+        <div
+          className="rounded-2xl p-6 mb-8"
+          style={{ background: "rgba(59,130,246,0.06)", border: "1px solid rgba(59,130,246,0.25)" }}
+        >
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-2xl">📚</span>
+            <h2 className="font-black text-lg">ຮຽນ Forex ຟຣີ — ຄູ່ມື 4 ພາກ 20 ບົດ</h2>
           </div>
-
-          {/* XM */}
-          <div className="bg-[#0f172a] border border-yellow-400 rounded-3xl p-8">
-            <h2 className="text-4xl font-black mb-6">🏆 XM ໂບກເກີ້</h2>
-            <p className="text-gray-400 leading-8 mb-8">
-              XM ເປັນໂບກເກີ້ຍອດນິຍົມໃນລາວ · Support ດີ · ຝາກ-ຖອນ BCEL ໄດ້
-            </p>
-            <a href="/xm" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
-              📖 ອ່ານລີວິວ XM
-            </a>
-          </div>
-
-          {/* EXNESS */}
-          <div className="bg-[#0f172a] border border-blue-400 rounded-3xl p-8">
-            <h2 className="text-4xl font-black mb-6">⚡ Exness</h2>
-            <p className="text-gray-400 leading-8 mb-8">
-              Exness ເໝາະສໍາລັບ Scalping · ຖອນເງິນໄວ 24/7 · Leverage ສູງ
-            </p>
-            <a href="/exness" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
-              📖 ອ່ານລີວິວ Exness
-            </a>
-          </div>
-
-          {/* VANTAGE */}
-          <div className="bg-[#0f172a] border border-green-400 rounded-3xl p-8">
-            <h2 className="text-4xl font-black mb-6">🚀 Vantage</h2>
-            <p className="text-gray-400 leading-8 mb-8">
-              Vantage ມີ Cashback ດີທີ່ສຸດ $4/Lot · ຖອນໄວ · Regulated
-            </p>
-            <a href="/vantage" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
-              📖 ອ່ານລີວິວ Vantage
-            </a>
-          </div>
-
-          {/* IUX */}
-          <div className="bg-[#0f172a] border border-pink-400 rounded-3xl p-8">
-            <h2 className="text-4xl font-black mb-6">💎 IUX</h2>
-            <p className="text-gray-400 leading-8 mb-8">
-              IUX ມີ Spread ຕໍ່ານ 0.9pip · Bonus ດີ · UI ທັນສະໄໝ
-            </p>
-            <a href="/iux" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
-              📖 ອ່ານລີວິວ IUX
-            </a>
-          </div>
-
-          {/* MARKET4YOU */}
-          <div className="bg-[#0f172a] border border-orange-400 rounded-3xl p-8">
-            <h2 className="text-4xl font-black mb-6">🎁 Market4you</h2>
-            <p className="text-gray-400 leading-8 mb-8">
-              Market4you ເໝາະສໍາລັບມືໃໝ່ · ຝາກຕໍ່າ $10 · Bonus ດີ
-            </p>
-            <a href="/market4you" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
-              📖 ອ່ານລີວິວ Market4you
-            </a>
-          </div>
-
-          {/* HFM */}
-          <div className="bg-[#0f172a] border border-cyan-400 rounded-3xl p-8">
-            <h2 className="text-4xl font-black mb-6">✅ HFM</h2>
-            <p className="text-gray-400 leading-8 mb-8">
-              HFM ເປັນໂບກເກີ້ທີ່ໜ້າເຊື່ອຖື · ມີ License ຫຼາຍ · Regulated
-            </p>
-            <a href="/hfm" className="block bg-yellow-400 hover:bg-yellow-300 transition text-black py-4 rounded-2xl text-center font-black text-xl">
-              📖 ອ່ານລີວິວ HFM
-            </a>
-          </div>
-
+          <p className="text-gray-400 text-sm mb-4" style={{ lineHeight: "1.8" }}>
+            ຕັ້ງແຕ່ Forex ແມ່ນຫຍັງ · ຄໍາສັບພື້ນຖານ · ຂັ້ນຕອນເລີ່ມຕົ້ນ · Tips ສໍາລັບມືໃໝ່
+          </p>
+          <a
+            href="/blog/how-to-start-forex-laos"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-black text-sm text-black transition-all hover:scale-[1.02]"
+            style={{ background: "linear-gradient(135deg, #facc15, #f97316)" }}
+          >
+            📖 ອ່ານຄູ່ມື Forex
+          </a>
         </div>
+
+        {/* SECTION TITLE */}
+        <div className="mb-4">
+          <p className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-1">ລີວິວ BROKER</p>
+          <h2 className="text-xl font-black">ໂບກເກີ້ແນະນໍາ</h2>
+        </div>
+
+        {/* BROKER LIST */}
+        <div className="space-y-3">
+          {brokers.map((broker) => (
+            <a
+              key={broker.name}
+              href={broker.href}
+              className="flex items-center gap-4 p-5 rounded-2xl transition-all hover:-translate-y-0.5 block"
+              style={{
+                background: `rgba(255,255,255,0.02)`,
+                border: `1px solid ${broker.border}`,
+                boxShadow: `0 4px 20px ${broker.glow}`,
+                textDecoration: "none",
+              }}
+            >
+              {/* Icon */}
+              <div className="text-3xl flex-shrink-0">{broker.icon}</div>
+
+              {/* Info */}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <span className="font-black text-white">{broker.name}</span>
+                  <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${broker.tagColor}`}>
+                    {broker.tag}
+                  </span>
+                </div>
+                <p className="text-gray-400 text-xs" style={{ lineHeight: "1.6" }}>{broker.desc}</p>
+              </div>
+
+              {/* Arrow */}
+              <div className="text-gray-600 text-xl flex-shrink-0">›</div>
+            </a>
+          ))}
+        </div>
+
+        {/* DISCLAIMER */}
+        <div
+          className="mt-10 rounded-xl p-5 text-xs text-gray-500"
+          style={{ background: "rgba(239,68,68,0.04)", border: "1px solid rgba(239,68,68,0.12)" }}
+        >
+          ⚠️ Forex ມີຄວາມສ່ຽງສູງ · ລົງທຶນສະເພາະເງິນທີ່ຍອມສູນໄດ້ · ລີວິວຈາກທາງໃຊ້ງານຈິງ
+        </div>
+
       </div>
     </main>
   );
