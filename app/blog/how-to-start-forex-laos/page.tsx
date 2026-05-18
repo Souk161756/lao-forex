@@ -116,10 +116,11 @@ export default function HowToStartForexLaos() {
               {/* Lessons */}
               <div className="space-y-2">
                 {chapter.lessons.map((lesson) => (
-                  <div
+                  <a
                     key={lesson.num}
-                    className="flex items-center gap-4 px-5 py-4 rounded-xl transition-all hover:bg-white/5 cursor-pointer"
-                    style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}
+                    href={`/blog/how-to-start-forex-laos/${lesson.num}`}
+                    className="flex items-center gap-4 px-5 py-4 rounded-xl transition-all hover:-translate-y-0.5 hover:bg-white/5"
+                    style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", display: "flex", textDecoration: "none" }}
                   >
                     {/* Number */}
                     <div
@@ -138,9 +139,9 @@ export default function HowToStartForexLaos() {
                     <div className="flex items-center gap-1.5 text-gray-500 text-xs flex-shrink-0">
                       <span>🕐</span>
                       <span>{lesson.time}</span>
-                      <span className="text-gray-600 ml-1 text-base">›</span>
+                      <span className="text-gray-400 ml-1 text-base">›</span>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>
