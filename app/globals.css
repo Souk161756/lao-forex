@@ -1,32 +1,13 @@
-@font-face {
-  font-family: 'AliceLao';
-  src: url('/fonts/ALICE_3.TTF');
-}
-
-*{
-  font-family:'AliceLao',sans-serif;
-}
-
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@400;700;900&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #07080f;
+  --foreground: #ffffff;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: 'Noto Serif Lao', serif;
 }
