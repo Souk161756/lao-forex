@@ -170,7 +170,7 @@ export default function Home() {
             <a href="/reviews" className="hover:text-yellow-400 transition-colors">ລີວິວ</a>
             <a href="/blog/how-to-start-forex-laos" className="hover:text-yellow-400 transition-colors">ບົດຄວາມ</a>
             <a href="#brokers" className="hover:text-yellow-400 transition-colors">ໂບກເກີ້</a>
-            <a href="https://wa.me/your-number" target="_blank"
+            <a href="https://wa.me/8562029826898" target="_blank"
               className="flex items-center gap-1.5 text-white px-3 py-2 rounded-full text-xs font-bold hover:opacity-90 transition"
               style={{ background: "#25D366" }}>
               💬 WhatsApp
@@ -183,7 +183,7 @@ export default function Home() {
           </div>
           {/* Mobile menu */}
           <div className="md:hidden flex items-center gap-2">
-            <a href="https://wa.me/your-number" target="_blank"
+            <a href="https://wa.me/8562029826898" target="_blank"
               className="w-9 h-9 rounded-full flex items-center justify-center text-sm"
               style={{ background: "#25D366" }}>💬</a>
             <a href="https://t.me/laoforex" target="_blank"
@@ -227,7 +227,7 @@ export default function Home() {
           </div>
           {/* Contact buttons */}
           <div className="flex items-center justify-center gap-3 flex-wrap">
-            <a href="https://wa.me/your-number" target="_blank"
+            <a href="https://wa.me/8562029826898" target="_blank"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-sm text-white transition-all hover:scale-105"
               style={{ background: "#25D366", boxShadow: "0 8px 24px rgba(37,211,102,0.3)" }}>
               💬 ຕິດຕໍ່ WhatsApp
@@ -479,7 +479,7 @@ export default function Home() {
             ທີມງານລາວ · ຕອບ 24/7 · ຟຣີ · ບໍ່ມີຄ່າໃຊ້ຈ່າຍ
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <a href="https://wa.me/your-number" target="_blank"
+            <a href="https://wa.me/8562029826898" target="_blank"
               className="flex items-center gap-2 px-7 py-3.5 rounded-xl font-black text-white transition-all hover:scale-105"
               style={{ background: "#25D366", boxShadow: "0 8px 32px rgba(37,211,102,0.3)" }}>
               💬 WhatsApp
@@ -516,7 +516,7 @@ export default function Home() {
                 ລວມ Forex Brokers · Cashback Rebate · ລີວິວສໍາລັບຄົນລາວ 🇱🇦
               </p>
               <div className="flex gap-3">
-                <a href="https://wa.me/your-number" target="_blank"
+                <a href="https://wa.me/8562029826898" target="_blank"
                   className="w-9 h-9 rounded-xl flex items-center justify-center text-sm hover:scale-110 transition"
                   style={{ background: "#25D366" }}>💬</a>
                 <a href="https://t.me/laoforex" target="_blank"
@@ -553,7 +553,7 @@ export default function Home() {
 
       {/* ── FLOATING BUTTONS ── */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-        <a href="https://wa.me/02029826898" target="_blank"
+        <a href="https://wa.me/8562029826898" target="_blank"
           className="w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition-all hover:scale-110"
           style={{ background: "#25D366", boxShadow: "0 8px 32px rgba(37,211,102,0.4)" }}
           title="WhatsApp">
