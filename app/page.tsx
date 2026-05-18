@@ -1,9 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [search, setSearch] = useState("");
+  const [news, setNews] = useState([
+    { tag: "ຂ່າວ", title: "XAUUSD ທອງຄໍາຂຶ້ນສູງ $2,400 ຫຼັງ Fed ສົ່ງສັນຍານ", time: "2 ຊມ ກ່ອນ", color: "#facc15" },
+    { tag: "ວິເຄາະ", title: "EUR/USD ດ້ານ 1.0850 — ລໍຖ້າຂໍ້ມູນ CPI ສະຫະລັດ", time: "4 ຊມ ກ່ອນ", color: "#60a5fa" },
+    { tag: "ໂບກເກີ້", title: "XM ເພີ່ມ Bonus Promotion ພິເສດເດືອນນີ້", time: "6 ຊມ ກ່ອນ", color: "#fb923c" },
+    { tag: "ຄູ່ມື", title: "ວິທີຝາກເງິນ BCEL ເຂົ້າ Forex — ຄູ່ມືສໍາລັບຄົນລາວ", time: "1 ວັນ ກ່ອນ", color: "#4ade80" },
+  ]);
+
+  useEffect(() => {
+    fetch("/api/news")
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.items?.length > 0) {
+          setNews(data.items.map((item: { title: string; date: string }) => ({
+            tag: "Forex",
+            title: item.title,
+            time: item.date ? new Date(item.date).toLocaleDateString("lo-LA") : "",
+            color: "#facc15",
+          })));
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const brokers = [
     {
@@ -128,13 +150,6 @@ export default function Home() {
     },
   ];
 
-  const news = [
-    { tag: "ຂ່າວ", title: "XAUUSD ທອງຄໍາຂຶ້ນສູງ $2,400 ຫຼັງ Fed ສົ່ງສັນຍານ", time: "2 ຊມ ກ່ອນ", color: "#facc15" },
-    { tag: "ວິເຄາະ", title: "EUR/USD ດ້ານ 1.0850 — ລໍຖ້າຂໍ້ມູນ CPI ສະຫະລັດ", time: "4 ຊມ ກ່ອນ", color: "#60a5fa" },
-    { tag: "ໂບກເກີ້", title: "XM ເພີ່ມ Bonus Promotion ພິເສດເດືອນນີ້", time: "6 ຊມ ກ່ອນ", color: "#fb923c" },
-    { tag: "ຄູ່ມື", title: "ວິທີຝາກເງິນ BCEL ເຂົ້າ Forex — ຄູ່ມືສໍາລັບຄົນລາວ", time: "1 ວັນ ກ່ອນ", color: "#4ade80" },
-  ];
-
   const filtered = brokers.filter((b) =>
     b.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -181,7 +196,6 @@ export default function Home() {
               ✈️ Telegram
             </a>
           </div>
-          {/* Mobile menu */}
           <div className="md:hidden flex items-center gap-2">
             <a href="https://wa.me/8562029826898" target="_blank"
               className="w-9 h-9 rounded-full flex items-center justify-center text-sm"
@@ -225,7 +239,6 @@ export default function Home() {
               📚 ຮຽນ Forex
             </a>
           </div>
-          {/* Contact buttons */}
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <a href="https://wa.me/8562029826898" target="_blank"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-sm text-white transition-all hover:scale-105"
@@ -313,7 +326,6 @@ export default function Home() {
                 border: `1px solid ${broker.borderColor}`,
                 boxShadow: `0 8px 40px ${broker.glowColor}`,
               }}>
-              {/* TOP */}
               <div className="flex items-center justify-between mb-5 flex-wrap gap-3">
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl overflow-hidden flex items-center justify-center flex-shrink-0"
@@ -336,8 +348,6 @@ export default function Home() {
                   {broker.badge}
                 </div>
               </div>
-
-              {/* STATS */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
                 {[
                   { label: "ຝາກຕໍ່າ", value: broker.deposit, sub: "ທະນາຄານລາວ" },
@@ -353,16 +363,12 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-
-              {/* BCEL badge */}
               <div className="flex items-center gap-2 mb-5 text-xs text-green-400">
                 <span>✓</span><span>ຝາກ-ຖອນ BCEL ທະນາຄານລາວໄດ້</span>
               </div>
-
-              {/* BUTTONS */}
               <div className="flex gap-3">
                 <a href={broker.link} target="_blank"
-                  className="flex-1 py-3.5 rounded-xl font-black text-sm text-center text-black transition-all hover:scale-[1.02] hover:opacity-95"
+                  className="flex-1 py-3.5 rounded-xl font-black text-sm text-center text-black transition-all hover:scale-[1.02]"
                   style={{ background: "linear-gradient(135deg, #facc15, #f97316)" }}>
                   ສະໝັກເປີດບັນຊີ →
                 </a>
@@ -454,7 +460,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-4">
           {[
-            { title: "Forex ແມ່ນຫຍັງ?", desc: "ຮຽນພື້ນຖານ Forex ສໍາລັບຜູ້ເລີ່ມຕົ້ນ · ຄໍາສັບ · ຂັ້ນຕອນ · Tips", href: "/blog/how-to-start-forex-laos", color: "from-blue-400/20" },
+            { title: "Forex ແມ່ນຫຍັງ?", desc: "ຮຽນພື້ນຖານ Forex · ຄໍາສັບ · ຂັ້ນຕອນ · Tips", href: "/blog/how-to-start-forex-laos", color: "from-blue-400/20" },
             { title: "ໂບກເກີ້ Forex ທີ່ດີໃນລາວ", desc: "ປຽບທຽບໂບກເກີ້ ຝາກ-ຖອນ BCEL ໄດ້ · ທົດສອບຈິງ", href: "/blog", color: "from-yellow-400/20" },
             { title: "ລີວິວ Exness ສໍາລັບຄົນລາວ", desc: "ລີວິວ Exness ແບບລະອຽດ ທົດສອບຈິງ ໂດຍທີມລາວ", href: "/exness", color: "from-green-400/20" },
           ].map((p) => (
@@ -556,15 +562,11 @@ export default function Home() {
         <a href="https://wa.me/8562029826898" target="_blank"
           className="w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition-all hover:scale-110"
           style={{ background: "#25D366", boxShadow: "0 8px 32px rgba(37,211,102,0.4)" }}
-          title="WhatsApp">
-          💬
-        </a>
+          title="WhatsApp">💬</a>
         <a href="https://t.me/laoforex" target="_blank"
           className="w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition-all hover:scale-110"
           style={{ background: "#229ED9", boxShadow: "0 8px 32px rgba(34,158,217,0.4)" }}
-          title="Telegram">
-          ✈️
-        </a>
+          title="Telegram">✈️</a>
       </div>
 
     </main>
