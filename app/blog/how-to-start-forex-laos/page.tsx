@@ -1,155 +1,165 @@
 export default function HowToStartForexLaos() {
+  const chapters = [
+    {
+      title: "ພາກທີ 1: ພື້ນຖານ Forex",
+      color: "text-blue-400",
+      bg: "rgba(59,130,246,0.08)",
+      border: "rgba(59,130,246,0.25)",
+      lessons: [
+        { num: 1, title: "Forex ແມ່ນຫຍັງ? ຕະຫຼາດເງິນຕາໂລກ", time: "4 ນທ" },
+        { num: 2, title: "Pip, Lot, Spread ແມ່ນຫຍັງ? ຄໍາສັບທີ່ Trader ຕ້ອງຮູ້", time: "4 ນທ" },
+        { num: 3, title: "Leverage ແມ່ນຫຍັງ? ໃຊ້ແນວໃດໃຫ້ປອດໄພ", time: "4 ນທ" },
+        { num: 4, title: "Timeframe ໃດດີ? M5, H1, D1 ຕ່າງກັນແນວໃດ", time: "4 ນທ" },
+        { num: 5, title: "ໂບກເກີ້ Forex ແມ່ນຫຍັງ? ເລືອກແນວໃດ", time: "5 ນທ" },
+      ],
+    },
+    {
+      title: "ພາກທີ 2: ການວິເຄາະຕະຫຼາດ",
+      color: "text-yellow-400",
+      bg: "rgba(250,204,21,0.08)",
+      border: "rgba(250,204,21,0.25)",
+      lessons: [
+        { num: 6, title: "Candlestick ແມ່ນຫຍັງ? ອ່ານກຣາຟເບື້ອງຕົ້ນ", time: "5 ນທ" },
+        { num: 7, title: "Support & Resistance ຄືຫຍັງ? ໃຊ້ແນວໃດ", time: "5 ນທ" },
+        { num: 8, title: "Trend ແມ່ນຫຍັງ? ເທຣດຕາມ Trend ໄດ້ກໍາໄລກວ່າ", time: "5 ນທ" },
+        { num: 9, title: "Market Structure: Higher High, Lower Low ອ່ານ Trend ຢ່າງມີອາຊີບ", time: "5 ນທ" },
+        { num: 10, title: "Indicator ທີ່ຄວນຮູ້: RSI, MACD, MA", time: "5 ນທ" },
+      ],
+    },
+    {
+      title: "ພາກທີ 3: ການຄຸ້ມຄອງເງິນ",
+      color: "text-green-400",
+      bg: "rgba(74,222,128,0.08)",
+      border: "rgba(74,222,128,0.25)",
+      lessons: [
+        { num: 11, title: "Risk Management ແມ່ນຫຍັງ? ສໍາຄັນສໍ່າໃດ", time: "5 ນທ" },
+        { num: 12, title: "Stop Loss & Take Profit ຕັ້ງຢ່າງຖືກຕ້ອງ", time: "5 ນທ" },
+        { num: 13, title: "Money Management Plan: ວາງແຜນທຶນ Forex ຢ່າງມີອາຊີບ", time: "5 ນທ" },
+        { num: 14, title: "Drawdown ແມ່ນຫຍັງ? ຈະຟື້ນຕົວຈາກ Drawdown ໄດ້ແນວໃດ", time: "5 ນທ" },
+        { num: 15, title: "Position Sizing: ໃຊ້ Lot ຂະໜາດໃດໃຫ້ເໝາະ", time: "4 ນທ" },
+      ],
+    },
+    {
+      title: "ພາກທີ 4: ເລີ່ມເທຣດຈິງ",
+      color: "text-orange-400",
+      bg: "rgba(251,146,60,0.08)",
+      border: "rgba(251,146,60,0.25)",
+      lessons: [
+        { num: 16, title: "ເລືອກໂບກເກີ້ ແລະ ເປີດບັນຊີ Demo ຄັ້ງທຳອິດ", time: "4 ນທ" },
+        { num: 17, title: "ຝາກເງິນ BCEL ເຂົ້າ Forex ໄດ້ແນວໃດ?", time: "4 ນທ" },
+        { num: 18, title: "ວິທີເທຣດ EURUSD ຄັ້ງທຳອິດ ທີ່ຄວນຮູ້", time: "5 ນທ" },
+        { num: 19, title: "Backtesting ແມ່ນຫຍັງ? ທົດສອບ Strategy ກ່ອນໃຊ້ຈິງ", time: "5 ນທ" },
+        { num: 20, title: "Trading Journal: ຈົດບັນທຶກ Trade ເພື່ອປັບປຸງຕົວເອງ", time: "4 ນທ" },
+      ],
+    },
+  ];
+
   return (
-    <main className="bg-black text-white min-h-screen px-6 py-20">
-      <div className="max-w-5xl mx-auto">
+    <main
+      className="min-h-screen text-white px-5 py-16"
+      style={{
+        background: "#07080f",
+        fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif",
+      }}
+    >
+      <div className="max-w-3xl mx-auto">
+
+        {/* BACK */}
+        <a href="/" className="inline-flex items-center gap-2 text-gray-500 text-sm mb-8 hover:text-yellow-400 transition-colors">
+          ← ກັບໜ້າຫຼັກ
+        </a>
 
         {/* BADGE */}
-        <div className="bg-blue-400/20 text-blue-400 inline-block px-5 py-2 rounded-full text-sm font-black mb-8">
+        <div
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-6"
+          style={{ background: "rgba(250,204,21,0.08)", border: "1px solid rgba(250,204,21,0.2)", color: "#facc15" }}
+        >
           📚 ຄູ່ມື FOREX ສໍາລັບຄົນລາວ
         </div>
 
         {/* TITLE */}
-        <h1 className="text-6xl font-black mb-6 leading-tight">
+        <h1 className="font-black leading-tight mb-4" style={{ fontSize: "clamp(2rem, 6vw, 3rem)" }}>
           ວິທີເລີ່ມຕົ້ນ Forex ໃນລາວ
         </h1>
-
-        <p className="text-gray-300 text-xl leading-10 mb-14">
-          ຄູ່ມືຄົບຈົບໃນໜ້າດຽວ · ຕັ້ງແຕ່ Forex ແມ່ນຫຍັງ ຈົນເຖິງ ເລີ່ມເທຣດຈິງ ·
-          ສໍາລັບຄົນລາວໂດຍສະເພາະ
+        <p className="text-gray-400 text-base mb-10" style={{ lineHeight: "2" }}>
+          ຄູ່ມືຄົບ 4 ພາກ 20 ບົດ · ຕັ້ງແຕ່ Forex ແມ່ນຫຍັງ ຈົນເຖິງ ເລີ່ມເທຣດຈິງ · ສໍາລັບຄົນລາວໂດຍສະເພາະ
         </p>
 
-        {/* SECTION 1 */}
-        <div className="bg-[#0f172a] border border-blue-400/30 rounded-3xl p-10 mb-8">
-          <h2 className="text-4xl font-black mb-6 text-blue-400">
-            📖 ບົດທີ 1 — Forex ແມ່ນຫຍັງ?
-          </h2>
-          <div className="text-gray-300 leading-10 text-lg space-y-4">
-            <p>
-              Forex ຫຼື Foreign Exchange ແມ່ນຕະຫຼາດແລກປ່ຽນເງິນຕາທີ່ໃຫຍ່ທີ່ສຸດໃນໂລກ
-              ມີການຊື້ຂາຍກວ່າ <span className="text-yellow-400 font-black">$7 ຕື້ຕໍ່ວັນ</span>
-            </p>
-            <p>
-              ຕົວຢ່າງ: ເຈົ້າຄິດວ່າ USD ຈະແຂງກວ່າ EUR ກໍ່ຂາຍ EUR/USD ·
-              ຖ້າຖືກ ເຈົ້າໄດ້ກໍາໄລ
-            </p>
-            <p>
-              ຕະຫຼາດ Forex ເປີດ <span className="text-yellow-400 font-black">24 ຊົ່ວໂມງ · 5 ວັນຕໍ່ອາທິດ</span> ·
-              ເທຣດໄດ້ຈາກທຸກທີ່ທີ່ມີ Internet
-            </p>
-          </div>
+        {/* STATS */}
+        <div className="grid grid-cols-3 gap-3 mb-10">
+          {[
+            { num: "4", label: "ພາກ" },
+            { num: "20", label: "ບົດ" },
+            { num: "100%", label: "ຟຣີ" },
+          ].map((s) => (
+            <div key={s.num} className="rounded-xl p-4 text-center"
+              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
+              <div className="text-2xl font-black text-yellow-400">{s.num}</div>
+              <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+            </div>
+          ))}
         </div>
 
-        {/* SECTION 2 */}
-        <div className="bg-[#0f172a] border border-yellow-400/30 rounded-3xl p-10 mb-8">
-          <h2 className="text-4xl font-black mb-6 text-yellow-400">
-            💱 ບົດທີ 2 — ຄໍາສັບພື້ນຖານ
-          </h2>
-          <div className="space-y-5 text-gray-300 text-lg leading-10">
-            {[
-              { term: "Pip", desc: "ໜ່ວຍການເຄື່ອນໄຫວຂອງລາຄາ · ເຊັ່ນ EURUSD ຂຶ້ນ 0.0001 = 1 Pip" },
-              { term: "Lot", desc: "ໜ່ວຍການຊື້ຂາຍ · 1 Lot = 100,000 ໜ່ວຍ · ມືໃໝ່ໃຊ້ 0.01 Lot (Micro)" },
-              { term: "Spread", desc: "ສ່ວນຕ່າງລາຄາຊື້-ຂາຍ · Spread ຕໍ່າ = ປະຢັດຄ່າໃຊ້ຈ່າຍ" },
-              { term: "Leverage", desc: "ການຍືມເງິນເທຣດ · 1:1000 ໝາຍຄວາມວ່າ $1 ຄວບຄຸມ $1,000" },
-              { term: "Stop Loss", desc: "ລະດັບຢຸດຂາດທຶນ · ສໍາຄັນຫຼາຍ ຕ້ອງຕັ້ງທຸກຄັ້ງ" },
-              { term: "Take Profit", desc: "ລະດັບທໍາກໍາໄລ · ຕັ້ງໄວ້ໃຫ້ລະບົບປິດ Order ໃຫ້ອັດຕະໂນມັດ" },
-              { term: "Margin", desc: "ເງິນຄໍ້າປະກັນ · ຕ້ອງມີໃນ Account ພໍກັບ Leverage ທີ່ໃຊ້" },
-            ].map((item) => (
-              <div key={item.term} className="flex gap-4 flex-wrap">
-                <span className="text-yellow-400 font-black min-w-[120px]">{item.term}</span>
-                <span className="flex-1">{item.desc}</span>
+        {/* CHAPTERS */}
+        <div className="space-y-8">
+          {chapters.map((chapter) => (
+            <div key={chapter.title}>
+              {/* Chapter Header */}
+              <div
+                className="flex items-center justify-between px-5 py-4 rounded-2xl mb-3"
+                style={{ background: chapter.bg, border: `1px solid ${chapter.border}` }}
+              >
+                <span className={`font-black text-base ${chapter.color}`}>{chapter.title}</span>
+                <span className="text-gray-500 text-sm">{chapter.lessons.length} ບົດ</span>
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* SECTION 3 */}
-        <div className="bg-[#0f172a] border border-green-400/30 rounded-3xl p-10 mb-8">
-          <h2 className="text-4xl font-black mb-6 text-green-400">
-            🏦 ບົດທີ 3 — ເລືອກໂບກເກີ້ແນວໃດ?
-          </h2>
-          <div className="text-gray-300 text-lg leading-10 space-y-3">
-            <p>ໂບກເກີ້ຄືຕົວກາງລະຫວ່າງເຈົ້າກັບຕະຫຼາດ Forex · ຕ້ອງເລືອກຢ່າງລະມັດລະວັງ</p>
-            {[
-              { icon: "✅", text: "Regulated — ໄດ້ຮັບໃບອະນຸຍາດຈາກ FCA, ASIC, CySEC" },
-              { icon: "✅", text: "ຝາກ-ຖອນ BCEL ໄດ້ — ສໍາຄັນຫຼາຍສໍາລັບຄົນລາວ" },
-              { icon: "✅", text: "Spread ຕໍ່າ — ຊ່ວຍຫຼຸດຕົ້ນທຶນການເທຣດ" },
-              { icon: "✅", text: "Support ພາສາລາວ ຫຼື ໄທ — ສື່ສານງ່າຍ" },
-              { icon: "✅", text: "ຖອນໄວ — ບໍ່ຕ້ອງລໍຖ້ານານ" },
-              { icon: "❌", text: "ຫຼີກລ້ຽງໂບກເກີ້ທີ່ບໍ່ມີ License · Scam ຫຼາຍ" },
-            ].map((item) => (
-              <div key={item.text} className="flex gap-3">
-                <span>{item.icon}</span>
-                <span>{item.text}</span>
+              {/* Lessons */}
+              <div className="space-y-2">
+                {chapter.lessons.map((lesson) => (
+                  <div
+                    key={lesson.num}
+                    className="flex items-center gap-4 px-5 py-4 rounded-xl transition-all hover:bg-white/5 cursor-pointer"
+                    style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}
+                  >
+                    {/* Number */}
+                    <div
+                      className="w-9 h-9 rounded-xl flex items-center justify-center font-black text-sm flex-shrink-0 text-gray-400"
+                      style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)" }}
+                    >
+                      {lesson.num}
+                    </div>
+
+                    {/* Title */}
+                    <div className="flex-1 text-sm font-bold leading-snug text-gray-200">
+                      {lesson.title}
+                    </div>
+
+                    {/* Time + Arrow */}
+                    <div className="flex items-center gap-1.5 text-gray-500 text-xs flex-shrink-0">
+                      <span>🕐</span>
+                      <span>{lesson.time}</span>
+                      <span className="text-gray-600 ml-1 text-base">›</span>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* SECTION 4 */}
-        <div className="bg-[#0f172a] border border-purple-400/30 rounded-3xl p-10 mb-8">
-          <h2 className="text-4xl font-black mb-8 text-purple-400">
-            🚀 ບົດທີ 4 — ຂັ້ນຕອນເລີ່ມຕົ້ນ
-          </h2>
-          <div className="space-y-8">
-            {[
-              { step: "01", title: "ເລືອກໂບກເກີ້", desc: "ເລືອກໂບກເກີ້ທີ່ Regulated ແລະ ຮັບ BCEL · ແນະນໍາ XM ຫຼື Exness ສໍາລັບມືໃໝ່" },
-              { step: "02", title: "ເປີດບັນຊີ Demo", desc: "ຝຶກເທຣດດ້ວຍເງິນທົດລອງກ່ອນ · ບໍ່ມີຄວາມສ່ຽງ · ຝຶກຈົນໝັ້ນໃຈ ຢ່າງໜ້ອຍ 1 ເດືອນ" },
-              { step: "03", title: "ຮຽນພື້ນຖານ", desc: "ຮຽນ Chart, Candlestick, Support & Resistance · ບໍ່ຕ້ອງຮຽນທຸກຢ່າງ ຮຽນທີ່ຈໍາເປັນກ່ອນ" },
-              { step: "04", title: "ຝາກເງິນຈິງ", desc: "ຝາກຜ່ານ BCEL ຫຼື ທະນາຄານລາວ · ເລີ່ມດ້ວຍ $30-$50 ກ່ອນ · ຢ່າໃສ່ຫຼາຍໃນທີ" },
-              { step: "05", title: "ເທຣດ Lot ນ້ອຍ", desc: "ເລີ່ມດ້ວຍ 0.01 Lot · ຕັ້ງ Stop Loss ທຸກຄັ້ງ · ບໍ່ Oversize ບໍ່ວ່າຈະໝັ້ນໃຈສໍ່າໃດ" },
-              { step: "06", title: "ທົບທວນ ແລະ ປັບປຸງ", desc: "ບັນທຶກທຸກ Trade · ຮຽນຈາກຄວາມຜິດພາດ · ປັບ Strategy ຕໍ່ເນື່ອງທຸກເດືອນ" },
-            ].map((item) => (
-              <div key={item.step} className="flex gap-6 items-start">
-                <div className="text-5xl font-black text-yellow-400 min-w-[70px]">{item.step}</div>
-                <div>
-                  <div className="font-black text-xl mb-2">{item.title}</div>
-                  <div className="text-gray-400 leading-8">{item.desc}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* SECTION 5 */}
-        <div className="bg-[#0f172a] border border-red-400/30 rounded-3xl p-10 mb-8">
-          <h2 className="text-4xl font-black mb-6 text-red-400">
-            ⚠️ ບົດທີ 5 — ຄວາມສ່ຽງທີ່ຕ້ອງຮູ້
-          </h2>
-          <div className="text-gray-300 text-lg leading-10 space-y-3">
-            <p>❌ ຢ່າໃຊ້ Leverage ສູງໂດຍບໍ່ຮູ້ຈັກ — ອາດສູນເສຍທຸກຢ່າງໃນ 1 Trade</p>
-            <p>❌ ຢ່າ Oversize — ໃຊ້ Lot ໃຫຍ່ເກີນ Capital</p>
-            <p>❌ ຢ່າເທຣດດ້ວຍຄວາມໂລບ — ຕ້ອງ ມີ Plan ຊັດເຈນ</p>
-            <p>❌ ຢ່າໃສ່ເງິນທີ່ຕ້ອງການໃຊ້ — ໃສ່ສະເພາະເງິນທີ່ຍອມສູນໄດ້</p>
-            <p>✅ ສະເໝີຕັ້ງ Stop Loss · ຄຸ້ມຄອງ Risk ກ່ອນຄິດກໍາໄລ</p>
-          </div>
-        </div>
-
-        {/* SECTION 6 */}
-        <div className="bg-[#0f172a] border border-cyan-400/30 rounded-3xl p-10 mb-12">
-          <h2 className="text-4xl font-black mb-6 text-cyan-400">
-            💡 ບົດທີ 6 — Tips ສໍາລັບມືໃໝ່
-          </h2>
-          <div className="text-gray-300 text-lg leading-10 space-y-3">
-            <p>🎯 ເລີ່ມດ້ວຍ 1-2 Currency Pair ເທົ່ານັ້ນ · EURUSD ຫຼື XAUUSD</p>
-            <p>🎯 ເທຣດຕາມ Trend · "Trend is your friend"</p>
-            <p>🎯 ຮຽນ Price Action ກ່ອນ Indicator</p>
-            <p>🎯 ຈົດບັນທຶກທຸກ Trade — ກໍາໄລ ແລະ ຂາດທຶນ</p>
-            <p>🎯 ໃຊ້ Demo ຢ່າງໜ້ອຍ 1-3 ເດືອນກ່ອນໃຊ້ເງິນຈິງ</p>
-            <p>🎯 ຢ່າ Copy Trade ໂດຍບໍ່ຮຽນຮູ້ — ຕ້ອງຮູ້ວ່າ ທໍາໄມ ຈຶ່ງຊື້/ຂາຍ</p>
-          </div>
+            </div>
+          ))}
         </div>
 
         {/* CTA */}
-        <a
-          href="/#brokers"
-          className="block bg-yellow-400 hover:bg-yellow-300 transition text-black text-center py-5 rounded-2xl font-black text-xl mb-4"
-        >
-          🚀 ເລືອກໂບກເກີ້ທີ່ດີທີ່ສຸດ
-        </a>
-
-        <p className="text-center text-gray-600 text-sm mt-4">
-          ⚠️ Forex ມີຄວາມສ່ຽງສູງ · ລົງທຶນສະເພາະເງິນທີ່ຍອມສູນໄດ້
-        </p>
+        <div className="mt-12 space-y-3">
+          <a
+            href="/#brokers"
+            className="block text-center py-4 rounded-2xl font-black text-black text-lg transition-all hover:scale-[1.02]"
+            style={{ background: "linear-gradient(135deg, #facc15, #f97316)", boxShadow: "0 12px 40px rgba(250,204,21,0.2)" }}
+          >
+            🚀 ເລືອກໂບກເກີ້ທີ່ດີທີ່ສຸດ
+          </a>
+          <p className="text-center text-gray-600 text-xs">
+            ⚠️ Forex ມີຄວາມສ່ຽງສູງ · ລົງທຶນສະເພາະເງິນທີ່ຍອມສູນໄດ້
+          </p>
+        </div>
 
       </div>
     </main>
