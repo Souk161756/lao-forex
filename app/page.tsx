@@ -1,166 +1,27 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [search, setSearch] = useState("");
- 
-const [news, setNews] = useState([
-  {
-    tag: "ທອງຄໍາ",
-    title: "XAUUSD $4,550 ຫຼຸດຕໍ່ — USD ແຂງ + ເງິນເຟີ້ສູງ ກົດດັນທອງ",
-    time: "19 ພ.ພ. 2026",
-    color: "#facc15",
-    href: "https://www.investing.com/commodities/gold",
-  },
-  {
-    tag: "ວິເຄາະ",
-    title: "Support $4,500 ສໍາຄັນ — ຖ້າທໍ່ລົງ ອາດ Bounce · Resistance $4,580",
-    time: "19 ພ.ພ. 2026",
-    color: "#fb923c",
-    href: "https://www.investing.com/commodities/gold",
-  },
-  {
-    tag: "⚠️ ຂ່າວ",
-    title: "20 ພ.ພ. FOMC Minutes ອອກ — ລໍຖ້າກ່ອນ Buy · Volatility ສູງ",
-    time: "19 ພ.ພ. 2026",
-    color: "#f472b6",
-    href: "https://www.investing.com/economic-calendar/",
-  },
-  {
-    tag: "ຄູ່ມື",
-    title: "ເທຣດທອງຄໍາ XAUUSD ແນວໃດ? Stop Loss ແລະ Entry Point ສໍາລັບຄົນລາວ",
-    time: "19 ພ.ພ. 2026",
-    color: "#4ade80",
-    href: "/blog/how-to-start-forex-laos",
-  },
-]);
-  const brokers = [
-    {
-      name: "XM",
-      logo: "/brokers/xm.png",
-      rating: 4.3,
-      ratingText: "4.3/5",
-      cashback: "$3/Lot",
-      spread: "1.6 pip",
-      deposit: "$30",
-      leverage: "1:1000",
-      badge: "🥇 ອັນດັບ 1",
-      badgeBg: "linear-gradient(135deg, #facc15, #f59e0b)",
-      glowColor: "rgba(250,204,21,0.08)",
-      accentColor: "#facc15",
-      borderColor: "rgba(250,204,21,0.3)",
-      tag: "ແນະນໍາ",
-      tagStyle: { background: "rgba(250,204,21,0.1)", border: "1px solid rgba(250,204,21,0.25)", color: "#facc15" },
-      link: "https://affs.click/wLl9B",
-      review: "/xm",
-      highlight: true,
-    },
-    {
-      name: "Exness",
-      logo: "/brokers/exness.png",
-      rating: 4.6,
-      ratingText: "4.6/5",
-      cashback: "$3/Lot",
-      spread: "1.0 pip",
-      deposit: "$20",
-      leverage: "1:2000",
-      badge: "🥈 ອັນດັບ 2",
-      badgeBg: "linear-gradient(135deg, #94a3b8, #64748b)",
-      glowColor: "rgba(148,163,184,0.05)",
-      accentColor: "#93c5fd",
-      borderColor: "rgba(148,163,184,0.2)",
-      tag: "ຖອນໄວ 24/7",
-      tagStyle: { background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.25)", color: "#60a5fa" },
-      link: "https://one.exnessonelink.com/boarding/sign-up/a/ocvhdpugv1?lng=th",
-      review: "/exness",
-      highlight: false,
-    },
-    {
-      name: "Vantage",
-      logo: "/brokers/vantage.png",
-      rating: 4.1,
-      ratingText: "4.1/5",
-      cashback: "$4/Lot",
-      spread: "1.2 pip",
-      deposit: "$50",
-      leverage: "1:500",
-      badge: "🥉 ອັນດັບ 3",
-      badgeBg: "linear-gradient(135deg, #f97316, #ea580c)",
-      glowColor: "rgba(251,146,60,0.05)",
-      accentColor: "#fb923c",
-      borderColor: "rgba(251,146,60,0.2)",
-      tag: "Cashback ສູງ",
-      tagStyle: { background: "rgba(249,115,22,0.1)", border: "1px solid rgba(249,115,22,0.25)", color: "#fb923c" },
-      link: "https://vigco.co/la-com-inv/wmd8Y80S",
-      review: "/vantage",
-      highlight: false,
-    },
-    {
-      name: "IUX",
-      logo: "/brokers/iux.png",
-      rating: 4.2,
-      ratingText: "4.2/5",
-      cashback: "$2/Lot",
-      spread: "0.9 pip",
-      deposit: "$50",
-      leverage: "1:3000",
-      badge: "⭐ Spread ຕໍ່າ",
-      badgeBg: "linear-gradient(135deg, #ec4899, #be185d)",
-      glowColor: "rgba(244,114,182,0.05)",
-      accentColor: "#f472b6",
-      borderColor: "rgba(244,114,182,0.2)",
-      tag: "Spread ຕໍ່ານ",
-      tagStyle: { background: "rgba(236,72,153,0.1)", border: "1px solid rgba(236,72,153,0.25)", color: "#f472b6" },
-      link: "https://iux.com/en/register?code=EPs5nw6M",
-      review: "/iux",
-      highlight: false,
-    },
-    {
-      name: "HFM",
-      logo: "/brokers/hfm.png",
-      rating: 4.0,
-      ratingText: "4.0/5",
-      cashback: "$3/Lot",
-      spread: "1.1 pip",
-      deposit: "$50",
-      leverage: "1:1000",
-      badge: "✅ ໜ້າເຊື່ອຖື",
-      badgeBg: "linear-gradient(135deg, #06b6d4, #0e7490)",
-      glowColor: "rgba(34,211,238,0.05)",
-      accentColor: "#22d3ee",
-      borderColor: "rgba(34,211,238,0.2)",
-      tag: "Regulated",
-      tagStyle: { background: "rgba(6,182,212,0.1)", border: "1px solid rgba(6,182,212,0.25)", color: "#22d3ee" },
-      link: "https://register.hfm.com/sv/en/new-live-account/?refid=30421077",
-      review: "/hfm",
-      highlight: false,
-    },
-    {
-      name: "Market4you",
-      logo: "/brokers/market4you.png",
-      rating: 3.9,
-      ratingText: "3.9/5",
-      cashback: "$3/Lot",
-      spread: "1.5 pip",
-      deposit: "$10",
-      leverage: "1:500",
-      badge: "🎁 Bonus",
-      badgeBg: "linear-gradient(135deg, #22c55e, #15803d)",
-      glowColor: "rgba(74,222,128,0.05)",
-      accentColor: "#4ade80",
-      borderColor: "rgba(74,222,128,0.2)",
-      tag: "ຝາກຕໍ່າ $10",
-      tagStyle: { background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.25)", color: "#4ade80" },
-      link: "https://account.markets4you.online/en/user-registration/?affid=bpblvtj",
-      review: "/market4you",
-      highlight: false,
-    },
+
+  const news = [
+    { tag: "ທອງຄໍາ", title: "XAUUSD $4,550 ຫຼຸດຕໍ່ — USD ແຂງ + ເງິນເຟີ້ສູງ ກົດດັນທອງ", time: "19 ພ.ພ. 2026", color: "#facc15", href: "https://www.investing.com/commodities/gold" },
+    { tag: "ວິເຄາະ", title: "Support $4,500 ສໍາຄັນ — ຖ້າທໍ່ລົງ ອາດ Bounce · Resistance $4,580", time: "19 ພ.ພ. 2026", color: "#fb923c", href: "https://www.investing.com/commodities/gold" },
+    { tag: "⚠️ ຂ່າວ", title: "20 ພ.ພ. FOMC Minutes ອອກ — ລໍຖ້າກ່ອນ Buy · Volatility ສູງ", time: "19 ພ.ພ. 2026", color: "#f472b6", href: "https://www.investing.com/economic-calendar/" },
+    { tag: "ຄູ່ມື", title: "ເທຣດທອງຄໍາ XAUUSD ແນວໃດ? Stop Loss ແລະ Entry Point ສໍາລັບຄົນລາວ", time: "19 ພ.ພ. 2026", color: "#4ade80", href: "/blog/how-to-start-forex-laos" },
   ];
 
-  const filtered = brokers.filter((b) =>
-    b.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const brokers = [
+    { name: "XM", logo: "/brokers/xm.png", rating: 4.3, ratingText: "4.3/5", cashback: "$3/Lot", spread: "1.6 pip", deposit: "$30", leverage: "1:1000", badge: "🥇 ອັນດັບ 1", badgeBg: "linear-gradient(135deg, #facc15, #f59e0b)", glowColor: "rgba(250,204,21,0.08)", accentColor: "#facc15", borderColor: "rgba(250,204,21,0.3)", tag: "ແນະນໍາ", tagStyle: { background: "rgba(250,204,21,0.1)", border: "1px solid rgba(250,204,21,0.25)", color: "#facc15" }, link: "https://affs.click/wLl9B", review: "/xm", highlight: true },
+    { name: "Exness", logo: "/brokers/exness.png", rating: 4.6, ratingText: "4.6/5", cashback: "$3/Lot", spread: "1.0 pip", deposit: "$20", leverage: "1:2000", badge: "🥈 ອັນດັບ 2", badgeBg: "linear-gradient(135deg, #94a3b8, #64748b)", glowColor: "rgba(148,163,184,0.05)", accentColor: "#93c5fd", borderColor: "rgba(148,163,184,0.2)", tag: "ຖອນໄວ 24/7", tagStyle: { background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.25)", color: "#60a5fa" }, link: "https://one.exnessonelink.com/boarding/sign-up/a/ocvhdpugv1?lng=th", review: "/exness", highlight: false },
+    { name: "Vantage", logo: "/brokers/vantage.png", rating: 4.1, ratingText: "4.1/5", cashback: "$4/Lot", spread: "1.2 pip", deposit: "$50", leverage: "1:500", badge: "🥉 ອັນດັບ 3", badgeBg: "linear-gradient(135deg, #f97316, #ea580c)", glowColor: "rgba(251,146,60,0.05)", accentColor: "#fb923c", borderColor: "rgba(251,146,60,0.2)", tag: "Cashback ສູງ", tagStyle: { background: "rgba(249,115,22,0.1)", border: "1px solid rgba(249,115,22,0.25)", color: "#fb923c" }, link: "https://vigco.co/la-com-inv/wmd8Y80S", review: "/vantage", highlight: false },
+    { name: "IUX", logo: "/brokers/iux.png", rating: 4.2, ratingText: "4.2/5", cashback: "$2/Lot", spread: "0.9 pip", deposit: "$50", leverage: "1:3000", badge: "⭐ Spread ຕໍ່າ", badgeBg: "linear-gradient(135deg, #ec4899, #be185d)", glowColor: "rgba(244,114,182,0.05)", accentColor: "#f472b6", borderColor: "rgba(244,114,182,0.2)", tag: "Spread ຕໍ່ານ", tagStyle: { background: "rgba(236,72,153,0.1)", border: "1px solid rgba(236,72,153,0.25)", color: "#f472b6" }, link: "https://iux.com/en/register?code=EPs5nw6M", review: "/iux", highlight: false },
+    { name: "HFM", logo: "/brokers/hfm.png", rating: 4.0, ratingText: "4.0/5", cashback: "$3/Lot", spread: "1.1 pip", deposit: "$50", leverage: "1:1000", badge: "✅ ໜ້າເຊື່ອຖື", badgeBg: "linear-gradient(135deg, #06b6d4, #0e7490)", glowColor: "rgba(34,211,238,0.05)", accentColor: "#22d3ee", borderColor: "rgba(34,211,238,0.2)", tag: "Regulated", tagStyle: { background: "rgba(6,182,212,0.1)", border: "1px solid rgba(6,182,212,0.25)", color: "#22d3ee" }, link: "https://register.hfm.com/sv/en/new-live-account/?refid=30421077", review: "/hfm", highlight: false },
+    { name: "Market4you", logo: "/brokers/market4you.png", rating: 3.9, ratingText: "3.9/5", cashback: "$3/Lot", spread: "1.5 pip", deposit: "$10", leverage: "1:500", badge: "🎁 Bonus", badgeBg: "linear-gradient(135deg, #22c55e, #15803d)", glowColor: "rgba(74,222,128,0.05)", accentColor: "#4ade80", borderColor: "rgba(74,222,128,0.2)", tag: "ຝາກຕໍ່າ $10", tagStyle: { background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.25)", color: "#4ade80" }, link: "https://account.markets4you.online/en/user-registration/?affid=bpblvtj", review: "/market4you", highlight: false },
+  ];
+
+  const filtered = brokers.filter((b) => b.name.toLowerCase().includes(search.toLowerCase()));
 
   function Stars({ rating }: { rating: number }) {
     return (
@@ -173,43 +34,7 @@ const [news, setNews] = useState([
   }
 
   return (
-    <main className="min-h-screen text-white"
-      style={{ background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
-
-      {/* ── NAVBAR ── */}
-      <nav className="sticky top-0 z-50"
-        style={{ background: "rgba(7,8,15,0.9)", backdropFilter: "blur(24px)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
-        <div className="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="LaoForex" className="w-10 h-10 rounded-xl object-contain"
-              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
-            <div>
-              <div className="font-black text-xl text-yellow-400 leading-none">LaoForex</div>
-              <div className="text-[10px] text-gray-500 leading-none mt-0.5">ໂບກເກີ້ Forex ສໍາລັບຄົນລາວ</div>
-            </div>
-          </div>
-          <div className="hidden md:flex items-center gap-5 text-sm font-semibold text-gray-400">
-            <a href="/" className="hover:text-yellow-400 transition-colors">ໜ້າຫຼັກ</a>
-            <a href="/reviews" className="hover:text-yellow-400 transition-colors">ລີວິວ</a>
-            <a href="/blog/how-to-start-forex-laos" className="hover:text-yellow-400 transition-colors">ບົດຄວາມ</a>
-            <a href="#brokers" className="hover:text-yellow-400 transition-colors">ໂບກເກີ້</a>
-            <a href="https://wa.me/8562029826898" target="_blank"
-              className="flex items-center gap-1.5 text-white px-3 py-2 rounded-full text-xs font-bold hover:opacity-90 transition"
-              style={{ background: "#25D366" }}>💬 WhatsApp</a>
-            <a href="https://t.me/laoforex" target="_blank"
-              className="flex items-center gap-1.5 text-white px-3 py-2 rounded-full text-xs font-bold hover:opacity-90 transition"
-              style={{ background: "#229ED9" }}>✈️ Telegram</a>
-          </div>
-          <div className="md:hidden flex items-center gap-2">
-            <a href="https://wa.me/8562029826898" target="_blank"
-              className="w-9 h-9 rounded-full flex items-center justify-center text-sm"
-              style={{ background: "#25D366" }}>💬</a>
-            <a href="https://t.me/laoforex" target="_blank"
-              className="w-9 h-9 rounded-full flex items-center justify-center text-sm"
-              style={{ background: "#229ED9" }}>✈️</a>
-          </div>
-        </div>
-      </nav>
+    <main className="min-h-screen text-white" style={{ background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
 
       {/* ── HERO ── */}
       <section className="relative overflow-hidden pt-20 pb-24 px-5">
@@ -324,9 +149,7 @@ const [news, setNews] = useState([
           {filtered.map((broker) => (
             <div key={broker.name} className="rounded-[28px] p-6 transition-all duration-300 hover:-translate-y-1"
               style={{
-                background: broker.highlight
-                  ? "linear-gradient(135deg, rgba(250,204,21,0.07) 0%, rgba(7,8,15,1) 60%)"
-                  : "rgba(255,255,255,0.025)",
+                background: broker.highlight ? "linear-gradient(135deg, rgba(250,204,21,0.07) 0%, rgba(7,8,15,1) 60%)" : "rgba(255,255,255,0.025)",
                 border: `1px solid ${broker.borderColor}`,
                 boxShadow: `0 8px 40px ${broker.glowColor}`,
               }}>
@@ -339,16 +162,13 @@ const [news, setNews] = useState([
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="font-black text-xl text-white">{broker.name}</span>
-                      <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full" style={broker.tagStyle}>
-                        {broker.tag}
-                      </span>
+                      <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full" style={broker.tagStyle}>{broker.tag}</span>
                     </div>
                     <Stars rating={broker.rating} />
                     <div className="text-xs text-gray-500 mt-0.5">{broker.ratingText} · Trustpilot</div>
                   </div>
                 </div>
-                <div className="px-4 py-1.5 rounded-full text-sm font-black text-black"
-                  style={{ background: broker.badgeBg }}>
+                <div className="px-4 py-1.5 rounded-full text-sm font-black text-black" style={{ background: broker.badgeBg }}>
                   {broker.badge}
                 </div>
               </div>
@@ -435,8 +255,7 @@ const [news, setNews] = useState([
 
       {/* ── GUIDE ── */}
       <section className="max-w-6xl mx-auto px-5 pb-20">
-        <div className="rounded-[24px] p-8"
-          style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)" }}>
+        <div className="rounded-[24px] p-8" style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)" }}>
           <p className="text-yellow-400 text-xs font-bold uppercase tracking-widest mb-1">ຄູ່ມື</p>
           <h2 className="text-2xl font-black mb-6">ໂບກເກີ້ໃດເໝາະກັບໃຜ?</h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -446,8 +265,7 @@ const [news, setNews] = useState([
               { name: "🥉 Vantage", desc: "Cashback $4/Lot ສູງສຸດ · ເໝາະ Volume Trader · Regulated ASIC" },
               { name: "⭐ IUX", desc: "Spread 0.9pip ຕໍ່ານ · Leverage 1:3000 · UI ທັນສະໄໝ · ໃຊ້ງານງ່າຍ" },
             ].map((g) => (
-              <div key={g.name} className="rounded-xl p-5"
-                style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}>
+              <div key={g.name} className="rounded-xl p-5" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}>
                 <div className="font-black text-yellow-400 mb-2">{g.name}</div>
                 <p className="text-gray-300 text-sm leading-relaxed">{g.desc}</p>
               </div>
@@ -468,8 +286,7 @@ const [news, setNews] = useState([
             { title: "ໂບກເກີ້ Forex ທີ່ດີໃນລາວ", desc: "ປຽບທຽບໂບກເກີ້ ຝາກ-ຖອນ BCEL ໄດ້ · ທົດສອບຈິງ", href: "/blog", color: "from-yellow-400/20" },
             { title: "ລີວິວ Exness ສໍາລັບຄົນລາວ", desc: "ລີວິວ Exness ແບບລະອຽດ ທົດສອບຈິງ ໂດຍທີມລາວ", href: "/exness", color: "from-green-400/20" },
           ].map((p) => (
-            <a key={p.title} href={p.href}
-              className="block rounded-2xl p-6 transition-all hover:-translate-y-1"
+            <a key={p.title} href={p.href} className="block rounded-2xl p-6 transition-all hover:-translate-y-1"
               style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}>
               <div className={`w-full h-28 rounded-xl mb-4 bg-gradient-to-br ${p.color} to-transparent`} />
               <h3 className="font-black mb-2 leading-snug text-white">{p.title}</h3>
@@ -485,28 +302,21 @@ const [news, setNews] = useState([
         <div className="rounded-[24px] p-8 text-center"
           style={{ background: "linear-gradient(135deg, rgba(250,204,21,0.06), rgba(249,115,22,0.06))", border: "1px solid rgba(250,204,21,0.15)" }}>
           <h2 className="font-black text-2xl mb-3">💬 ມີຄໍາຖາມ? ຕິດຕໍ່ເຮົາໄດ້ເລີຍ</h2>
-          <p className="text-gray-400 text-sm mb-6" style={{ lineHeight: "2" }}>
-            ທີມງານລາວ · ຕອບ 24/7 · ຟຣີ · ບໍ່ມີຄ່າໃຊ້ຈ່າຍ
-          </p>
+          <p className="text-gray-400 text-sm mb-6" style={{ lineHeight: "2" }}>ທີມງານລາວ · ຕອບ 24/7 · ຟຣີ · ບໍ່ມີຄ່າໃຊ້ຈ່າຍ</p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <a href="https://wa.me/8562029826898" target="_blank"
               className="flex items-center gap-2 px-7 py-3.5 rounded-xl font-black text-white transition-all hover:scale-105"
-              style={{ background: "#25D366", boxShadow: "0 8px 32px rgba(37,211,102,0.3)" }}>
-              💬 WhatsApp
-            </a>
+              style={{ background: "#25D366", boxShadow: "0 8px 32px rgba(37,211,102,0.3)" }}>💬 WhatsApp</a>
             <a href="https://t.me/laoforex" target="_blank"
               className="flex items-center gap-2 px-7 py-3.5 rounded-xl font-black text-white transition-all hover:scale-105"
-              style={{ background: "#229ED9", boxShadow: "0 8px 32px rgba(34,158,217,0.3)" }}>
-              ✈️ Telegram
-            </a>
+              style={{ background: "#229ED9", boxShadow: "0 8px 32px rgba(34,158,217,0.3)" }}>✈️ Telegram</a>
           </div>
         </div>
       </section>
 
       {/* ── DISCLAIMER ── */}
       <section className="max-w-6xl mx-auto px-5 pb-20">
-        <div className="rounded-2xl p-6"
-          style={{ background: "rgba(239,68,68,0.05)", border: "1px solid rgba(239,68,68,0.12)" }}>
+        <div className="rounded-2xl p-6" style={{ background: "rgba(239,68,68,0.05)", border: "1px solid rgba(239,68,68,0.12)" }}>
           <h3 className="text-red-400 font-black mb-3">⚠️ ຄຳເຕືອນຄວາມສ່ຽງ</h3>
           <div className="text-gray-400 text-sm space-y-2" style={{ lineHeight: "1.8" }}>
             <p>Forex ແລະ CFD ມີຄວາມສ່ຽງສູງ ແລະ ອາດເຮັດໃຫ້ສູນເສຍເງິນລົງທຶນໄດ້.</p>
@@ -521,28 +331,28 @@ const [news, setNews] = useState([
         <div className="max-w-6xl mx-auto px-5 py-14">
           <div className="grid md:grid-cols-3 gap-10 mb-10">
             <div>
-              <div className="font-black text-2xl text-yellow-400 mb-3">LaoForex</div>
-              <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                ລວມ Forex Brokers · Cashback Rebate · ລີວິວສໍາລັບຄົນລາວ 🇱🇦
-              </p>
+              <a href="/" style={{ textDecoration: "none" }}>
+                <img src="/logo.png" alt="LaoForex" style={{ width: "48px", height: "48px", borderRadius: "12px", objectFit: "contain", marginBottom: "12px" }} />
+              </a>
+              <p className="text-gray-500 text-sm leading-relaxed mb-4">ລວມ Forex Brokers · Cashback Rebate · ລີວິວສໍາລັບຄົນລາວ 🇱🇦</p>
               <div className="flex gap-3">
-                <a href="https://wa.me/8562029826898" target="_blank"
-                  className="w-9 h-9 rounded-xl flex items-center justify-center text-sm hover:scale-110 transition"
-                  style={{ background: "#25D366" }}>💬</a>
-                <a href="https://t.me/laoforex" target="_blank"
-                  className="w-9 h-9 rounded-xl flex items-center justify-center text-sm hover:scale-110 transition"
-                  style={{ background: "#229ED9" }}>✈️</a>
+                <a href="https://wa.me/8562029826898" target="_blank" className="w-9 h-9 rounded-xl flex items-center justify-center text-sm hover:scale-110 transition" style={{ background: "#25D366" }}>💬</a>
+                <a href="https://t.me/laoforex" target="_blank" className="w-9 h-9 rounded-xl flex items-center justify-center text-sm hover:scale-110 transition" style={{ background: "#229ED9" }}>✈️</a>
               </div>
             </div>
             <div>
               <h3 className="font-black mb-4 text-sm uppercase tracking-widest text-gray-400">ລິ້ງດ່ວນ</h3>
               <div className="flex flex-col gap-3 text-sm text-gray-500">
-                <a href="/" className="hover:text-yellow-400 transition-colors">ໜ້າຫຼັກ</a>
-                <a href="/reviews" className="hover:text-yellow-400 transition-colors">ລີວິວ</a>
-                <a href="/blog/how-to-start-forex-laos" className="hover:text-yellow-400 transition-colors">ບົດຄວາມ</a>
-                <a href="/privacy-policy" className="hover:text-yellow-400 transition-colors">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</a>
-                <a href="/disclaimer" className="hover:text-yellow-400 transition-colors">ຂໍ້ຈໍາກັດ</a>
-                <a href="/contact" className="hover:text-yellow-400 transition-colors">ຕິດຕໍ່</a>
+                {[
+                  { href: "/", label: "ໜ້າຫຼັກ" },
+                  { href: "/reviews", label: "ລີວິວ" },
+                  { href: "/blog/how-to-start-forex-laos", label: "ບົດຄວາມ" },
+                  { href: "/privacy-policy", label: "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ" },
+                  { href: "/disclaimer", label: "ຂໍ້ຈໍາກັດ" },
+                  { href: "/contact", label: "ຕິດຕໍ່" },
+                ].map((l) => (
+                  <a key={l.href} href={l.href} className="hover:text-yellow-400 transition-colors">{l.label}</a>
+                ))}
               </div>
             </div>
             <div>
@@ -554,24 +364,11 @@ const [news, setNews] = useState([
               </div>
             </div>
           </div>
-          <div className="pt-6 text-center text-xs text-gray-600"
-            style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+          <div className="pt-6 text-center text-xs text-gray-600" style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
             © 2026 LaoForex — ສ້າງເພື່ອ Trader ຄົນລາວ 🇱🇦
           </div>
         </div>
       </footer>
-
-      {/* ── FLOATING BUTTONS ── */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-        <a href="https://wa.me/8562029826898" target="_blank"
-          className="w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition-all hover:scale-110"
-          style={{ background: "#25D366", boxShadow: "0 8px 32px rgba(37,211,102,0.4)" }}
-          title="WhatsApp">💬</a>
-        <a href="https://t.me/laoforex" target="_blank"
-          className="w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition-all hover:scale-110"
-          style={{ background: "#229ED9", boxShadow: "0 8px 32px rgba(34,158,217,0.4)" }}
-          title="Telegram">✈️</a>
-      </div>
 
     </main>
   );
