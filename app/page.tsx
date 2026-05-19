@@ -4,39 +4,37 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [search, setSearch] = useState("");
-  const [news, setNews] = useState([
-   
+ 
+const [news, setNews] = useState([
   {
     tag: "ທອງຄໍາ",
-    title: "XAUUSD ຮັກສາລະດັບ $3,200 ຫຼັງຕະຫຼາດລໍຖ້າຂໍ້ມູນ Fed Minutes",
-    time: "18 ພ.ພ. 2026",
+    title: "XAUUSD $4,550 ຫຼຸດຕໍ່ — USD ແຂງ + ເງິນເຟີ້ສູງ ກົດດັນທອງ",
+    time: "19 ພ.ພ. 2026",
     color: "#facc15",
     href: "https://www.investing.com/commodities/gold",
   },
   {
     tag: "ວິເຄາະ",
-    title: "ນັກວິເຄາະຄາດທອງຄໍາຂຶ້ນທົດສອບ $3,300 ໃນໄລຍະສັ້ນ",
-    time: "18 ພ.ພ. 2026",
+    title: "Support $4,500 ສໍາຄັນ — ຖ້າທໍ່ລົງ ອາດ Bounce · Resistance $4,580",
+    time: "19 ພ.ພ. 2026",
     color: "#fb923c",
     href: "https://www.investing.com/commodities/gold",
   },
   {
-    tag: "Forex",
-    title: "USD ອ່ອນຄ່າ — EUR/USD ດີດຂຶ້ນເໜືອ 1.1200 ໃນຕອນເຊົ້າ",
-    time: "18 ພ.ພ. 2026",
-    color: "#60a5fa",
-    href: "https://www.investing.com/currencies/eur-usd",
+    tag: "⚠️ ຂ່າວ",
+    title: "20 ພ.ພ. FOMC Minutes ອອກ — ລໍຖ້າກ່ອນ Buy · Volatility ສູງ",
+    time: "19 ພ.ພ. 2026",
+    color: "#f472b6",
+    href: "https://www.investing.com/economic-calendar/",
   },
   {
     tag: "ຄູ່ມື",
-    title: "ວິທີເທຣດ XAUUSD ສໍາລັບຄົນລາວ — Entry Point ແລະ Stop Loss",
-    time: "18 ພ.ພ. 2026",
+    title: "ເທຣດທອງຄໍາ XAUUSD ແນວໃດ? Stop Loss ແລະ Entry Point ສໍາລັບຄົນລາວ",
+    time: "19 ພ.ພ. 2026",
     color: "#4ade80",
     href: "/blog/how-to-start-forex-laos",
   },
 ]);
-
-
   const brokers = [
     {
       name: "XM",
