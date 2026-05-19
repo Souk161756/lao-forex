@@ -10,6 +10,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="lo">
       <body style={{ margin: 0, padding: 0, background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
 
+        <style>{`
+          .nav-link { color: #9ca3af; font-size: 13px; font-weight: 600; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color 0.2s; }
+          .nav-link:hover { color: #facc15; }
+          .nav-desktop { display: flex; align-items: center; gap: 6px; }
+          .nav-mobile { display: none; align-items: center; gap: 8px; }
+          .float-btn { transition: transform 0.2s; }
+          .float-btn:hover { transform: scale(1.1); }
+          @media (max-width: 768px) {
+            .nav-desktop { display: none !important; }
+            .nav-mobile { display: flex !important; }
+          }
+        `}</style>
+
         {/* ══ GLOBAL NAVBAR ══ */}
         <nav style={{
           position: "sticky", top: 0, zIndex: 100,
@@ -24,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             display: "flex", alignItems: "center", justifyContent: "space-between",
           }}>
 
-            {/* LOGO — ກົດກັບໜ້າຫຼັກ */}
+            {/* LOGO */}
             <a href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "12px" }}>
               <div style={{
                 width: "44px", height: "44px", borderRadius: "12px", overflow: "hidden",
@@ -34,115 +47,65 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <img src="/logo.png" alt="LaoForex" style={{ width: "36px", height: "36px", objectFit: "contain" }} />
               </div>
               <div>
-                <div style={{ fontWeight: 900, fontSize: "20px", color: "#facc15", lineHeight: 1, letterSpacing: "-0.5px" }}>
-                  LaoForex
-                </div>
-                <div style={{ fontSize: "10px", color: "#6b7280", lineHeight: 1, marginTop: "3px" }}>
-                  ໂບກເກີ້ Forex ສໍາລັບຄົນລາວ
-                </div>
+                <div style={{ fontWeight: 900, fontSize: "20px", color: "#facc15", lineHeight: 1 }}>LaoForex</div>
+                <div style={{ fontSize: "10px", color: "#6b7280", lineHeight: 1, marginTop: "3px" }}>ໂບກເກີ້ Forex ສໍາລັບຄົນລາວ</div>
               </div>
             </a>
 
-            {/* NAV LINKS — Desktop */}
-            <div style={{ display: "flex", alignItems: "center", gap: "6px" }} className="nav-desktop">
-              {[
-                { href: "/", label: "ໜ້າຫຼັກ" },
-                { href: "/reviews", label: "ລີວິວ" },
-                { href: "/blog/how-to-start-forex-laos", label: "ບົດຄວາມ" },
-                { href: "/#brokers", label: "ໂບກເກີ້" },
-              ].map((link) => (
-                <a key={link.href} href={link.href} style={{
-                  color: "#9ca3af", fontSize: "13px", fontWeight: 600,
-                  textDecoration: "none", padding: "6px 12px", borderRadius: "8px",
-                  transition: "color 0.2s",
-                }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#facc15")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#9ca3af")}>
-                  {link.label}
-                </a>
-              ))}
-
-              {/* Divider */}
+            {/* Desktop Nav */}
+            <div className="nav-desktop">
+              <a href="/" className="nav-link">ໜ້າຫຼັກ</a>
+              <a href="/reviews" className="nav-link">ລີວິວ</a>
+              <a href="/blog/how-to-start-forex-laos" className="nav-link">ບົດຄວາມ</a>
+              <a href="/#brokers" className="nav-link">ໂບກເກີ້</a>
               <div style={{ width: "1px", height: "20px", background: "rgba(255,255,255,0.1)", margin: "0 6px" }} />
-
-              {/* WhatsApp */}
               <a href="https://wa.me/8562029826898" target="_blank" style={{
                 background: "#25D366", color: "#fff", padding: "7px 14px",
                 borderRadius: "20px", fontSize: "12px", fontWeight: 700,
                 textDecoration: "none", display: "flex", alignItems: "center", gap: "5px",
                 boxShadow: "0 4px 12px rgba(37,211,102,0.3)",
-              }}>
-                💬 WhatsApp
-              </a>
-
-              {/* Telegram */}
+              }}>💬 WhatsApp</a>
               <a href="https://t.me/laoforex" target="_blank" style={{
                 background: "#229ED9", color: "#fff", padding: "7px 14px",
                 borderRadius: "20px", fontSize: "12px", fontWeight: 700,
                 textDecoration: "none", display: "flex", alignItems: "center", gap: "5px",
                 boxShadow: "0 4px 12px rgba(34,158,217,0.3)",
-              }}>
-                ✈️ Telegram
-              </a>
+              }}>✈️ Telegram</a>
             </div>
 
-            {/* Mobile buttons */}
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }} className="nav-mobile">
+            {/* Mobile Nav */}
+            <div className="nav-mobile">
               <a href="https://wa.me/8562029826898" target="_blank" style={{
-                width: "38px", height: "38px", borderRadius: "50%",
-                background: "#25D366", display: "flex", alignItems: "center",
-                justifyContent: "center", fontSize: "16px", textDecoration: "none",
+                width: "38px", height: "38px", borderRadius: "50%", background: "#25D366",
+                display: "flex", alignItems: "center", justifyContent: "center",
+                fontSize: "16px", textDecoration: "none",
               }}>💬</a>
               <a href="https://t.me/laoforex" target="_blank" style={{
-                width: "38px", height: "38px", borderRadius: "50%",
-                background: "#229ED9", display: "flex", alignItems: "center",
-                justifyContent: "center", fontSize: "16px", textDecoration: "none",
+                width: "38px", height: "38px", borderRadius: "50%", background: "#229ED9",
+                display: "flex", alignItems: "center", justifyContent: "center",
+                fontSize: "16px", textDecoration: "none",
               }}>✈️</a>
             </div>
 
           </div>
         </nav>
 
-        <style>{`
-          .nav-desktop { display: flex; }
-          .nav-mobile { display: none; }
-          @media (max-width: 768px) {
-            .nav-desktop { display: none !important; }
-            .nav-mobile { display: flex !important; }
-          }
-        `}</style>
-
         {children}
 
         {/* FLOATING BUTTONS */}
-        <div style={{
-          position: "fixed", bottom: "24px", right: "24px",
-          zIndex: 50, display: "flex", flexDirection: "column", gap: "12px",
-        }}>
-          <a href="https://wa.me/8562029826898" target="_blank" style={{
-            width: "56px", height: "56px", borderRadius: "50%",
-            background: "#25D366", display: "flex", alignItems: "center",
-            justifyContent: "center", fontSize: "24px", textDecoration: "none",
+        <div style={{ position: "fixed", bottom: "24px", right: "24px", zIndex: 50, display: "flex", flexDirection: "column", gap: "12px" }}>
+          <a href="https://wa.me/8562029826898" target="_blank" className="float-btn" style={{
+            width: "56px", height: "56px", borderRadius: "50%", background: "#25D366",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            fontSize: "24px", textDecoration: "none",
             boxShadow: "0 8px 32px rgba(37,211,102,0.4)",
-            transition: "transform 0.2s",
-          }}
-            title="WhatsApp"
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}>
-            💬
-          </a>
-          <a href="https://t.me/laoforex" target="_blank" style={{
-            width: "56px", height: "56px", borderRadius: "50%",
-            background: "#229ED9", display: "flex", alignItems: "center",
-            justifyContent: "center", fontSize: "24px", textDecoration: "none",
+          }} title="WhatsApp">💬</a>
+          <a href="https://t.me/laoforex" target="_blank" className="float-btn" style={{
+            width: "56px", height: "56px", borderRadius: "50%", background: "#229ED9",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            fontSize: "24px", textDecoration: "none",
             boxShadow: "0 8px 32px rgba(34,158,217,0.4)",
-            transition: "transform 0.2s",
-          }}
-            title="Telegram"
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}>
-            ✈️
-          </a>
+          }} title="Telegram">✈️</a>
         </div>
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KE4H9XCRXN" />
