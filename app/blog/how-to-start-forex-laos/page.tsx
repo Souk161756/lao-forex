@@ -22,7 +22,7 @@ export default function HowToStartForexLaos() {
         { num: 6, title: "Candlestick ແມ່ນຫຍັງ? ອ່ານກຣາຟເບື້ອງຕົ້ນ", time: "5 ນທ" },
         { num: 7, title: "Support & Resistance ຄືຫຍັງ? ໃຊ້ແນວໃດ", time: "5 ນທ" },
         { num: 8, title: "Trend ແມ່ນຫຍັງ? ເທຣດຕາມ Trend ໄດ້ກໍາໄລກວ່າ", time: "5 ນທ" },
-        { num: 9, title: "Market Structure: Higher High, Lower Low ອ່ານ Trend ຢ່າງມີອາຊີບ", time: "5 ນທ" },
+        { num: 9, title: "Market Structure: Higher High, Lower Low", time: "5 ນທ" },
         { num: 10, title: "Indicator ທີ່ຄວນຮູ້: RSI, MACD, MA", time: "5 ນທ" },
       ],
     },
@@ -34,8 +34,8 @@ export default function HowToStartForexLaos() {
       lessons: [
         { num: 11, title: "Risk Management ແມ່ນຫຍັງ? ສໍາຄັນສໍ່າໃດ", time: "5 ນທ" },
         { num: 12, title: "Stop Loss & Take Profit ຕັ້ງຢ່າງຖືກຕ້ອງ", time: "5 ນທ" },
-        { num: 13, title: "Money Management Plan: ວາງແຜນທຶນ Forex ຢ່າງມີອາຊີບ", time: "5 ນທ" },
-        { num: 14, title: "Drawdown ແມ່ນຫຍັງ? ຈະຟື້ນຕົວຈາກ Drawdown ໄດ້ແນວໃດ", time: "5 ນທ" },
+        { num: 13, title: "Money Management Plan: ວາງແຜນທຶນ Forex", time: "5 ນທ" },
+        { num: 14, title: "Drawdown ແມ່ນຫຍັງ? ຟື້ນຕົວແນວໃດ", time: "5 ນທ" },
         { num: 15, title: "Position Sizing: ໃຊ້ Lot ຂະໜາດໃດໃຫ້ເໝາະ", time: "4 ນທ" },
       ],
     },
@@ -47,9 +47,27 @@ export default function HowToStartForexLaos() {
       lessons: [
         { num: 16, title: "ເລືອກໂບກເກີ້ ແລະ ເປີດບັນຊີ Demo ຄັ້ງທຳອິດ", time: "4 ນທ" },
         { num: 17, title: "ຝາກເງິນ BCEL ເຂົ້າ Forex ໄດ້ແນວໃດ?", time: "4 ນທ" },
-        { num: 18, title: "ວິທີເທຣດ EURUSD ຄັ້ງທຳອິດ ທີ່ຄວນຮູ້", time: "5 ນທ" },
-        { num: 19, title: "Backtesting ແມ່ນຫຍັງ? ທົດສອບ Strategy ກ່ອນໃຊ້ຈິງ", time: "5 ນທ" },
-        { num: 20, title: "Trading Journal: ຈົດບັນທຶກ Trade ເພື່ອປັບປຸງຕົວເອງ", time: "4 ນທ" },
+        { num: 18, title: "ວິທີເທຣດ EURUSD ຄັ້ງທຳອິດ", time: "5 ນທ" },
+        { num: 19, title: "Backtesting ແມ່ນຫຍັງ? ທົດສອບ Strategy", time: "5 ນທ" },
+        { num: 20, title: "Trading Journal: ຈົດບັນທຶກ Trade", time: "4 ນທ" },
+      ],
+    },
+    {
+      title: "ພາກທີ 5: ຮູ້ເລິກກ່ອນເສຍເງິນ",
+      color: "text-pink-400",
+      bg: "rgba(244,114,182,0.08)",
+      border: "rgba(244,114,182,0.25)",
+      lessons: [
+        { num: 21, title: "Balance, Equity, Margin, Free Margin ຄືຫຍັງ?", time: "5 ນທ" },
+        { num: 22, title: "Margin Level ແລະ Margin Call ຄືຫຍັງ?", time: "5 ນທ" },
+        { num: 23, title: "Stop Out ຄືຫຍັງ? ໂບກບາງໂບກ SO 20% ບໍ່ແມ່ນ 0%!", time: "5 ນທ" },
+        { num: 24, title: "Buy Ask / Sell Bid ຄືຫຍັງ? ຄົນສ່ວນໃຫຍ່ຍັງບໍ່ຮູ້!", time: "5 ນທ" },
+        { num: 25, title: "Slippage ແລະ Gap ຄືຫຍັງ? ເສຍເງິນແບບນີ້ໄດ້ດ້ວຍ!", time: "5 ນທ" },
+        { num: 26, title: "Instant vs Market Execution ຕ່າງກັນແນວໃດ?", time: "4 ນທ" },
+        { num: 27, title: "A-Book vs B-Book vs Market Maker ຄືຫຍັງ?", time: "6 ນທ" },
+        { num: 28, title: "Dealing Desk vs Non-Dealing Desk ຕ່າງກັນແນວໃດ?", time: "5 ນທ" },
+        { num: 29, title: "Swap ແລະ Negative Balance Protection ຄືຫຍັງ?", time: "5 ນທ" },
+        { num: 30, title: "Liquidity ແລະ Market Volatility ຄືຫຍັງ?", time: "6 ນທ" },
       ],
     },
   ];
@@ -57,10 +75,7 @@ export default function HowToStartForexLaos() {
   return (
     <main
       className="min-h-screen text-white px-5 py-16"
-      style={{
-        background: "#07080f",
-        fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif",
-      }}
+      style={{ background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}
     >
       <div className="max-w-3xl mx-auto">
 
@@ -70,10 +85,8 @@ export default function HowToStartForexLaos() {
         </a>
 
         {/* BADGE */}
-        <div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-6"
-          style={{ background: "rgba(250,204,21,0.08)", border: "1px solid rgba(250,204,21,0.2)", color: "#facc15" }}
-        >
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-6"
+          style={{ background: "rgba(250,204,21,0.08)", border: "1px solid rgba(250,204,21,0.2)", color: "#facc15" }}>
           📚 ຄູ່ມື FOREX ສໍາລັບຄົນລາວ
         </div>
 
@@ -82,14 +95,14 @@ export default function HowToStartForexLaos() {
           ວິທີເລີ່ມຕົ້ນ Forex ໃນລາວ
         </h1>
         <p className="text-gray-400 text-base mb-10" style={{ lineHeight: "2" }}>
-          ຄູ່ມືຄົບ 4 ພາກ 20 ບົດ · ຕັ້ງແຕ່ Forex ແມ່ນຫຍັງ ຈົນເຖິງ ເລີ່ມເທຣດຈິງ · ສໍາລັບຄົນລາວໂດຍສະເພາະ
+          ຄູ່ມືຄົບ 5 ພາກ 30 ບົດ · ຕັ້ງແຕ່ Forex ແມ່ນຫຍັງ ຈົນເຖິງ ຮູ້ເລິກກ່ອນເສຍເງິນ · ສໍາລັບຄົນລາວໂດຍສະເພາະ
         </p>
 
         {/* STATS */}
         <div className="grid grid-cols-3 gap-3 mb-10">
           {[
-            { num: "4", label: "ພາກ" },
-            { num: "20", label: "ບົດ" },
+            { num: "5", label: "ພາກ" },
+            { num: "30", label: "ບົດ" },
             { num: "100%", label: "ຟຣີ" },
           ].map((s) => (
             <div key={s.num} className="rounded-xl p-4 text-center"
@@ -104,38 +117,23 @@ export default function HowToStartForexLaos() {
         <div className="space-y-8">
           {chapters.map((chapter) => (
             <div key={chapter.title}>
-              {/* Chapter Header */}
-              <div
-                className="flex items-center justify-between px-5 py-4 rounded-2xl mb-3"
-                style={{ background: chapter.bg, border: `1px solid ${chapter.border}` }}
-              >
+              <div className="flex items-center justify-between px-5 py-4 rounded-2xl mb-3"
+                style={{ background: chapter.bg, border: `1px solid ${chapter.border}` }}>
                 <span className={`font-black text-base ${chapter.color}`}>{chapter.title}</span>
                 <span className="text-gray-500 text-sm">{chapter.lessons.length} ບົດ</span>
               </div>
-
-              {/* Lessons */}
               <div className="space-y-2">
                 {chapter.lessons.map((lesson) => (
-                  <a
-                    key={lesson.num}
-                    href={`/blog/how-to-start-forex-laos/${lesson.num}`}
+                  <a key={lesson.num} href={`/blog/how-to-start-forex-laos/${lesson.num}`}
                     className="flex items-center gap-4 px-5 py-4 rounded-xl transition-all hover:-translate-y-0.5 hover:bg-white/5"
-                    style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", display: "flex", textDecoration: "none" }}
-                  >
-                    {/* Number */}
-                    <div
-                      className="w-9 h-9 rounded-xl flex items-center justify-center font-black text-sm flex-shrink-0 text-gray-400"
-                      style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)" }}
-                    >
+                    style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", display: "flex", textDecoration: "none" }}>
+                    <div className="w-9 h-9 rounded-xl flex items-center justify-center font-black text-sm flex-shrink-0 text-gray-400"
+                      style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)" }}>
                       {lesson.num}
                     </div>
-
-                    {/* Title */}
                     <div className="flex-1 text-sm font-bold leading-snug text-gray-200">
                       {lesson.title}
                     </div>
-
-                    {/* Time + Arrow */}
                     <div className="flex items-center gap-1.5 text-gray-500 text-xs flex-shrink-0">
                       <span>🕐</span>
                       <span>{lesson.time}</span>
@@ -150,11 +148,9 @@ export default function HowToStartForexLaos() {
 
         {/* CTA */}
         <div className="mt-12 space-y-3">
-          <a
-            href="/#brokers"
+          <a href="/#brokers"
             className="block text-center py-4 rounded-2xl font-black text-black text-lg transition-all hover:scale-[1.02]"
-            style={{ background: "linear-gradient(135deg, #facc15, #f97316)", boxShadow: "0 12px 40px rgba(250,204,21,0.2)" }}
-          >
+            style={{ background: "linear-gradient(135deg, #facc15, #f97316)", boxShadow: "0 12px 40px rgba(250,204,21,0.2)" }}>
             🚀 ເລືອກໂບກເກີ້ທີ່ດີທີ່ສຸດ
           </a>
           <p className="text-center text-gray-600 text-xs">
