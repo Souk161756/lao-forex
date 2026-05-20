@@ -74,7 +74,7 @@ export default function Home() {
               style={{ background: "#25D366", boxShadow: "0 8px 24px rgba(37,211,102,0.3)" }}>
               💬 ຕິດຕໍ່ WhatsApp
             </a>
-            <a href="https://t.me/laoforex" target="_blank"
+            <a href="https://t.me/laofx_org" target="_blank"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-sm text-white transition-all hover:scale-105"
               style={{ background: "#229ED9", boxShadow: "0 8px 24px rgba(34,158,217,0.3)" }}>
               ✈️ ຕິດຕໍ່ Telegram
@@ -307,7 +307,7 @@ export default function Home() {
             <a href="https://wa.me/8562029826898" target="_blank"
               className="flex items-center gap-2 px-7 py-3.5 rounded-xl font-black text-white transition-all hover:scale-105"
               style={{ background: "#25D366", boxShadow: "0 8px 32px rgba(37,211,102,0.3)" }}>💬 WhatsApp</a>
-            <a href="https://t.me/laoforex" target="_blank"
+            <a href="https://t.me/laofx_org" target="_blank"
               className="flex items-center gap-2 px-7 py-3.5 rounded-xl font-black text-white transition-all hover:scale-105"
               style={{ background: "#229ED9", boxShadow: "0 8px 32px rgba(34,158,217,0.3)" }}>✈️ Telegram</a>
           </div>
@@ -337,7 +337,7 @@ export default function Home() {
               <p className="text-gray-500 text-sm leading-relaxed mb-4">ລວມ Forex Brokers · Cashback Rebate · ລີວິວສໍາລັບຄົນລາວ 🇱🇦</p>
               <div className="flex gap-3">
                 <a href="https://wa.me/8562029826898" target="_blank" className="w-9 h-9 rounded-xl flex items-center justify-center text-sm hover:scale-110 transition" style={{ background: "#25D366" }}>💬</a>
-                <a href="https://t.me/laoforex" target="_blank" className="w-9 h-9 rounded-xl flex items-center justify-center text-sm hover:scale-110 transition" style={{ background: "#229ED9" }}>✈️</a>
+                <a href="https://t.me/laofx_org" target="_blank" className="w-9 h-9 rounded-xl flex items-center justify-center text-sm hover:scale-110 transition" style={{ background: "#229ED9" }}>✈️</a>
               </div>
             </div>
             <div>
