@@ -5,13 +5,36 @@ import { useState } from "react";
 export default function Home() {
   const [search, setSearch] = useState("");
 
-  const news = [
-    { tag: "ທອງຄໍາ", title: "XAUUSD $4,550 ຫຼຸດຕໍ່ — USD ແຂງ + ເງິນເຟີ້ສູງ ກົດດັນທອງ", time: "19 ພ.ພ. 2026", color: "#facc15", href: "https://www.investing.com/commodities/gold" },
-    { tag: "ວິເຄາະ", title: "Support $4,500 ສໍາຄັນ — ຖ້າທໍ່ລົງ ອາດ Bounce · Resistance $4,580", time: "19 ພ.ພ. 2026", color: "#fb923c", href: "https://www.investing.com/commodities/gold" },
-    { tag: "⚠️ ຂ່າວ", title: "20 ພ.ພ. FOMC Minutes ອອກ — ລໍຖ້າກ່ອນ Buy · Volatility ສູງ", time: "19 ພ.ພ. 2026", color: "#f472b6", href: "https://www.investing.com/economic-calendar/" },
-    { tag: "ຄູ່ມື", title: "ເທຣດທອງຄໍາ XAUUSD ແນວໃດ? Stop Loss ແລະ Entry Point ສໍາລັບຄົນລາວ", time: "19 ພ.ພ. 2026", color: "#4ade80", href: "/blog/how-to-start-forex-laos" },
-  ];
-
+  const [news, setNews] = useState([
+  {
+    tag: "ທອງຄໍາ",
+    title: "XAUUSD $4,483 ຫຼຸດຕໍ່ — Bearish ຍັງຄອງຕະຫຼາດ",
+    time: "20 ພ.ພ. 2026",
+    color: "#facc15",
+    href: "https://www.investing.com/commodities/gold",
+  },
+  {
+    tag: "⚡ FOMC",
+    title: "FOMC Minutes ຄືນນີ້! — ລໍຖ້າກ່ອນ Buy · Volatility ສູງຫຼາຍ",
+    time: "20 ພ.ພ. 2026",
+    color: "#f472b6",
+    href: "https://www.investing.com/economic-calendar/",
+  },
+  {
+    tag: "ວິເຄາະ",
+    title: "ແນວຮັບ $4,477 · ແນວຕ້ານ $4,605 — ທອງຍັງໃຕ້ Downtrend",
+    time: "20 ພ.ພ. 2026",
+    color: "#fb923c",
+    href: "https://www.investing.com/commodities/gold",
+  },
+  {
+    tag: "ຄູ່ມື",
+    title: "ເລີ່ມເທຣດທອງ XAUUSD ສໍາລັບຄົນລາວ — Entry · SL · TP",
+    time: "20 ພ.ພ. 2026",
+    color: "#4ade80",
+    href: "/blog/how-to-start-forex-laos",
+  },
+]);
   const brokers = [
     { name: "XM", logo: "/brokers/xm.png", rating: 4.3, ratingText: "4.3/5", cashback: "$3/Lot", spread: "1.6 pip", deposit: "$30", leverage: "1:1000", badge: "🥇 ອັນດັບ 1", badgeBg: "linear-gradient(135deg, #facc15, #f59e0b)", glowColor: "rgba(250,204,21,0.08)", accentColor: "#facc15", borderColor: "rgba(250,204,21,0.3)", tag: "ແນະນໍາ", tagStyle: { background: "rgba(250,204,21,0.1)", border: "1px solid rgba(250,204,21,0.25)", color: "#facc15" }, link: "https://affs.click/wLl9B", review: "/xm", highlight: true },
     { name: "Exness", logo: "/brokers/exness.png", rating: 4.6, ratingText: "4.6/5", cashback: "$3/Lot", spread: "1.0 pip", deposit: "$20", leverage: "1:2000", badge: "🥈 ອັນດັບ 2", badgeBg: "linear-gradient(135deg, #94a3b8, #64748b)", glowColor: "rgba(148,163,184,0.05)", accentColor: "#93c5fd", borderColor: "rgba(148,163,184,0.2)", tag: "ຖອນໄວ 24/7", tagStyle: { background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.25)", color: "#60a5fa" }, link: "https://one.exnessonelink.com/boarding/sign-up/a/ocvhdpugv1?lng=th", review: "/exness", highlight: false },
