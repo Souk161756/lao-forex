@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="lo">
-      <body style={{ margin: 0, padding: 0, background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
+      <body style={{ margin: 0, padding: 0, background: "#141920", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
 
         <style>{`
           .nav-link { color: #9ca3af; font-size: 13px; font-weight: 600; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color 0.2s; }

@@ -57,7 +57,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen text-white" style={{ background: "#07080f", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
+    <main className="min-h-screen text-white" style={{ background: "#141920", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
 
       {/* ── HERO ── */}
       <section className="relative overflow-hidden pt-20 pb-24 px-5">
