@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 textDecoration: "none", display: "flex", alignItems: "center", gap: "5px",
                 boxShadow: "0 4px 12px rgba(37,211,102,0.3)",
               }}>💬 WhatsApp</a>
-              <a href="https://t.me/laoforex" target="_blank" style={{
+              <a href="https://t.me/laofx_org" target="_blank" style={{
                 background: "#229ED9", color: "#fff", padding: "7px 14px",
                 borderRadius: "20px", fontSize: "12px", fontWeight: 700,
                 textDecoration: "none", display: "flex", alignItems: "center", gap: "5px",
@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 display: "flex", alignItems: "center", justifyContent: "center",
                 fontSize: "16px", textDecoration: "none",
               }}>💬</a>
-              <a href="https://t.me/laoforex" target="_blank" style={{
+              <a href="https://t.me/laofx_org" target="_blank" style={{
                 width: "38px", height: "38px", borderRadius: "50%", background: "#229ED9",
                 display: "flex", alignItems: "center", justifyContent: "center",
                 fontSize: "16px", textDecoration: "none",
@@ -100,7 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             fontSize: "24px", textDecoration: "none",
             boxShadow: "0 8px 32px rgba(37,211,102,0.4)",
           }} title="WhatsApp">💬</a>
-          <a href="https://t.me/laoforex" target="_blank" className="float-btn" style={{
+          <a href="https://t.me/laofx_org" target="_blank" className="float-btn" style={{
             width: "56px", height: "56px", borderRadius: "50%", background: "#229ED9",
             display: "flex", alignItems: "center", justifyContent: "center",
             fontSize: "24px", textDecoration: "none",
