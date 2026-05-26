@@ -107,7 +107,7 @@ export default function HFMReviewLaos() {
             {[
               { label: "ປະເພດ Account", value: "Micro, Premium, Zero Spread, Auto" },
               { label: "Currency Pairs", value: "50+ ຄູ່ເງິນ" },
-              { label: "ຝາກຕໍ່າ", value: "$50" },
+              { label: "ຝາກຕໍ່າ", value: "$5" },
               { label: "ຖອນ", value: "1-5 ວັນທໍາການ" },
               { label: "Platform", value: "MT4, MT5, HFM App" },
               { label: "Regulation", value: "FCA, CySEC, DFSA, FSA, FSCA" },
