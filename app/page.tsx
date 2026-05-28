@@ -8,31 +8,31 @@ export default function Home() {
   const [news, setNews] = useState([
   {
     tag: "ທອງຄໍາ",
-    title: "XAUUSD $4,526 Sideways — Bounce ຈາກ Support $4,450 ແຕ່ຍັງຕິດ Resistance",
-    time: "26 ພ.ພ. 2026",
+    title: "XAUUSD $4,490 ຫຼຸດຕໍ່ — Bearish ຢູ່ໃຕ້ $4,534 ລໍຖ້າ GDP",
+    time: "27 ພ.ພ. 2026",
     color: "#facc15",
     href: "https://www.investing.com/commodities/gold",
   },
   {
-    tag: "ວິເຄາະ",
-    title: "ແນວຮັບ $4,466 - $4,423 · ແນວຕ້ານ $4,576 - $4,608 · ລໍຖ້າ Breakout",
-    time: "26 ພ.ພ. 2026",
-    color: "#fb923c",
-    href: "https://www.investing.com/commodities/gold",
-  },
-  {
-    tag: "⚡ ຂ່າວ",
+    tag: "⚡ GDP",
     title: "28 ພ.ພ. GDP ສະຫະລັດ Q1 + Jobless Claims ອອກ — Volatility ສູງ!",
-    time: "26 ພ.ພ. 2026",
+    time: "27 ພ.ພ. 2026",
     color: "#f472b6",
     href: "https://www.investing.com/economic-calendar/",
   },
   {
+    tag: "ວິເຄາະ",
+    title: "ແນວຮັບ $4,466 - $4,423 · ແນວຕ້ານ $4,534 - $4,576 · ຢ່າ Buy ກ່ອນ GDP",
+    time: "27 ພ.ພ. 2026",
+    color: "#fb923c",
+    href: "https://www.investing.com/commodities/gold",
+  },
+  {
     tag: "ຄູ່ມື",
-    title: "ເລີ່ມເທຣດທອງ XAUUSD ສໍາລັບຄົນລາວ — Entry · SL · TP ຖືກຕ້ອງ",
-    time: "26 ພ.ພ. 2026",
+    title: "Stop Loss ແມ່ນຫຍັງ? ວິທີປ້ອງກັນທຶນໃຫ້ຖືກຕ້ອງ",
+    time: "27 ພ.ພ. 2026",
     color: "#4ade80",
-    href: "/blog/how-to-start-forex-laos",
+    href: "/blog/how-to-start-forex-laos/12",
   },
 ]);
   const brokers = [
