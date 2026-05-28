@@ -7,32 +7,32 @@ export default function Home() {
 
   const [news, setNews] = useState([
   {
-    tag: "ທອງຄໍາ",
-    title: "XAUUSD $4,490 ຫຼຸດຕໍ່ — Bearish ຢູ່ໃຕ້ $4,534 ລໍຖ້າ GDP",
-    time: "27 ພ.ພ. 2026",
-    color: "#facc15",
-    href: "https://www.investing.com/commodities/gold",
-  },
-  {
     tag: "⚡ GDP",
-    title: "28 ພ.ພ. GDP ສະຫະລັດ Q1 + Jobless Claims ອອກ — Volatility ສູງ!",
-    time: "27 ພ.ພ. 2026",
+    title: "GDP ສະຫະລັດ Q1 + Jobless Claims ອອກວັນນີ້ — Volatility ສູງ ລໍຖ້າກ່ອນ!",
+    time: "28 ພ.ພ. 2026",
     color: "#f472b6",
     href: "https://www.investing.com/economic-calendar/",
   },
   {
+    tag: "ທອງຄໍາ",
+    title: "XAUUSD $4,510 - $4,577 Consolidate — ຖ້າ GDP ດີ ທອງຫຼຸດ · ຖ້າ GDP ບໍ່ດີ ທອງຂຶ້ນ",
+    time: "28 ພ.ພ. 2026",
+    color: "#facc15",
+    href: "https://www.investing.com/commodities/gold",
+  },
+  {
     tag: "ວິເຄາະ",
-    title: "ແນວຮັບ $4,466 - $4,423 · ແນວຕ້ານ $4,534 - $4,576 · ຢ່າ Buy ກ່ອນ GDP",
-    time: "27 ພ.ພ. 2026",
+    title: "ແນວຮັບ $4,510 - $4,466 · ແນວຕ້ານ $4,577 - $4,660 · ຢ່າ Trade ກ່ອນ GDP!",
+    time: "28 ພ.ພ. 2026",
     color: "#fb923c",
     href: "https://www.investing.com/commodities/gold",
   },
   {
     tag: "ຄູ່ມື",
-    title: "Stop Loss ແມ່ນຫຍັງ? ວິທີປ້ອງກັນທຶນໃຫ້ຖືກຕ້ອງ",
-    time: "27 ພ.ພ. 2026",
+    title: "Volatility ແມ່ນຫຍັງ? ວິທີ Trade ຊ່ວງຂ່າວໃຫ້ປອດໄພ",
+    time: "28 ພ.ພ. 2026",
     color: "#4ade80",
-    href: "/blog/how-to-start-forex-laos/12",
+    href: "/blog/how-to-start-forex-laos/25",
   },
 ]);
   const brokers = [
