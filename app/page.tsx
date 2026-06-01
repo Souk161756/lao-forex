@@ -7,32 +7,32 @@ export default function Home() {
 
   const [news, setNews] = useState([
   {
-    tag: "⚡ GDP",
-    title: "GDP ສະຫະລັດ Q1 + Jobless Claims ອອກວັນນີ້ — Volatility ສູງ ລໍຖ້າກ່ອນ!",
-    time: "28 ພ.ພ. 2026",
-    color: "#f472b6",
-    href: "https://www.investing.com/economic-calendar/",
-  },
-  {
     tag: "ທອງຄໍາ",
-    title: "XAUUSD $4,510 - $4,577 Consolidate — ຖ້າ GDP ດີ ທອງຫຼຸດ · ຖ້າ GDP ບໍ່ດີ ທອງຂຶ້ນ",
-    time: "28 ພ.ພ. 2026",
+    title: "XAUUSD $4,541 Sideways — STAGFLATION ຢືນຢັດ ເຕີບໂຕຊ້າ + ເງິນເຟີ້ສູງ",
+    time: "1 ມິ.ຖ. 2026",
     color: "#facc15",
     href: "https://www.investing.com/commodities/gold",
   },
   {
     tag: "ວິເຄາະ",
-    title: "ແນວຮັບ $4,510 - $4,466 · ແນວຕ້ານ $4,577 - $4,660 · ຢ່າ Trade ກ່ອນ GDP!",
-    time: "28 ພ.ພ. 2026",
+    title: "ແນວຮັບ $4,510 - $4,480 · ແນວຕ້ານ $4,577 - $4,600 · Buy Break $4,510",
+    time: "1 ມິ.ຖ. 2026",
     color: "#fb923c",
     href: "https://www.investing.com/commodities/gold",
   },
   {
+    tag: "⚡ NFP",
+    title: "5 ມິ.ຖ. NFP ອອກ — ສໍາຄັນຫຼາຍ! ຢ່າ Hold ຂ້າມ NFP ລະວັງ Volatile!",
+    time: "1 ມິ.ຖ. 2026",
+    color: "#f472b6",
+    href: "https://www.investing.com/economic-calendar/",
+  },
+  {
     tag: "ຄູ່ມື",
-    title: "Volatility ແມ່ນຫຍັງ? ວິທີ Trade ຊ່ວງຂ່າວໃຫ້ປອດໄພ",
-    time: "28 ພ.ພ. 2026",
+    title: "Stagflation ແມ່ນຫຍັງ? ມັນສົ່ງຜົນຕໍ່ທອງຄໍາແນວໃດ?",
+    time: "1 ມິ.ຖ. 2026",
     color: "#4ade80",
-    href: "/blog/how-to-start-forex-laos/25",
+    href: "/blog/how-to-start-forex-laos",
   },
 ]);
   const brokers = [
