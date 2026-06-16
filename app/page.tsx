@@ -7,30 +7,30 @@ export default function Home() {
 
   const [news, setNews] = useState([
   {
+    tag: "🔥 FOMC",
+    title: "FOMC ຄືນນີ້! Iran MOU ຢືນຢັດ — ທອງ Bounce $4,308 · ລໍຖ້າ Dot Plot!",
+    time: "16 ມິ.ຖ. 2026",
+    color: "#f472b6",
+    href: "https://www.investing.com/economic-calendar/",
+  },
+  {
     tag: "ທອງຄໍາ",
-    title: "XAUUSD $4,336 ຕໍ່າສຸດໃນປີ 2026! NFP ດີ 172K — USD ແຂງ ທອງຫຼຸດຮຸນແຮງ",
-    time: "8 ມິ.ຖ. 2026",
+    title: "XAUUSD $4,308 Bounce! DXY ຫຼຸດ · CPI 4.2% · Goldman $5,400 JPMorgan $6,000",
+    time: "16 ມິ.ຖ. 2026",
     color: "#facc15",
     href: "https://www.investing.com/commodities/gold",
   },
   {
     tag: "ວິເຄາະ",
-    title: "ແນວຮັບ $4,336 - $4,300 · ແນວຕ້ານ $4,460 - $4,500 · Bearish ຮຸນແຮງ!",
-    time: "8 ມິ.ຖ. 2026",
+    title: "ແນວຮັບ $4,266 - $4,200 · ແນວຕ້ານ $4,381 - $4,500 · ຢ່າ Hold ຂ້າມ FOMC!",
+    time: "16 ມິ.ຖ. 2026",
     color: "#fb923c",
     href: "https://www.investing.com/commodities/gold",
   },
   {
-    tag: "⚡ CPI",
-    title: "10 ມິ.ຖ. CPI + 11 ມິ.ຖ. PPI + 16-17 ມິ.ຖ. FOMC — ອາທິດນີ້ Volatile ສູງ!",
-    time: "8 ມິ.ຖ. 2026",
-    color: "#f472b6",
-    href: "https://www.investing.com/economic-calendar/",
-  },
-  {
     tag: "ຄູ່ມື",
-    title: "NFP ແມ່ນຫຍັງ? ເຫດຜົນທີ່ Trader ທຸກຄົນຕ້ອງຮູ້ກ່ອນ Trade",
-    time: "8 ມິ.ຖ. 2026",
+    title: "FOMC Dot Plot ແມ່ນຫຍັງ? ເຫດຜົນທີ່ມັນສໍາຄັນຫຼາຍສໍາລັບ Trader",
+    time: "16 ມິ.ຖ. 2026",
     color: "#4ade80",
     href: "/blog/how-to-start-forex-laos",
   },
