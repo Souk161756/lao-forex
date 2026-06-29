@@ -4,33 +4,32 @@ import { useState } from "react";
 
 export default function Home() {
   const [search, setSearch] = useState("");
-
-  const [news, setNews] = useState([
+const [news, setNews] = useState([
   {
-    tag: "🔥 FOMC",
-    title: "FOMC ຄືນນີ້! Iran MOU ຢືນຢັດ — ທອງ Bounce $4,308 · ລໍຖ້າ Dot Plot!",
-    time: "16 ມິ.ຖ. 2026",
-    color: "#f472b6",
-    href: "https://www.investing.com/economic-calendar/",
+    tag: "🔴 Iran ໂຈມຕີ",
+    title: "Iran ຕີ Bahrain + Kuwait Weekend! US ໂຕ້ 2 ຄ່ຳ · Stand Down · Doha Talks ອາທິດນີ້!",
+    time: "29 ມິ.ຖ. 2026",
+    color: "#f87171",
+    href: "https://www.investing.com/commodities/gold",
   },
   {
     tag: "ທອງຄໍາ",
-    title: "XAUUSD $4,308 Bounce! DXY ຫຼຸດ · CPI 4.2% · Goldman $5,400 JPMorgan $6,000",
-    time: "16 ມິ.ຖ. 2026",
+    title: "XAUUSD ~$4,050 · PCE 4.1% in-line · Rate Hike Sept 62% · ຮັບ $4,022 · ຕ້ານ $4,114",
+    time: "29 ມິ.ຖ. 2026",
     color: "#facc15",
     href: "https://www.investing.com/commodities/gold",
   },
   {
-    tag: "ວິເຄາະ",
-    title: "ແນວຮັບ $4,266 - $4,200 · ແນວຕ້ານ $4,381 - $4,500 · ຢ່າ Hold ຂ້າມ FOMC!",
-    time: "16 ມິ.ຖ. 2026",
+    tag: "💥 NFP Week",
+    title: "ອາທິດໃຫຍ່! ISM ຄືນນີ້ · JOLTS ອັງຄານ · ADP ພຸດ · NFP ວັນສຸກ 3 ກ.ກ. ກ່ອນ July 4!",
+    time: "29 ມິ.ຖ. 2026",
     color: "#fb923c",
-    href: "https://www.investing.com/commodities/gold",
+    href: "https://www.investing.com/economic-calendar/",
   },
   {
-    tag: "ຄູ່ມື",
-    title: "FOMC Dot Plot ແມ່ນຫຍັງ? ເຫດຜົນທີ່ມັນສໍາຄັນຫຼາຍສໍາລັບ Trader",
-    time: "16 ມິ.ຖ. 2026",
+    tag: "ວິເຄາະ",
+    title: "Doha ສໍາເລັດ + NFP ອ່ອນ → Bounce $4,267 · Iran ຟ້າວ ອີກ → Oil ພຸ່ງ + ທອງ Safe Haven!",
+    time: "29 ມິ.ຖ. 2026",
     color: "#4ade80",
     href: "/blog/how-to-start-forex-laos",
   },
