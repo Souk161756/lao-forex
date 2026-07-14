@@ -6,32 +6,32 @@ export default function Home() {
   const [search, setSearch] = useState("");
 const [news, setNews] = useState([
   {
-    tag: "⚡ FOMC Minutes",
-    title: "FOMC Minutes ຕີ 1 ຄືນນີ້! Warsh ບໍ່ຍື່ນ Dot — ຄັ້ງທຳອິດ 14 ປີ! 9/18 ຄາດ Hike · Hawkish ຫຼື?",
-    time: "8 ກ.ກ. 2026",
+    tag: "💥 CPI 19:30!",
+    title: "CPI ມິ.ຖ. ຄືນນີ້ 19:30! ຄາດ 3.9% Headline · Core 2.9% Sticky · JPM+GS Earnings + Warsh ພຸດ!",
+    time: "14 ກ.ກ. 2026",
     color: "#f472b6",
-    href: "https://www.investing.com/economic-calendar/fomc-meeting-minutes-108",
+    href: "https://www.investing.com/economic-calendar/cpi-733",
+  },
+  {
+    tag: "🚨 Iran Hormuz",
+    title: "Iran ປິດ Hormuz! US-Iran ໂຈມຕີ Weekend · Oil $79 · Ceasefire ລົ້ມ · Rate Hike Sept 65-70%!",
+    time: "14 ກ.ກ. 2026",
+    color: "#f87171",
+    href: "https://www.investing.com/commodities/crude-oil",
   },
   {
     tag: "ທອງຄໍາ",
-    title: "XAUUSD ~$4,128 Pullback ລໍ Minutes · JPMorgan Q3 $4,300 · Q4 $4,500 · ຕ້ານ $4,180 · ຮັບ $4,060",
-    time: "8 ກ.ກ. 2026",
+    title: "XAUUSD ~$4,010 Safe-Haven Paradox! Iran ໂຈມ=Oil ຂຶ້ນ=Inflation=Rate Hike=ທອງ ລົງ! ຮັບ $3,960",
+    time: "14 ກ.ກ. 2026",
     color: "#facc15",
     href: "https://www.investing.com/commodities/gold",
   },
   {
-    tag: "🔥 CPI 14 ກ.ກ.",
-    title: "CPI ມິ.ຖ. ວັນຈັນ 14 ກ.ກ. = ຈຸດໃຫຍ່ສຸດ! ຮ້ອນ → Hike Sept 70%+ · ເຢັນ → ທອງ Bounce $4,500!",
-    time: "14 ກ.ກ. 2026",
-    color: "#f87171",
-    href: "https://www.investing.com/economic-calendar/cpi-733",
-  },
-  {
-    tag: "🏦 FOMC 29 ກ.ກ.",
-    title: "FOMC ຕັດສິນດອກເບ້ຍ 29-30 ກ.ກ.! July Hold 75% · September Live 50% · Fed Median ທ້າຍປີ 3.8%",
-    time: "29 ກ.ກ. 2026",
+    tag: "🎤 Warsh ສັກຂີ",
+    title: "Warsh ສັກຂີກຳ Congress ພຸດ 15 ກ.ກ.! ຄັ້ງທຳອິດ! + PPI ມິ.ຖ. + Beige Book = ຈຸດຕັດສິນ!",
+    time: "15 ກ.ກ. 2026",
     color: "#4ade80",
-    href: "/blog/how-to-start-forex-laos",
+    href: "https://www.investing.com/economic-calendar/",
   },
 ]);
   const brokers = [
