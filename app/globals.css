@@ -1,10 +1,17 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@400;700;900&display=swap');
+@import "tailwindcss";
 
 :root {
   --background: #07080f;
   --foreground: #ffffff;
 }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Noto Serif Lao", serif;
+}
+
 
 body {
   background: var(--background);

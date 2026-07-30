@@ -55,9 +55,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {/* Desktop Nav */}
             <div className="nav-desktop">
               <a href="/" className="nav-link">ໜ້າຫຼັກ</a>
-              <a href="/reviews" className="nav-link">ລີວິວ</a>
-              <a href="/blog/how-to-start-forex-laos" className="nav-link">ບົດຄວາມ</a>
-              <a href="/#brokers" className="nav-link">ໂບກເກີ້</a>
+<a href="/reviews" className="nav-link">ລີວິວ</a>
+<a href="/blog/how-to-start-forex-laos" className="nav-link">ບົດຄວາມ</a>
+<a href="/#brokers" className="nav-link">ໂບກເກີ້</a>
+<a href="/tools" className="nav-link">🧮 Tools</a>
               <div style={{ width: "1px", height: "20px", background: "rgba(255,255,255,0.1)", margin: "0 6px" }} />
               <a href="https://wa.me/8562029826898" target="_blank" style={{
                 background: "#25D366", color: "#fff", padding: "7px 14px",
