@@ -159,7 +159,7 @@ export default function Hero() {
             <div className="absolute -inset-8 rounded-[40px] bg-gradient-to-r from-yellow-500/20 via-orange-500/10 to-blue-500/20 blur-3xl"></div>
 
             {/* Main Card */}
-            <div className="relative rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-2xl overflow-hidden">
+     <div className="relative rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-2xl overflow-hidden">
 
               {/* Header */}
               <div className="flex items-center justify-between px-8 py-6 border-b border-white/10">

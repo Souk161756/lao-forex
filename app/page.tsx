@@ -10,6 +10,7 @@ import Guide from "./components/Guide";
 import Blog from "./components/Blog";
 import ContactCTA from "./components/ContactCTA";
 import Footer from "./components/Footer";
+import TradingViewGold from "./components/TradingViewGold";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -72,10 +73,22 @@ return (
       color: "#fff",
     }}
   >
-    <Hero />
+   <Hero />
 
-    <Stats />
+<section className="max-w-7xl mx-auto px-5 py-12">
+  <div className="mb-8">
+    <h2 className="text-3xl font-black text-white">
+      📈 ກຣາຟລາຄາຄຳ (XAU/USD)
+    </h2>
+    <p className="text-gray-400 mt-2">
+      ກຣາຟລາຄາຄຳແບບ Live ອັບເດດຈາກ TradingView
+    </p>
+  </div>
 
+  <TradingViewGold />
+</section>
+
+<Stats />
     <NewsSection news={news} />
 
     {/* SEARCH */}
