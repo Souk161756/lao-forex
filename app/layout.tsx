@@ -1,15 +1,85 @@
 import "./globals.css";
 
-export const metadata = {
-  title: "LaoForex.org — ໂບກເກີ້ Forex ທີ່ດີສຸດໃນລາວ",
-  description: "ລີວິວໂບກເກີ້ Forex ສໍາລັບຄົນລາວ · ປຽບທຽບ Spread · Cashback · ຝາກ-ຖອນ BCEL",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://laoforex.org"),
+
+  title: {
+    default: "LaoForex.org | ໂບກເກີ Forex ທີ່ດີທີ່ສຸດໃນລາວ",
+    template: "%s | LaoForex.org",
+
+  },
+manifest: "/manifest.webmanifest",
+
+  description:
+    "ປຽບທຽບ XM, Exness, Vantage, IUX, HFM ແລະ Broker ອື່ນໆ ພ້ອມ Cashback, Spread, ຂ່າວ Forex ແລະ XAUUSD ສໍາລັບຄົນລາວ.",
+
+  keywords: [
+    "Forex Laos",
+    "LaoForex",
+    "XM",
+    "Exness",
+    "Vantage",
+    "IUX",
+    "HFM",
+    "Gold",
+    "XAUUSD",
+    "Cashback",
+  ],
+
+  openGraph: {
+    title: "LaoForex.org",
+    description:
+      "ເວັບລວມ Broker Forex ສໍາລັບຄົນລາວ",
+    url: "https://laoforex.org",
+    siteName: "LaoForex",
+    locale: "lo_LA",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "LaoForex.org",
+    description: "Forex Broker ສໍາລັບຄົນລາວ",
+    images: ["/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="lo">
       <body style={{ margin: 0, padding: 0, background: "#141920", fontFamily: "'Noto Serif Lao', 'Phetsarath OT', serif" }}>
-
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "LaoForex.org",
+      url: "https://laoforex.org",
+      logo: "https://laoforex.org/logo.png",
+      description:
+        "ເວັບລວມໂບກເກີ Forex ສໍາລັບຄົນລາວ",
+      sameAs: [
+        "https://www.facebook.com/",
+        "https://t.me/laofx_org",
+      ],
+    }),
+  }}
+/>
         <style>{`
           .nav-link { color: #9ca3af; font-size: 13px; font-weight: 600; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color 0.2s; }
           .nav-link:hover { color: #facc15; }
