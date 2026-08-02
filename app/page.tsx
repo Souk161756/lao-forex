@@ -60,7 +60,7 @@ return (
    <Hero />
 
 <Stats />
-    <NewsSection news={news} />
+    <NewsSection />
 
     {/* SEARCH */}
     <section className="max-w-6xl mx-auto px-5 pb-6">
