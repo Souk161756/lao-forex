@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export default function LiveBitcoin() {
+export default function LiveOil() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function LiveBitcoin() {
     script.async = true;
 
     script.innerHTML = JSON.stringify({
-      symbol: "BITSTAMP:BTCUSD",
+      symbol: "TVC:USOIL",
       width: "100%",
       locale: "en",
       colorTheme: "dark",
@@ -29,7 +29,7 @@ export default function LiveBitcoin() {
   return (
     <div
       ref={ref}
-      className="tradingview-widget-container rounded-3xl border border-orange-500/20 bg-white/5 backdrop-blur-xl p-5"
+      className="tradingview-widget-container rounded-3xl border border-cyan-500/20 bg-white/5 backdrop-blur-xl p-5"
     ></div>
   );
 }

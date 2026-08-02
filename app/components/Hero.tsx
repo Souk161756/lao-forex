@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import LiveGoldPrice from "./LiveGoldPrice";
+import LiveSilver from "./LiveSilver";
+import LiveOil from "./LiveOil";
 import LiveBitcoin from "./LiveBitcoin";
 import TradingViewGold from "./TradingViewGold";
 
@@ -182,11 +184,15 @@ export default function Hero() {
             {/* Live Cards */}
             <div className="mb-5 grid grid-cols-2 gap-4">
 
-              <LiveGoldPrice />
+  <LiveGoldPrice />
 
-              <LiveBitcoin />
+  <LiveSilver />
 
-            </div>
+  <LiveOil />
+
+  <LiveBitcoin />
+
+</div>
 
             {/* Dashboard */}
             <div className="hero-card hero-glow overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-2xl shadow-2xl transition-all duration-500 hover:scale-[1.01]">
