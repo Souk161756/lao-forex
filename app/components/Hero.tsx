@@ -1,11 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import LiveGoldPrice from "./LiveGoldPrice";
-import LiveSilver from "./LiveSilver";
-import LiveOil from "./LiveOil";
-import LiveBitcoin from "./LiveBitcoin";
 import TradingViewGold from "./TradingViewGold";
+import MarketCards from "./MarketCards";
 
 export default function Hero() {
   return (
@@ -67,8 +64,7 @@ export default function Hero() {
 
         </div>
 
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr] items-start">
           {/* LEFT */}
           <div>
 
@@ -179,21 +175,13 @@ export default function Hero() {
           </div>
 
           {/* RIGHT */}
-                    <div>
+                <div>
 
-            {/* Live Cards */}
-            <div className="mb-5 grid grid-cols-2 gap-4">
+            {/* Market Cards */}
 
-  <LiveGoldPrice />
-
-  <LiveSilver />
-
-  <LiveOil />
-
-  <LiveBitcoin />
-
+<div className="mb-6">
+  <MarketCards />
 </div>
-
             {/* Dashboard */}
             <div className="hero-card hero-glow overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-2xl shadow-2xl transition-all duration-500 hover:scale-[1.01]">
 
