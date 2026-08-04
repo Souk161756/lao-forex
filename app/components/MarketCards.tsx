@@ -1,47 +1,51 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import MarketCard from "./MarketCard";
 
+type Market = {
+  icon: string;
+  symbol: string;
+  name: string;
+  price: string;
+  change: string;
+  color: string;
+};
+
 export default function MarketCards() {
+  const [markets, setMarkets] = useState<Market[]>([]);
+
+  useEffect(() => {
+    async function loadPrices() {
+      try {
+        const res = await fetch("/api/prices");
+        const data = await res.json();
+        setMarkets(data);
+      } catch (error) {
+        console.error("Failed to load prices:", error);
+      }
+    }
+
+    loadPrices();
+
+    const timer = setInterval(loadPrices, 30000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="grid grid-cols-4 gap-4">
-
-      <MarketCard
-        icon="🥇"
-        symbol="XAUUSD"
-        name="Gold"
-        price="3352.45"
-        change="+18.54 (+0.55%)"
-        color="#22c55e"
-      />
-
-      <MarketCard
-        icon="🥈"
-        symbol="XAGUSD"
-        name="Silver"
-        price="38.12"
-        change="+0.32 (+0.85%)"
-        color="#22c55e"
-      />
-
-      <MarketCard
-        icon="🛢️"
-        symbol="USOIL"
-        name="Oil"
-        price="71.81"
-        change="-0.18 (-0.25%)"
-        color="#ef4444"
-      />
-
-      <MarketCard
-        icon="₿"
-        symbol="BTCUSD"
-        name="Bitcoin"
-        price="114,258"
-        change="+2,152 (+1.91%)"
-        color="#22c55e"
-      />
-
+      {markets.map((item) => (
+        <MarketCard
+          key={item.symbol}
+          icon={item.icon}
+          symbol={item.symbol}
+          name={item.name}
+          price={item.price}
+          change={item.change}
+          color={item.color}
+        />
+      ))}
     </div>
   );
 }

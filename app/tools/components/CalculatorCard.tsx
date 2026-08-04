@@ -15,29 +15,35 @@ export default function CalculatorCard({
 }: CalculatorCardProps) {
   return (
     <Link href={href}>
-      <div className="group rounded-3xl border border-gray-800 bg-[#121826] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:shadow-xl hover:shadow-yellow-500/10">
+      <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#111827] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-yellow-400 hover:shadow-[0_20px_50px_rgba(250,204,21,.15)]">
 
-        <div className="mb-5 text-5xl">
-          {icon}
-        </div>
+        <div className="absolute right-0 top-0 h-28 w-28 rounded-full bg-yellow-400/5 blur-3xl" />
 
-        <h2 className="text-2xl font-bold text-white group-hover:text-yellow-400">
-          {title}
-        </h2>
+        <div className="relative z-10">
 
-        <p className="mt-3 leading-7 text-gray-400">
-          {description}
-        </p>
+          <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-yellow-500/10 text-4xl">
+            {icon}
+          </div>
 
-        <div className="mt-6 flex items-center justify-between">
+          <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition">
+            {title}
+          </h3>
 
-          <span className="rounded-full bg-yellow-500/10 px-4 py-2 text-sm text-yellow-400">
-            ເຄື່ອງມື
-          </span>
+          <p className="mt-3 text-sm leading-7 text-gray-400">
+            {description}
+          </p>
 
-          <span className="font-semibold text-yellow-400">
-            ເຂົ້າໃຊ້ →
-          </span>
+          <div className="mt-6 flex items-center justify-between">
+
+            <span className="rounded-full bg-white/5 px-3 py-1 text-xs text-gray-300">
+              Forex Tool
+            </span>
+
+            <span className="text-yellow-400 font-semibold">
+              Open →
+            </span>
+
+          </div>
 
         </div>
 

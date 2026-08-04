@@ -1,94 +1,135 @@
 export default function Sidebar() {
   return (
     <div className="space-y-6">
-      {/* ລາຄາທອງຄຳ */}
-      <div className="rounded-2xl border border-yellow-500/20 bg-[#121826] p-6">
-        <h2 className="mb-4 text-lg font-bold text-yellow-400">
-          🥇 ລາຄາທອງຄຳ
-        </h2>
 
-        <div className="flex items-center justify-between">
-          <span className="text-gray-400">XAU/USD</span>
-          <span className="text-2xl font-bold text-green-400">
-            3,338.52
+      {/* Gold */}
+      <div className="rounded-3xl border border-yellow-500/20 bg-[#111827] p-6 shadow-lg">
+
+        <div className="mb-5 flex items-center justify-between">
+          <div>
+            <p className="text-sm text-gray-400">🥇 Gold Price</p>
+            <h2 className="mt-1 text-2xl font-bold text-white">
+              XAU/USD
+            </h2>
+          </div>
+
+          <span className="rounded-full bg-green-500/10 px-3 py-1 text-sm font-semibold text-green-400">
+            LIVE
           </span>
         </div>
 
-        <p className="mt-2 text-sm text-green-400">
-          ▲ +12.35 (+0.37%)
-        </p>
-      </div>
-
-      {/* ຄູ່ເງິນຍອດນິຍົມ */}
-      <div className="rounded-2xl border border-gray-700 bg-[#121826] p-6">
-        <h2 className="mb-4 text-lg font-bold">
-          💱 ຄູ່ເງິນຍອດນິຍົມ
-        </h2>
-
-        <div className="space-y-3 text-sm">
-          <div className="flex justify-between">
-            <span>EUR/USD</span>
-            <span>1.1762</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>GBP/USD</span>
-            <span>1.3521</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>USD/JPY</span>
-            <span>148.64</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>AUD/USD</span>
-            <span>0.6598</span>
-          </div>
+        <div className="text-4xl font-black text-green-400">
+          3,338.52
         </div>
+
+        <div className="mt-2 text-lg font-semibold text-green-400">
+          ▲ +12.35 (+0.37%)
+        </div>
+
       </div>
 
-      {/* ສະຖານະຕະຫຼາດ */}
-      <div className="rounded-2xl border border-gray-700 bg-[#121826] p-6">
-        <h2 className="mb-4 text-lg font-bold">
-          🌍 ສະຖານະຕະຫຼາດ
+      {/* Major Pairs */}
+
+      <div className="rounded-3xl border border-white/10 bg-[#111827] p-6">
+
+        <h2 className="mb-5 text-xl font-bold text-white">
+          💱 Major Pairs
         </h2>
 
         <div className="space-y-3">
-          <div className="flex justify-between">
-            <span>ຊິດນີ</span>
-            <span className="text-red-400">ປິດ</span>
+
+          <div className="flex justify-between border-b border-white/5 pb-3">
+            <span className="text-gray-300">EUR/USD</span>
+            <span className="text-green-400">1.1762 ▲</span>
+          </div>
+
+          <div className="flex justify-between border-b border-white/5 pb-3">
+            <span className="text-gray-300">GBP/USD</span>
+            <span className="text-red-400">1.3521 ▼</span>
+          </div>
+
+          <div className="flex justify-between border-b border-white/5 pb-3">
+            <span className="text-gray-300">USD/JPY</span>
+            <span className="text-green-400">148.64 ▲</span>
           </div>
 
           <div className="flex justify-between">
-            <span>ໂຕກຽວ</span>
-            <span className="text-red-400">ປິດ</span>
+            <span className="text-gray-300">AUD/USD</span>
+            <span className="text-green-400">0.6598 ▲</span>
           </div>
 
-          <div className="flex justify-between">
-            <span>ລອນດອນ</span>
-            <span className="text-red-400">ປິດ</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>ນິວຢອກ</span>
-            <span className="text-red-400">ປິດ</span>
-          </div>
         </div>
+
       </div>
 
-      {/* ຂ່າວສຳຄັນ */}
-      <div className="rounded-2xl border border-gray-700 bg-[#121826] p-6">
-        <h2 className="mb-4 text-lg font-bold">
-          📰 ຂ່າວສຳຄັນ
+      {/* Market Sessions */}
+
+      <div className="rounded-3xl border border-white/10 bg-[#111827] p-6">
+
+        <h2 className="mb-5 text-xl font-bold text-white">
+          🌍 Market Sessions
         </h2>
 
-        <ul className="space-y-3 text-sm text-gray-300">
-          <li>• ຕິດຕາມການປະຊຸມ FOMC</li>
-          <li>• ປະກາດຕົວເລກ GDP ສະຫະລັດ</li>
-          <li>• ການເຄື່ອນໄຫວຂອງ XAU/USD</li>
-        </ul>
+        <div className="space-y-3">
+
+          <div className="flex justify-between">
+            <span className="text-gray-300">Sydney</span>
+            <span className="rounded-full bg-red-500/10 px-3 py-1 text-sm text-red-400">
+              CLOSED
+            </span>
+          </div>
+
+          <div className="flex justify-between">
+            <span className="text-gray-300">Tokyo</span>
+            <span className="rounded-full bg-red-500/10 px-3 py-1 text-sm text-red-400">
+              CLOSED
+            </span>
+          </div>
+
+          <div className="flex justify-between">
+            <span className="text-gray-300">London</span>
+            <span className="rounded-full bg-green-500/10 px-3 py-1 text-sm text-green-400">
+              OPEN
+            </span>
+          </div>
+
+          <div className="flex justify-between">
+            <span className="text-gray-300">New York</span>
+            <span className="rounded-full bg-green-500/10 px-3 py-1 text-sm text-green-400">
+              OPEN
+            </span>
+          </div>
+
+        </div>
+
       </div>
+
+      {/* News */}
+
+      <div className="rounded-3xl border border-white/10 bg-[#111827] p-6">
+
+        <h2 className="mb-5 text-xl font-bold text-white">
+          📰 Latest News
+        </h2>
+
+        <div className="space-y-3">
+
+          <div className="rounded-xl bg-white/5 p-4 hover:bg-white/10 transition">
+            FOMC Meeting This Week
+          </div>
+
+          <div className="rounded-xl bg-white/5 p-4 hover:bg-white/10 transition">
+            US GDP Release
+          </div>
+
+          <div className="rounded-xl bg-white/5 p-4 hover:bg-white/10 transition">
+            Gold Market Outlook
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
   );
 }
