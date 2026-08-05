@@ -2,10 +2,17 @@
 
 import { Search } from "lucide-react";
 
-export default function SearchBar() {
+type SearchBarProps = {
+  value: string;
+  onChange: (value: string) => void;
+};
+
+export default function SearchBar({
+  value,
+  onChange,
+}: SearchBarProps) {
   return (
     <section className="mb-8">
-
       <div className="relative">
 
         <Search
@@ -15,6 +22,8 @@ export default function SearchBar() {
 
         <input
           type="text"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
           placeholder="ຄົ້ນຫາ Calculator, Broker, Gold, Forex..."
           className="
             h-16
@@ -38,7 +47,6 @@ export default function SearchBar() {
         />
 
       </div>
-
     </section>
   );
 }

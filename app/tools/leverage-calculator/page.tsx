@@ -6,24 +6,37 @@ import NumberInput from "../components/NumberInput";
 import SelectBox from "../components/SelectBox";
 import ResultCard from "../components/ResultCard";
 
-export default function MarginCalculatorPage() {
+export default function LeverageCalculatorPage() {
+  const [balance, setBalance] = useState(1000);
   const [lot, setLot] = useState(1);
-  const [price, setPrice] = useState(1.17);
+  const [price, setPrice] = useState(1.1700);
   const [leverage, setLeverage] = useState("100");
-
-  const leverageValue = Number(leverage);
 
   const contractSize = 100000;
 
-  const margin =
-    (lot * contractSize * price) / leverageValue;
+  const positionValue = lot * contractSize * price;
+
+  const requiredMargin =
+    positionValue / Number(leverage);
+
+  const marginLevel =
+    requiredMargin > 0
+      ? (balance / requiredMargin) * 100
+      : 0;
 
   return (
     <ToolLayout
-      title="💰 Margin Calculator"
-      description="ຄຳນວນ Margin ທີ່ຕ້ອງໃຊ້ກ່ອນເປີດອໍເດີ"
+      title="⚡ Leverage Calculator"
+      description="ຄຳນວນ Leverage, Margin ແລະ Position Value"
     >
       <div className="grid gap-6 md:grid-cols-2">
+
+        <NumberInput
+          label="Account Balance"
+          value={balance}
+          onChange={setBalance}
+          suffix="USD"
+        />
 
         <NumberInput
           label="Lot Size"
@@ -36,6 +49,7 @@ export default function MarginCalculatorPage() {
           label="Current Price"
           value={price}
           onChange={setPrice}
+          step={0.0001}
         />
 
         <SelectBox
@@ -56,7 +70,7 @@ export default function MarginCalculatorPage() {
 
       <ResultCard
         title="Required Margin"
-        value={`$${margin.toFixed(2)}`}
+        value={`$${requiredMargin.toFixed(2)}`}
         subtitle={`Leverage 1:${leverage}`}
       />
 
@@ -65,35 +79,35 @@ export default function MarginCalculatorPage() {
         <div className="rounded-2xl border border-white/10 bg-[#1b2130] p-5">
 
           <div className="text-gray-400">
-            Contract Size
-          </div>
-
-          <div className="mt-2 text-2xl font-bold text-white">
-            100,000
-          </div>
-
-        </div>
-
-        <div className="rounded-2xl border border-white/10 bg-[#1b2130] p-5">
-
-          <div className="text-gray-400">
-            Current Price
-          </div>
-
-          <div className="mt-2 text-2xl font-bold text-yellow-400">
-            {price}
-          </div>
-
-        </div>
-
-        <div className="rounded-2xl border border-white/10 bg-[#1b2130] p-5">
-
-          <div className="text-gray-400">
-            Leverage
+            Position Value
           </div>
 
           <div className="mt-2 text-2xl font-bold text-green-400">
-            1:{leverage}
+            ${positionValue.toFixed(2)}
+          </div>
+
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-[#1b2130] p-5">
+
+          <div className="text-gray-400">
+            Required Margin
+          </div>
+
+          <div className="mt-2 text-2xl font-bold text-yellow-400">
+            ${requiredMargin.toFixed(2)}
+          </div>
+
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-[#1b2130] p-5">
+
+          <div className="text-gray-400">
+            Margin Level
+          </div>
+
+          <div className="mt-2 text-2xl font-bold text-blue-400">
+            {marginLevel.toFixed(2)}%
           </div>
 
         </div>
@@ -103,13 +117,29 @@ export default function MarginCalculatorPage() {
       <div className="mt-8 rounded-2xl border border-blue-500/20 bg-blue-500/5 p-6">
 
         <h3 className="font-bold text-blue-400">
-          📘 Margin Formula
+          📘 Leverage Formula
         </h3>
 
         <p className="mt-3 text-gray-300 leading-8">
-          Margin =
-          (Lot × Contract Size × Current Price)
-          ÷ Leverage
+          Required Margin = Position Value ÷ Leverage
+        </p>
+
+        <p className="mt-2 text-gray-300 leading-8">
+          Margin Level = Account Balance ÷ Margin × 100
+        </p>
+
+      </div>
+
+      <div className="mt-6 rounded-2xl border border-yellow-500/20 bg-yellow-500/5 p-6">
+
+        <h3 className="font-bold text-yellow-400">
+          💡 Trading Tip
+        </h3>
+
+        <p className="mt-3 text-gray-300 leading-8">
+          ການໃຊ້ Leverage ສູງຊ່ວຍໃຫ້ໃຊ້ Margin ໜ້ອຍລົງ
+          ແຕ່ຄວາມສ່ຽງກໍ່ສູງຂຶ້ນ.
+          ຄວນໃຊ້ Risk Management ຄວບຄູ່ກັນສະເໝີ.
         </p>
 
       </div>
