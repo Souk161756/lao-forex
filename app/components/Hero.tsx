@@ -79,20 +79,13 @@ export default function Hero() {
             </div>
 
             <h1 className="text-6xl font-black leading-tight text-white lg:text-7xl">
-
-              ເທຣດ
-
-              <br />
-
-              <span className="bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-500 bg-clip-text text-transparent">
-                Forex
-              </span>
-
-              <br />
-
-              ຢ່າງມືອາຊີບ
-
-            </h1>
+  ເທຣດ{" "}
+  <span className="bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-500 bg-clip-text text-transparent">
+    Forex
+  </span>
+  <br />
+  ຢ່າງມືອາຊີບ
+</h1>
 
             <p className="mt-8 max-w-xl text-xl leading-10 text-gray-300">
 
